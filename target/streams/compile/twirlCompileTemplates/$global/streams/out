@@ -1,4 +1,0 @@
-[0m[[31merror[0m] [0m/Users/vinh/Desktop/warehouse/app/views/products/list.scala.html:28: Expected '}' but found 'EOF'[0m
-[0m[[31merror[0m] [0m    </table>[0m
-[0m[[31merror[0m] [0m            ^[0m
-[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

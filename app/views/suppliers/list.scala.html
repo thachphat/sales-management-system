@@ -1,0 +1,42 @@
+@(suppliers: List[Supplier])
+
+@main("Suppliers catalogue") {
+
+  <h2>All Suppliers</h2>
+<script>
+function del(urlToDelete){
+$.ajax({
+url: urlToDelete,
+type:'DELETE',
+success: function(results){
+location.reload();
+}
+});
+}
+</script> 
+   <table class="table table-striped">
+    <thead>
+      <tr>
+		<th>Name</th>
+	  </tr>
+	</thead>
+	<tbody>
+	@for(supplier <- suppliers) {
+		 <tr>
+		        <td><a href="@routes.Suppliers.details(supplier.name)">
+		          @supplier.name
+		        </a></td>
+				<td>
+				<a href="@routes.Suppliers.details(supplier.name)">
+				<span class="glyphicon glyphicon-pencil"></span></a>
+				<a onclick="del('@routes.Suppliers.delete(supplier.name)')">
+				<span class="glyphicon glyphicon-remove"></span></a>
+				</td>
+		      </tr>
+		      }
+
+		    </tbody>
+		   </table>
+     <a href="@routes.Suppliers.newSupplier()"><button type="submit" class="btn btn-default">Create New</button></a>
+	
+	}

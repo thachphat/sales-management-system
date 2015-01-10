@@ -31,26 +31,80 @@ Seq[Any](format.raw/*1.32*/("""
 """),format.raw/*3.1*/("""<!DOCTYPE html>
 
 <html>
-  <head>
-    <title>"""),_display_(/*7.13*/title),format.raw/*7.18*/("""</title>
-    <link href=""""),_display_(/*8.18*/routes/*8.24*/.Assets.at("bootstrap/css/bootstrap.min.css")),format.raw/*8.69*/("""" rel="stylesheet" media="screen">
-    <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.55*/routes/*9.61*/.Assets.at("images/favicon.png")),format.raw/*9.93*/("""">
-    <script src=""""),_display_(/*10.19*/routes/*10.25*/.Assets.at("javascripts/jquery-1.9.0.min.js")),format.raw/*10.70*/("""" type="text/javascript"></script>
-  </head>
-  <body class="container">
-    """),_display_(/*13.6*/if(flash.containsKey("success"))/*13.38*/{_display_(Seq[Any](format.raw/*13.39*/("""
-      """),format.raw/*14.7*/("""<div class="alert alert-success">
-      """),_display_(/*15.8*/flash/*15.13*/.get("success")),format.raw/*15.28*/("""
-      """),format.raw/*16.7*/("""</div>
-    """)))}),format.raw/*17.6*/("""
+    <head>
+        <title>"""),_display_(/*7.17*/title),format.raw/*7.22*/("""</title>
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*8.54*/routes/*8.60*/.Assets.at("stylesheets/main.css")),format.raw/*8.94*/("""">    
+		
+		<link href=""""),_display_(/*10.16*/routes/*10.22*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*10.65*/("""" rel="stylesheet" media="screen">
+		<link rel="stylesheet" media="screen" href="http://cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+		<link href=""""),_display_(/*12.16*/routes/*12.22*/.Assets.at("stylesheets/simple-sidebar.css")),format.raw/*12.66*/("""" rel="stylesheet" media="screen">
+        
 
-    """),_display_(/*19.6*/if(flash.containsKey("error"))/*19.36*/{_display_(Seq[Any](format.raw/*19.37*/("""
-      """),format.raw/*20.7*/("""<div class="alert alert-error">
-      """),_display_(/*21.8*/flash/*21.13*/.get("error")),format.raw/*21.26*/("""
-      """),format.raw/*22.7*/("""</div>
-    """)))}),format.raw/*23.6*/("""
-  """),_display_(/*24.4*/content),format.raw/*24.11*/("""
-  """),format.raw/*25.3*/("""</body>
+
+		<link rel="shortcut icon" type="image/png" href=""""),_display_(/*16.53*/routes/*16.59*/.Assets.at("images/favicon.png")),format.raw/*16.91*/("""">
+        <script src=""""),_display_(/*17.23*/routes/*17.29*/.Assets.at("javascripts/hello.js")),format.raw/*17.63*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*18.23*/routes/*18.29*/.Assets.at("javascripts/jquery-2.1.3.min.js")),format.raw/*18.74*/("""" type="text/javascript"></script>
+       
+<script src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
+	</head>
+    <body>
+	
+	
+	<div id="wrapper">
+
+	        <!-- Sidebar -->
+	        <div id="sidebar-wrapper">
+	            <ul class="sidebar-nav">
+	                <li class="sidebar-brand">
+	                    <a href="#">
+						Retails Database         
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="#">Dashboard</a>
+	                </li>
+	                <li>
+	                    <a href=""""),_display_(/*40.32*/routes/*40.38*/.Products.list()),format.raw/*40.54*/("""">Products</a>
+	                </li>
+	                <li>
+	                    <a href=""""),_display_(/*43.32*/routes/*43.38*/.Suppliers.list()),format.raw/*43.55*/("""">Suppliers</a>
+	                </li>
+	                <li>
+	                    <a href="#">Transactions</a>
+	                </li>
+	            </ul>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+		    <!-- Page Content -->
+		           <div id="page-content-wrapper">
+		               <div class="container-fluid">
+				   	"""),_display_(/*54.10*/if(flash.containsKey("success"))/*54.42*/{_display_(Seq[Any](format.raw/*54.43*/("""
+				   	  """),format.raw/*55.11*/("""<div class="alert alert-success" role="alert">
+				   	    """),_display_(/*56.14*/flash/*56.19*/.get("success")),format.raw/*56.34*/("""
+				   	  """),format.raw/*57.11*/("""</div>
+				   	""")))}),format.raw/*58.10*/("""
+
+				   	"""),_display_(/*60.10*/if(flash.containsKey("error"))/*60.40*/{_display_(Seq[Any](format.raw/*60.41*/("""
+				   	  """),format.raw/*61.11*/("""<div class="alert alert-danger" role="alert">
+				   	    """),_display_(/*62.14*/flash/*62.19*/.get("error")),format.raw/*62.32*/("""
+				   	  """),format.raw/*63.11*/("""</div>
+				   	""")))}),format.raw/*64.10*/("""
+        """),_display_(/*65.10*/content),format.raw/*65.17*/("""
+		"""),format.raw/*66.3*/("""<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+		
+	    </div>
+	           </div>
+	           <!-- /#page-content-wrapper -->
+			   <!-- Menu Toggle Script -->
+			       <script>
+			       $("#menu-toggle").click(function(e) """),format.raw/*73.47*/("""{"""),format.raw/*73.48*/("""
+			           """),format.raw/*74.15*/("""e.preventDefault();
+			           $("#wrapper").toggleClass("toggled");
+			       """),format.raw/*76.11*/("""}"""),format.raw/*76.12*/(""");
+			       </script>
+				 
+    </body>
 </html>
 """))}
   }
@@ -64,11 +118,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Mon Jan 05 09:52:48 ICT 2015
-                  SOURCE: /Users/vinh/Desktop/warehouse/app/views/main.scala.html
-                  HASH: 607a77dc1bbaff170a2dc8e423883e1ed83f0a6a
-                  MATRIX: 727->1|845->31|873->33|944->78|969->83|1021->109|1035->115|1100->160|1215->249|1229->255|1281->287|1329->308|1344->314|1410->359|1513->436|1554->468|1593->469|1627->476|1694->517|1708->522|1744->537|1778->544|1820->556|1853->563|1892->593|1931->594|1965->601|2030->640|2044->645|2078->658|2112->665|2154->677|2184->681|2212->688|2242->691
-                  LINES: 26->1|29->1|31->3|35->7|35->7|36->8|36->8|36->8|37->9|37->9|37->9|38->10|38->10|38->10|41->13|41->13|41->13|42->14|43->15|43->15|43->15|44->16|45->17|47->19|47->19|47->19|48->20|49->21|49->21|49->21|50->22|51->23|52->24|52->24|53->25
+                  DATE: Sat Jan 10 13:28:40 ICT 2015
+                  SOURCE: /Users/mac/Downloads/activator-1.2.12/library/app/views/main.scala.html
+                  HASH: e2998835fa0518c8479ba713a65de4b9e94ce9e7
+                  MATRIX: 727->1|845->31|873->33|950->84|975->89|1063->151|1077->157|1131->191|1183->216|1198->222|1262->265|1446->422|1461->428|1526->472|1651->570|1666->576|1719->608|1771->633|1786->639|1841->673|1925->730|1940->736|2006->781|2634->1382|2649->1388|2686->1404|2804->1495|2819->1501|2857->1518|3218->1852|3259->1884|3298->1885|3337->1896|3424->1956|3438->1961|3474->1976|3513->1987|3560->2003|3598->2014|3637->2044|3676->2045|3715->2056|3801->2115|3815->2120|3849->2133|3888->2144|3935->2160|3972->2170|4000->2177|4030->2180|4315->2437|4344->2438|4387->2453|4497->2535|4526->2536
+                  LINES: 26->1|29->1|31->3|35->7|35->7|36->8|36->8|36->8|38->10|38->10|38->10|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|68->40|68->40|68->40|71->43|71->43|71->43|82->54|82->54|82->54|83->55|84->56|84->56|84->56|85->57|86->58|88->60|88->60|88->60|89->61|90->62|90->62|90->62|91->63|92->64|93->65|93->65|94->66|101->73|101->73|102->74|104->76|104->76
                   -- GENERATED --
               */
           

@@ -7,13 +7,23 @@ GET     /                           controllers.Application.index()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+# Product routes
+GET		/products/					controllers.Products.list()
+GET		/products/new				controllers.Products.newProduct()
+GET		/products/:ean				controllers.Products.details(ean:String)
+GET		/products/:ean/edit			controllers.Products.update(ean:String)
+POST	/products/					controllers.Products.save()
+DELETE	/products/:ean				controllers.Products.delete(ean:String)
+# Supplier routes
+GET		/suppliers/					controllers.Suppliers.list()
+GET		/suppliers/new				controllers.Suppliers.newSupplier()
+GET		/suppliers/:name			controllers.Suppliers.details(name:String)
+POST	/suppliers/					controllers.Suppliers.save()
+DELETE	/suppliers/:name			controllers.Suppliers.delete(name:String)
 
-GET		/products					controllers.Products.list()
+# Supplier transaction:
 
-GET     /products/new               controllers.Products.newProduct()
+GET /suppliers/:name/transactions/new controllers.Supplier_Transactions.newTransaction(name:String)
 
-GET     /products/:ean              controllers.Products.details(ean:String)
+POST /suppliers/:name/transactions/				controllers.Supplier_Transactions.save(name:String)
 
-POST    /products                   controllers.Products.save()
-
-DELETE  /products/:ean              controllers.Products.delete(ean:String)

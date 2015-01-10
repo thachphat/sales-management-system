@@ -1,0 +1,42 @@
+@(transactionForm: Form[Supplier_Transaction],name: String)
+
+@main("transaction form"){
+<h1> transaction form </h1>
+<form class="form-horizontal" method="POST" action="@routes.Supplier_Transactions.save(name)">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Product</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="product_ean">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Supplier</label>
+    <div class="col-sm-9">
+      <input readonly="readonly" type="text" class="form-control" name="supplier_name" placeholder=@name value=@name>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Quantity</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="quantity" placeholder=@transactionForm("name").valueOr("Name") value=@transactionForm("name").value()>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Status</label>
+    <div class="col-sm-9">
+	<div class="checkbox checkbox-inline">
+	      <label><input type="checkbox" name="status" value="true">Paid</label>
+	    </div>
+	    <div class="checkbox checkbox-inline">
+	      <label><input type="checkbox" name="status" value="false">Not Paid</label>
+	    </div>
+		</div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Save</button>
+    </div>
+  </div>
+</form>
+
+}
