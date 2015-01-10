@@ -45,8 +45,8 @@ Seq[Any](format.raw/*1.19*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 04 09:26:46 ICT 2015
-                  SOURCE: /Users/vinh/Desktop/warehouse/app/views/index.scala.html
+                  DATE: Sat Jan 10 10:45:04 ICT 2015
+                  SOURCE: /Users/mac/Downloads/activator-1.2.12/library/app/views/index.scala.html
                   HASH: 2525948bb0b9a19833e9b9027e706281dd6c624c
                   MATRIX: 723->1|828->18|856->21|887->44|926->46|958->53|972->59|1025->92|1057->95
                   LINES: 26->1|29->1|31->3|31->3|31->3|33->5|33->5|33->5|35->7
