@@ -1,0 +1,48 @@
+@(products: List[Product])
+@main("Products catalogue") {
+
+  <h2>All products</h2>
+
+    <script>
+     function del(urlToDelete) {
+        $.ajax({
+          url: urlToDelete,
+          type: 'DELETE',
+          success: function(results) {
+            // Refresh the page
+            location.reload();
+          }
+        });
+      }
+   </script>
+
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>EAN</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    @for(product <- products) {
+
+      <tr>
+        <td><a href="@routes.Products.details(product.ean)">
+          @product.ean 
+        </a></td>
+        <td><a href="@routes.Products.details(product.ean)">@product.name</a></td>
+        <td><a href="@routes.Products.details(product.ean)">@product.name</a></td>
+        <td>
+          <a href="@routes.Products.details(product.ean)"><i class="icon icon-pencil">Edit</i></a>
+          <a onclick="javascript:del('@routes.Products.delete(product.ean)')"><i class="icon icon-trash">Delete</i></a>
+        </td>
+      </tr>
+      }
+  
+    </tbody>
+   </table>
+
+    <a href="@routes.Products.newProduct() class="btn"><i class="icon-plus"></i>New product</a>
+}
