@@ -59,8 +59,8 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jan 10 10:45:04 ICT 2015
-                  SOURCE: /Users/mac/Downloads/activator-1.2.12/library/app/views/suppliers/update.scala.html
+                  DATE: Sun Jan 11 22:52:11 ICT 2015
+                  SOURCE: /Users/mac/Downloads/activator-1.2.12/sales-management-system/app/views/suppliers/update.scala.html
                   HASH: e21c0496c3309aab8a290caed60d18f52d443877
                   MATRIX: 742->1|860->31|888->34|917->55|955->56|982->57|1086->135|1100->141|1137->158|1364->359|1392->379|1429->395|1458->396|1492->403|1521->423|1550->431|1601->456|1630->476|1660->485|1694->492
                   LINES: 26->1|29->1|31->3|31->3|31->3|32->4|33->5|33->5|33->5|37->9|37->9|37->9|37->9|37->9|37->9|37->9|40->12|40->12|40->12|43->15
