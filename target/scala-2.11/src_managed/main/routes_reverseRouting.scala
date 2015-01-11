@@ -1,6 +1,6 @@
-// @SOURCE:/Users/mac/Downloads/activator-1.2.12/library/conf/routes
-// @HASH:708e01b0251cb5147a3787efad9b08216a88ae25
-// @DATE:Sat Jan 10 12:21:00 ICT 2015
+// @SOURCE:/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/routes
+// @HASH:0e40432e89853ae0fe2501fbda3569cfb049b0d5
+// @DATE:Sun Jan 11 22:52:10 ICT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -51,7 +51,7 @@ class ReverseApplication {
 
 
 // @LINE:6
-def index(): Call = {
+def home(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix)
 }
@@ -226,8 +226,8 @@ class ReverseApplication {
 
 
 // @LINE:6
-def index : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.index",
+def home : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.home",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + """"})
@@ -452,8 +452,8 @@ class ReverseApplication {
 
 
 // @LINE:6
-def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "index", Seq(), "GET", """ Home page""", _prefix + """""")
+def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.home(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "home", Seq(), "GET", """ Home page""", _prefix + """""")
 )
                       
 

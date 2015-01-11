@@ -20,7 +20,7 @@ public class Product extends Model{
 	
 	@Constraints.Required
 	@Basic(optional=false)
-	public int in_stock;
+	public int instock;
 	
 	@OneToMany(mappedBy="product",cascade=CascadeType.ALL)
 	public List<Supplier_Transaction> transactions;
@@ -28,7 +28,9 @@ public class Product extends Model{
 	public String toString(){
 		return String.format("%s - %s",ean,name);
 	}
-	
+	public void setInstock(int quantity) {
+	        this.instock = quantity;
+	    }
     public static Finder<Long,Product> find = new Finder<Long,Product>(
        Long.class, Product.class
      ); 

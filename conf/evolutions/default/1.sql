@@ -8,7 +8,7 @@ create table product (
   ean                       varchar(255) not null,
   name                      varchar(255),
   description               varchar(255),
-  in_stock                  integer not null,
+  instock                   integer not null,
   constraint uq_product_ean unique (ean),
   constraint pk_product primary key (id))
 ;

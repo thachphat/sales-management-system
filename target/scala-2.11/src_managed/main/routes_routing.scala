@@ -1,6 +1,6 @@
-// @SOURCE:/Users/mac/Downloads/activator-1.2.12/library/conf/routes
-// @HASH:708e01b0251cb5147a3787efad9b08216a88ae25
-// @DATE:Sat Jan 10 12:21:00 ICT 2015
+// @SOURCE:/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/routes
+// @HASH:0e40432e89853ae0fe2501fbda3569cfb049b0d5
+// @DATE:Sun Jan 11 22:52:10 ICT 2015
 
 
 import play.core._
@@ -33,10 +33,10 @@ lazy val defaultPrefix = { if(Routes.prefix.endsWith("/")) "" else "/" }
 
 
 // @LINE:6
-private[this] lazy val controllers_Application_index0_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix))))
-private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-controllers.Application.index(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "index", Nil,"GET", """ Home page""", Routes.prefix + """"""))
+private[this] lazy val controllers_Application_home0_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix))))
+private[this] lazy val controllers_Application_home0_invoker = createInvoker(
+controllers.Application.home(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "home", Nil,"GET", """ Home page""", Routes.prefix + """"""))
         
 
 // @LINE:9
@@ -136,7 +136,7 @@ private[this] lazy val controllers_Supplier_Transactions_save14_invoker = create
 controllers.Supplier_Transactions.save(fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Supplier_Transactions", "save", Seq(classOf[String]),"POST", """""", Routes.prefix + """suppliers/$name<[^/]+>/transactions/"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/""","""controllers.Products.list()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/new""","""controllers.Products.newProduct()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>""","""controllers.Products.details(ean:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>/edit""","""controllers.Products.update(ean:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/""","""controllers.Products.save()"""),("""DELETE""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>""","""controllers.Products.delete(ean:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/""","""controllers.Suppliers.list()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/new""","""controllers.Suppliers.newSupplier()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>""","""controllers.Suppliers.details(name:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/""","""controllers.Suppliers.save()"""),("""DELETE""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>""","""controllers.Suppliers.delete(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>/transactions/new""","""controllers.Supplier_Transactions.newTransaction(name:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>/transactions/""","""controllers.Supplier_Transactions.save(name:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.home()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/""","""controllers.Products.list()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/new""","""controllers.Products.newProduct()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>""","""controllers.Products.details(ean:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>/edit""","""controllers.Products.update(ean:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/""","""controllers.Products.save()"""),("""DELETE""", prefix + (if(prefix.endsWith("/")) "" else "/") + """products/$ean<[^/]+>""","""controllers.Products.delete(ean:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/""","""controllers.Suppliers.list()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/new""","""controllers.Suppliers.newSupplier()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>""","""controllers.Suppliers.details(name:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/""","""controllers.Suppliers.save()"""),("""DELETE""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>""","""controllers.Suppliers.delete(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>/transactions/new""","""controllers.Supplier_Transactions.newTransaction(name:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """suppliers/$name<[^/]+>/transactions/""","""controllers.Supplier_Transactions.save(name:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -145,9 +145,9 @@ def documentation = List(("""GET""", prefix,"""controllers.Application.index()""
 def routes:PartialFunction[RequestHeader,Handler] = {
 
 // @LINE:6
-case controllers_Application_index0_route(params) => {
+case controllers_Application_home0_route(params) => {
    call { 
-        controllers_Application_index0_invoker.call(controllers.Application.index())
+        controllers_Application_home0_invoker.call(controllers.Application.home())
    }
 }
         

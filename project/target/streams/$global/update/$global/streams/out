@@ -1,11 +1,11 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/mac/Downloads/activator-1.2.12/library/project/}library-build...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#library-build;0.1-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/mac/Downloads/activator-1.2.12/sales-management-system/project/}sales-management-system-build...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#sales-management-system-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-echo;0.1.6.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-echo;0.1.6.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-echo;0.1.6.2[0m
@@ -20,7 +20,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0[0m
@@ -71,14 +71,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.github.mpeltonen#sbt-idea;1.5.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.5.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.mpeltonen#sbt-idea;1.5.2[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.github.mpeltonen#sbt-idea;1.5.2[0m
 [0m[[0mdebug[0m] [0m	found com.github.mpeltonen#sbt-idea;1.5.2 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -90,8 +90,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.3.7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.7 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.3.7[0m
@@ -2495,7 +2495,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-coffeescript;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-coffeescript;1.0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-coffeescript;1.0.0[0m
@@ -2521,7 +2521,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-less;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-less;1.0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-less;1.0.0[0m
@@ -2562,7 +2562,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-jshint;1.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-jshint;1.0.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-jshint;1.0.1[0m
@@ -2601,7 +2601,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-rjs;1.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-rjs;1.0.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-rjs;1.0.1[0m
@@ -2618,7 +2618,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-digest;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-digest;1.0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-digest;1.0.0[0m
@@ -2626,7 +2626,7 @@
 [0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-digest;1.0.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-mocha;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-mocha;1.0.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-mocha;1.0.0[0m
@@ -2666,14 +2666,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime][0m
@@ -2695,15 +2695,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile][0m
@@ -4351,7 +4351,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->compile][0m
@@ -4362,7 +4362,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->compile][0m
@@ -4381,7 +4381,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->compile][0m
@@ -4396,17 +4396,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->compile][0m
@@ -4422,15 +4422,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime][0m
@@ -4452,15 +4452,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile][0m
@@ -6108,7 +6108,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->compile][0m
@@ -6119,7 +6119,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->compile][0m
@@ -6138,7 +6138,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->compile][0m
@@ -6153,17 +6153,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->compile][0m
@@ -6179,12 +6179,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.5 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.5[0m
@@ -6700,16 +6700,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime][0m
@@ -6737,15 +6737,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile][0m
@@ -8393,7 +8393,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->compile][0m
@@ -8404,7 +8404,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->compile][0m
@@ -8423,7 +8423,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->compile][0m
@@ -8438,17 +8438,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->compile][0m
@@ -8463,13 +8463,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -8769,15 +8769,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime][0m
@@ -8799,15 +8799,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile][0m
@@ -10455,7 +10455,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->compile][0m
@@ -10466,7 +10466,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->compile][0m
@@ -10485,7 +10485,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->compile][0m
@@ -10500,17 +10500,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->compile][0m
@@ -10525,18 +10525,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-echo;0.1.6.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-echo;0.1.6.2->org.aspectj#aspectjtools;1.7.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime][0m
@@ -10564,15 +10564,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.typesafe.play#build-link;2.3.7 [compile->compile][0m
@@ -12220,7 +12220,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe#webdriver_2.10;1.0.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-webdriver;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-coffeescript;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#coffee-script-node;1.7.1 [compile->compile][0m
@@ -12231,7 +12231,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-coffeescript;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-less;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#less-node;1.6.0-1 [compile->compile][0m
@@ -12250,7 +12250,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->org.webjars#mkdirp;0.3.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-less;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-jshint;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->compile][0m
@@ -12265,17 +12265,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->org.webjars#jshint-node;2.4.1-1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-jshint;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-rjs;1.0.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->org.webjars#rjs;2.1.11-1-trireme [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-rjs;1.0.1->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-digest;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-digest;1.0.0->com.typesafe.sbt#sbt-web;1.0.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-mocha;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->compile][0m
@@ -12290,13 +12290,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.5 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -12596,18 +12596,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-lang#scala-library;2.10.4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#precompiled-2_9_3;0.13.5->org.scala-sbt#interface;0.13.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#library-build;0.1-SNAPSHOT [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#sales-management-system-build;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->default][0m
@@ -12625,8 +12625,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.4->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#jline;2.10.4 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.4 {optional=[compile(*), master(*)]}[0m
@@ -12641,11 +12641,11 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.4->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#library-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#sales-management-system-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-echo;0.1.6.2!sbt-echo.jar[0m
@@ -12843,19 +12843,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 32764ms :: artifacts dl 3372ms[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT compile produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT runtime produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT test produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT provided produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT optional produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT compile-internal produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT runtime-internal produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT test-internal produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT plugin produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT sources produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT docs produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT pom produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#library-build;0.1-SNAPSHOT scala-tool produced in /Users/mac/Downloads/activator-1.2.12/library/project/target/resolution-cache/reports/default-library-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (32764ms resolve - 3372ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 26840ms :: artifacts dl 881ms[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT compile produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT runtime produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT test produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT provided produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT optional produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT compile-internal produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT runtime-internal produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT test-internal produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT plugin produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT sources produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT docs produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT pom produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sales-management-system-build;0.1-SNAPSHOT scala-tool produced in /Users/mac/Downloads/activator-1.2.12/sales-management-system/project/target/resolution-cache/reports/default-sales-management-system-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (26840ms resolve - 881ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

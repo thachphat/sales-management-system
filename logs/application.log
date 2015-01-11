@@ -1,9 +1,283 @@
-2015-01-10 22:02:02,144 - [INFO] - from play in pool-4-thread-2 
+2015-01-11 22:52:01,827 - [INFO] - from play in pool-366-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-01-10 22:04:50,059 - [INFO] - from play in play-internal-execution-context-1 
+2015-01-11 22:52:40,199 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-11 22:52:40,292 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
 
-2015-01-10 22:04:53,717 - [INFO] - from play in play-internal-execution-context-1 
+2015-01-11 22:52:43,700 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-11 22:52:43,702 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-11 22:52:44,031 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
+
+2015-01-11 22:52:51,048 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
+
+2015-01-11 22:52:51,064 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval
+
+2015-01-11 22:52:51,087 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+insert into supplier (SUPPLIER_ID, name) values (1,'Apples')
+
+2015-01-11 22:52:51,540 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:52:56,004 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
+
+2015-01-11 22:52:56,040 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
+
+2015-01-11 22:53:02,951 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-6 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-11 22:53:05,501 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-6 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:22,807 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:23,041 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
+
+2015-01-11 22:53:23,045 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval
+
+2015-01-11 22:53:23,051 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+insert into product (id, ean, name, description, instock) values (1,'CA123','Circle Band','Lala Nguyen',0)
+
+2015-01-11 22:53:23,078 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-11 22:53:27,740 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:32,091 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:33,783 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
+
+2015-01-11 22:53:33,785 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
+
+2015-01-11 22:53:42,528 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
+
+2015-01-11 22:53:42,544 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
+
+2015-01-11 22:53:42,551 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+update product set instock=2 where id=1 and ean='CA123' and name='Circle Band' and description='Lala Nguyen' and instock=0
+
+2015-01-11 22:53:42,554 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval
+
+2015-01-11 22:53:42,560 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
+insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (1,2015-01-11 22:53:42.545,2,false,1,1)
+
+2015-01-11 22:53:42,572 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
+
+2015-01-11 22:53:42,574 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
+
+2015-01-11 22:53:47,375 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-11 22:53:47,377 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-11 22:53:47,379 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-11 22:53:47,403 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
+
+2015-01-11 22:53:51,698 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:55,512 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:53:57,854 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-16 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-11 22:54:00,062 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
+
+2015-01-11 22:54:00,103 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
+select t0.ean c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.ean) in (1) 
+
+2015-01-11 22:54:07,338 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-16 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:54:13,817 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
+
+2015-01-11 22:54:13,849 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+insert into supplier (SUPPLIER_ID, name) values (2,'Dells')
+
+2015-01-11 22:54:13,862 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:54:15,345 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
+
+2015-01-11 22:54:15,347 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (2) 
+
+2015-01-11 22:54:23,001 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
+
+2015-01-11 22:54:23,016 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
+
+2015-01-11 22:54:23,018 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+update product set instock=14 where id=1 and ean='CA123' and name='Circle Band' and description='Lala Nguyen' and instock=2
+
+2015-01-11 22:54:23,019 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (2,2015-01-11 22:54:23.017,12,true,2,1)
+
+2015-01-11 22:54:23,055 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
+
+2015-01-11 22:54:23,059 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (2) 
+
+2015-01-11 22:54:27,193 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-11 22:54:38,099 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-14 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:55:01,410 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:55:01,479 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CL125' 
+
+2015-01-11 22:55:01,482 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
+insert into product (id, ean, name, description, instock) values (2,'CL125','Beautify Band','A circle band with flowers',0)
+
+2015-01-11 22:55:01,523 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-11 22:55:07,071 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-26 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:55:14,445 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-24 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
+
+2015-01-11 22:55:14,481 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-24 
+insert into supplier (SUPPLIER_ID, name) values (3,'Fitbits')
+
+2015-01-11 22:55:14,663 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-11 22:55:26,633 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
+
+2015-01-11 22:55:26,674 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (3) 
+
+2015-01-11 22:55:42,015 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CL125' 
+
+2015-01-11 22:55:42,088 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
+
+2015-01-11 22:55:42,090 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+update product set instock=2 where id=2 and ean='CL125' and name='Beautify Band' and description='A circle band with flowers' and instock=0
+
+2015-01-11 22:55:42,095 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (3,2015-01-11 22:55:42.088,2,true,3,2)
+
+2015-01-11 22:55:42,311 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
+
+2015-01-11 22:55:42,316 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
+select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (3) 
+
+2015-01-11 22:55:45,321 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-11 22:55:45,439 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-11 22:55:45,440 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-11 22:55:45,444 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
+
+2015-01-11 22:55:45,446 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 2  
+
+2015-01-11 22:55:45,447 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 3  
+
+2015-01-11 22:56:36,755 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-11 22:56:36,786 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-11 22:56:36,792 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-11 22:56:36,792 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-11 22:56:38,178 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-11 22:56:38,187 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-11 22:56:40,615 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-11 22:56:40,620 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-11 22:56:40,726 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-11 22:56:40,789 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-11 22:56:40,803 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-11 22:56:40,806 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-11 22:56:40,818 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.id = 1  
+
+2015-01-11 22:56:40,820 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
+
+2015-01-11 22:56:40,821 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 2  
+
+2015-01-11 22:56:40,822 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.id = 2  
+
+2015-01-11 22:56:40,823 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 3  
+
+2015-01-11 22:56:50,463 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-33 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
 

@@ -18,9 +18,6 @@ import java.util.*;
 public class Supplier_Transactions extends Controller {
 	private static final Form<Supplier_Transaction> transactionForm = Form.form(Supplier_Transaction.class);
 
-    public static Result index() {
-        return ok(index.render("Your new application is ready."));
-    }
 	public static Result newTransaction(String name){
 		return ok(update.render(transactionForm,name));
 	}
@@ -48,12 +45,12 @@ public class Supplier_Transactions extends Controller {
 		Product product = products.get(0);
 		
 		Supplier_Transaction transaction = new Supplier_Transaction();
-		transaction.product = product;
 		transaction.supplier = supplier;
 		transaction.quantity = Integer.parseInt(requestData.get("quantity"));
 		transaction.isPaid = Boolean.parseBoolean(requestData.get("status"));
-		product.in_stock = product.in_stock + transaction.quantity;
-		product.save();
+		product.setInstock(product.instock + transaction.quantity);
+		transaction.product = product;
+		product.update();
 		transaction.save();
 		return redirect(routes.Suppliers.details(name));		
 	}
