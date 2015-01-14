@@ -19,10 +19,10 @@ public class Suppliers extends Controller{
 	public static Result newSupplier(){
 		return ok(update.render(supplierForm));
 	}
-	public static Result details(String name){
-		List<Supplier> suppliers = Supplier.findByName(name);
+	public static Result details(Long id){
+		List<Supplier> suppliers = Supplier.findByID(id);
 		if (suppliers ==null){
-			return notFound(String.format("Supplier %s does not exist.",name));
+			return notFound(String.format("Supplier %s does not exist.",id));
 		}
 		System.out.print(suppliers);
 		Supplier supplier=suppliers.get(0);
@@ -35,7 +35,7 @@ public class Suppliers extends Controller{
 			return badRequest(update.render(boundForm));
 		}
 		Supplier supplier = boundForm.get();
-		if (!Supplier.findByName(supplier.name).isEmpty()){
+		if (!Supplier.findByID(supplier.name).isEmpty()){
 			flash("error","Supplier is already exist");
 			return badRequest(update.render(boundForm));
 		}
@@ -46,9 +46,9 @@ public class Suppliers extends Controller{
 		}		
 		
 	}
-	public static Result delete(String name){
-		List<Supplier> suppliers = Supplier.findByName(name);
-		if (Supplier.findByName(suppliers.get(0).name).isEmpty()){
+	public static Result delete(Long name){
+		List<Supplier> suppliers = Supplier.findByID(name);
+		if (Supplier.findByID(suppliers.get(0).name).isEmpty()){
 			return notFound(String.format("Supplier %s does not exist.",name));
 		}
 		suppliers.get(0).delete();

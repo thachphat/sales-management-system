@@ -23,9 +23,16 @@ location.reload();
 	<tbody>
 	@for(supplier <- suppliers) {
 		 <tr>
-		        <td><a href="@routes.Suppliers.details(supplier.name)">
+		        <td><a href="@routes.Suppliers.details(supplier.id)">
 		          @supplier.name
 		        </a></td>
+			 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.id</a></td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.name</a></td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.address</a> </td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.phone1</a> </td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.phone2</a> </td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email1</a> </td>
+				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email2</a> </td>
 				<td>
 				<a href="@routes.Suppliers.details(supplier.name)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
