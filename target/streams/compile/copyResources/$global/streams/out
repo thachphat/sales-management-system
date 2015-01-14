@@ -1,6 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/application.conf,/Users/mac/Downloads/activator-1.2.12/sales-management-system/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/evolutions,/Users/mac/Downloads/activator-1.2.12/sales-management-system/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/routes,/Users/mac/Downloads/activator-1.2.12/sales-management-system/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/evolutions/default,/Users/mac/Downloads/activator-1.2.12/sales-management-system/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/evolutions/default/1.sql,/Users/mac/Downloads/activator-1.2.12/sales-management-system/target/scala-2.11/classes/evolutions/default/1.sql)[0m

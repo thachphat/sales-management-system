@@ -30,3 +30,13 @@ DELETE /transactions/:id controllers.Supplier_Transactions.delete(id:Long)
 
 POST /suppliers/:name/transactions/				controllers.Supplier_Transactions.save(name:String)
 
+# Customer routes
+GET     /customers/             controllers.Customers.list()
+GET     /customers/new          controllers.Customers.newCustomer()
+GET     /customers/:id        controllers.Customers.details(id:Long)
+POST    /customers/             controllers.Customers.save()
+DELETE  /customers/:id        controllers.Customers.delete(id:Long)
+
+# Customer transaction:
+GET     /customers/:name/transactions/new   controllers.Customer_Transactions.newTransaction(name:String)
+POST    /customers/:name/transactions/      controllers.Customer_Transactions.save(name:String)

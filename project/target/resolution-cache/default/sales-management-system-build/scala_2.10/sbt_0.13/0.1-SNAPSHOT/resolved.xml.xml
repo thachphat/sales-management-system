@@ -4,7 +4,7 @@
 		module="sales-management-system-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150111100103"
+		publication="20150113103142"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>
