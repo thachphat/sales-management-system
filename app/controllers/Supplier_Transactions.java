@@ -1,9 +1,7 @@
 package controllers;
 
-import play.*;
 import play.mvc.*;
 
-import views.html.*;
 import models.Supplier;
 import models.Product;
 import models.Supplier_Transaction;
@@ -32,7 +30,7 @@ public class Supplier_Transactions extends Controller {
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		return ok(details.render(transaction));
 	}
-	public static Result save(String name){
+	public static Result save(Long name){
 	    DynamicForm requestData = Form.form().bindFromRequest();
 		if(requestData.hasErrors()){
 			flash("error","Please correct the form below.");
@@ -51,7 +49,7 @@ public class Supplier_Transactions extends Controller {
 			flash("error","Please input status.");
 			return badRequest(update.render(transactionForm,name));
 		}
-		List<Supplier> suppliers = Supplier.findByName(name);
+		List<Supplier> suppliers = Supplier.findByID(name);
 		Supplier supplier=suppliers.get(0);
 		Product product = products.get(0);
 		Supplier_Transaction transaction = new Supplier_Transaction();
@@ -72,7 +70,7 @@ public class Supplier_Transactions extends Controller {
 	public static Result delete(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		if (transaction==null){
-			return notFound(String.format("Transaction %s does not exist.",id));
+			return notFound(String.format("Transaction %s does not exist.", id));
 		}
 		transaction.delete();
 		User_Action action = new User_Action();
