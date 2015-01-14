@@ -8,6 +8,26 @@
     <div class="col-sm-9">
       <input type="text" class="form-control" name="name" placeholder=@supplierForm("name").valueOr("Name") value=@supplierForm("name").value()>
     </div>
+    <label for="inputEmail3" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="address" placeholder=@supplierForm("address").valueOr("Address") value=@supplierForm("address").value()>
+    </div>
+      <label for="inputEmail3" class="col-sm-2 control-label">Phone 1</label>
+      <div class="col-sm-9">
+          <input type="text" class="form-control" name="phone1" placeholder=@supplierForm("phone1").valueOr("Phone") value=@supplierForm("phone1").value()>
+      </div>
+      <label for="inputEmail3" class="col-sm-2 control-label">Phone 2</label>
+      <div class="col-sm-9">
+          <input type="text" class="form-control" name="phone2" placeholder=@supplierForm("phone2").valueOr("Phone") value=@supplierForm("phone2").value()>
+      </div>
+      <label for="inputEmail3" class="col-sm-2 control-label">Email 1</label>
+      <div class="col-sm-9">
+          <input type="text" class="form-control" name="email1" placeholder=@supplierForm("email1").valueOr("Email") value=@supplierForm("email1").value()>
+      </div>
+      <label for="inputEmail3" class="col-sm-2 control-label">Email 2</label>
+      <div class="col-sm-9">
+          <input type="text" class="form-control" name="email2" placeholder=@supplierForm("email2").valueOr("Email") value=@supplierForm("email2").value()>
+      </div>
   </div>
   @if(supplierForm.hasErrors) {
       <div class="alert alert-error">

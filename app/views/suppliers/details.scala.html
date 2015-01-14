@@ -38,14 +38,14 @@ $(document).ready(function() {
 			<td>@transaction.isPaid</td>
 			<td>@transaction.buyDate</td>
 			<td>
-			<a href="@routes.Suppliers.details(supplier.name)"><span class="glyphicon glyphicon-pencil"></span></a>
-			<a onclick="del('@routes.Suppliers.delete(supplier.name)')"><span class="glyphicon glyphicon-remove"></span></a>
+			<a href="@routes.Suppliers.details(supplier.id)"><span class="glyphicon glyphicon-pencil"></span></a>
+			<a onclick="del('@routes.Suppliers.delete(supplier.id)')"><span class="glyphicon glyphicon-remove"></span></a>
 			</td>
 	      </tr>
 	      }
 		  
 </tbody>
 </table>
-<a href="@routes.Supplier_Transactions.newTransaction(supplier.name)"><button type="submit" class="btn btn-default">Add Transaction</button></a>
+<a href="@routes.Supplier_Transactions.newTransaction(supplier.id)"><button type="submit" class="btn btn-default">Add Transaction</button></a>
 
 }

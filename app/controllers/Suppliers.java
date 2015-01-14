@@ -35,7 +35,7 @@ public class Suppliers extends Controller{
 			return badRequest(update.render(boundForm));
 		}
 		Supplier supplier = boundForm.get();
-		if (!Supplier.findByID(supplier.name).isEmpty()){
+		if (!Supplier.findByID(supplier.id).isEmpty()){
 			flash("error","Supplier is already exist");
 			return badRequest(update.render(boundForm));
 		}
@@ -46,10 +46,10 @@ public class Suppliers extends Controller{
 		}		
 		
 	}
-	public static Result delete(Long name){
-		List<Supplier> suppliers = Supplier.findByID(name);
-		if (Supplier.findByID(suppliers.get(0).name).isEmpty()){
-			return notFound(String.format("Supplier %s does not exist.",name));
+	public static Result delete(Long id){
+		List<Supplier> suppliers = Supplier.findByID(id);
+		if (Supplier.findByID(suppliers.get(0).id).isEmpty()){
+			return notFound(String.format("Supplier %s does not exist.",id));
 		}
 		suppliers.get(0).delete();
 		return redirect(routes.Suppliers.list());

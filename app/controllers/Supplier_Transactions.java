@@ -19,8 +19,8 @@ import models.User_Action;
 public class Supplier_Transactions extends Controller {
 	private static final Form<Supplier_Transaction> transactionForm = Form.form(Supplier_Transaction.class);
 
-	public static Result newTransaction(String name){
-		return ok(update.render(transactionForm,name));
+	public static Result newTransaction(Long id){
+		return ok(update.render(transactionForm,id));
 	}
 	public static Result list(){
 		List<Supplier_Transaction> transactions = Supplier_Transaction.find.all();
@@ -30,26 +30,26 @@ public class Supplier_Transactions extends Controller {
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		return ok(details.render(transaction));
 	}
-	public static Result save(Long name){
+	public static Result save(Long id){
 	    DynamicForm requestData = Form.form().bindFromRequest();
 		if(requestData.hasErrors()){
 			flash("error","Please correct the form below.");
-			return badRequest(update.render(transactionForm,name));
+			return badRequest(update.render(transactionForm,id));
 		}
 		List<Product> products = Product.findByEan(requestData.get("product_ean"));
 		if (products.isEmpty()){
 			flash("error","Product is not found.");
-			return badRequest(update.render(transactionForm,name));
+			return badRequest(update.render(transactionForm,id));
 		}
 		if (requestData.get("quantity")==""){
 			flash("error","Please input quantity.");
-			return badRequest(update.render(transactionForm,name));
+			return badRequest(update.render(transactionForm,id));
 		}
 		if (requestData.get("status")==null){
 			flash("error","Please input status.");
-			return badRequest(update.render(transactionForm,name));
+			return badRequest(update.render(transactionForm,id));
 		}
-		List<Supplier> suppliers = Supplier.findByID(name);
+		List<Supplier> suppliers = Supplier.findByID(id);
 		Supplier supplier=suppliers.get(0);
 		Product product = products.get(0);
 		Supplier_Transaction transaction = new Supplier_Transaction();
@@ -65,7 +65,7 @@ public class Supplier_Transactions extends Controller {
 		action.verb= "Insert";
 		action.description=str;
 		action.save();
-		return redirect(routes.Suppliers.details(name));		
+		return redirect(routes.Suppliers.details(id));
 	}
 	public static Result delete(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);

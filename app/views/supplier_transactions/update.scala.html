@@ -1,8 +1,8 @@
-@(transactionForm: Form[Supplier_Transaction],name: String)
+@(transactionForm: Form[Supplier_Transaction],id: Long)
 
 @main("transaction form"){
 <h1> transaction form </h1>
-<form class="form-horizontal" method="POST" action="@routes.Supplier_Transactions.save(name)">
+<form class="form-horizontal" method="POST" action="@routes.Supplier_Transactions.save(id)">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Product</label>
     <div class="col-sm-9">
@@ -12,7 +12,7 @@
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Supplier</label>
     <div class="col-sm-9">
-      <input readonly="readonly" type="text" class="form-control" name="supplier_name" placeholder=@name value=@name>
+      <input readonly="readonly" type="text" class="form-control" name="supplier_name" placeholder=@id value=@id>
     </div>
   </div>
   <div class="form-group">

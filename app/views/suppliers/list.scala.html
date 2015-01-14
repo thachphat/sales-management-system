@@ -17,15 +17,18 @@ location.reload();
    <table class="table table-striped">
     <thead>
       <tr>
+		  <th>ID</th>
 		<th>Name</th>
+		  <th>Address</th>
+		  <th>Phone 1</th>
+		  <th>Phone 2</th>
+		  <th>Email 1</th>
+		  <th>Email 2</th>
 	  </tr>
 	</thead>
 	<tbody>
 	@for(supplier <- suppliers) {
 		 <tr>
-		        <td><a href="@routes.Suppliers.details(supplier.id)">
-		          @supplier.name
-		        </a></td>
 			 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.id</a></td>
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.name</a></td>
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.address</a> </td>
@@ -34,9 +37,9 @@ location.reload();
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email1</a> </td>
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email2</a> </td>
 				<td>
-				<a href="@routes.Suppliers.details(supplier.name)">
+				<a href="@routes.Suppliers.details(supplier.id)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
-				<a onclick="del('@routes.Suppliers.delete(supplier.name)')">
+				<a onclick="del('@routes.Suppliers.delete(supplier.id)')">
 				<span class="glyphicon glyphicon-remove"></span></a>
 				</td>
 		      </tr>
