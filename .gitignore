@@ -2,4 +2,5 @@
 /logs
 /project
 /test
-.idea/*
+.idea
+.classpath
