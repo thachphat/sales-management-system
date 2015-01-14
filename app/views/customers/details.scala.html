@@ -2,6 +2,7 @@
 @main("Customer"){
     <h1>@customer.name</h1>
     <a href="@routes.Customer_Transactions.newTransaction(customer.id)"><button type="submit" class="btn btn-default">Add Transaction></button> </a>
+
     <script>
         $(document).ready(function(){
             $('#example').dataTable();

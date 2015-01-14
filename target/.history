@@ -42,3 +42,5 @@ run
 clean all
 clean
 run
+h2-browser
+run

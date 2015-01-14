@@ -2,7 +2,6 @@
 @main("Supplier"){
 
 <h1> @supplier.name </h1>
-<a href="@routes.Supplier_Transactions.newTransaction(supplier.name)"><button type="submit" class="btn btn-default">Add Transaction</button></a>
 <script>
 $(document).ready(function() {
     $('#example').dataTable();
@@ -47,5 +46,6 @@ $(document).ready(function() {
 		  
 </tbody>
 </table>
+<a href="@routes.Supplier_Transactions.newTransaction(supplier.name)"><button type="submit" class="btn btn-default">Add Transaction</button></a>
 
 }

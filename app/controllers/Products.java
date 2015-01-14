@@ -46,8 +46,13 @@ public class Products extends Controller{
 		
 		Product product = boundForm.get();
 		if (!Product.findByEan(product.ean).isEmpty()){
-			flash("error","Product is already exist");
-			return badRequest(update.render(boundForm,suppliers));
+			List<Product> old_product = Product.findByEan(product.ean);
+			Product old = old_product.get(0);
+			old.setName(product.name);
+			old.setDescription(product.description);
+			old.setInstock(product.instock);
+			old.update();
+			return redirect(routes.Products.list());
 		}
 		else{
 			product.save();

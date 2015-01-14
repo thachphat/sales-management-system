@@ -31,6 +31,14 @@ public class Product extends Model{
 	public void setInstock(int quantity) {
 	        this.instock = quantity;
 	    }
+	
+	public void setName(String name) {
+		        this.name = name;
+		    }
+	
+	public void setDescription(String description) {
+			   this.description = description;
+	}
     public static Finder<Long,Product> find = new Finder<Long,Product>(
        Long.class, Product.class
      ); 
