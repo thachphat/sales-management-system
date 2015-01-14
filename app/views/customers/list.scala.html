@@ -1,0 +1,51 @@
+@(customers: List[Customer])
+
+@main("Customers Catalogue"){
+    <h2>All Customers</h2>
+
+    <script>
+        function del(urlToDelete){
+            $.ajax({
+                url: urlToDelete,
+                type: 'DELETE',
+                success: function(results){
+                    location.reload();
+                }
+            });
+        }
+    </script>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone 1</th>
+                <th>Phone 2</th>
+                <th>Email 1</th>
+                <th>Email 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(customer <- customers){
+                <tr>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.id</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.name</a></td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.address</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.phone1</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.phone2</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.email1</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">@customer.email2</a> </td>
+                    <td><a href="@routes.Customers.details(customer.id)">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a><a onclick="del('@routes.Customers.delete(customer.id)')">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="@routes.Customers.newCustomer()"><button type="submit" class="btn btn-default">Create New</button> </a>
+}
