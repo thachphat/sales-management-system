@@ -1,6 +1,6 @@
 // @SOURCE:/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/routes
-// @HASH:0e40432e89853ae0fe2501fbda3569cfb049b0d5
-// @DATE:Sun Jan 11 22:52:10 ICT 2015
+// @HASH:6d69c74ce2c4bf1738ee180c3aa45e6ed44e8749
+// @DATE:Wed Jan 14 11:13:12 ICT 2015
 
 package controllers;
 

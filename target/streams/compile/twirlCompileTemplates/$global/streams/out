@@ -1,0 +1,4 @@
+[0m[[31merror[0m] [0m/Users/mac/Downloads/activator-1.2.12/sales-management-system/app/views/supplier_transactions/details.scala.html:5: Expected '}' but found 'EOF'[0m
+[0m[[31merror[0m] [0m<h1> Transaction ID : @transaction.internalId </h1>[0m
+[0m[[31merror[0m] [0m                                                   ^[0m
+[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

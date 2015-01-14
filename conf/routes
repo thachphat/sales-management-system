@@ -24,6 +24,9 @@ DELETE	/suppliers/:name			controllers.Suppliers.delete(name:String)
 # Supplier transaction:
 
 GET /suppliers/:name/transactions/new controllers.Supplier_Transactions.newTransaction(name:String)
+GET /transactions/:id controllers.Supplier_Transactions.details(id:Long)
+GET /transactions/ controllers.Supplier_Transactions.list()
+DELETE /transactions/:id controllers.Supplier_Transactions.delete(id:Long)
 
 POST /suppliers/:name/transactions/				controllers.Supplier_Transactions.save(name:String)
 

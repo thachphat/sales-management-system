@@ -30,11 +30,22 @@ create table supplier_transaction (
   constraint pk_supplier_transaction primary key (internal_id))
 ;
 
+create table user_action (
+  id                        bigint not null,
+  description               varchar(255) not null,
+  verb                      varchar(255) not null,
+  create_date               timestamp,
+  constraint uq_user_action_description unique (description),
+  constraint pk_user_action primary key (id))
+;
+
 create sequence product_seq;
 
 create sequence supplier_seq;
 
 create sequence supplier_transaction_seq;
+
+create sequence user_action_seq;
 
 alter table supplier_transaction add constraint fk_supplier_transaction_suppli_1 foreign key (SUPPLIER_ID) references supplier (SUPPLIER_ID) on delete restrict on update restrict;
 create index ix_supplier_transaction_suppli_1 on supplier_transaction (SUPPLIER_ID);
@@ -53,6 +64,8 @@ drop table if exists supplier;
 
 drop table if exists supplier_transaction;
 
+drop table if exists user_action;
+
 SET REFERENTIAL_INTEGRITY TRUE;
 
 drop sequence if exists product_seq;
@@ -60,4 +73,6 @@ drop sequence if exists product_seq;
 drop sequence if exists supplier_seq;
 
 drop sequence if exists supplier_transaction_seq;
+
+drop sequence if exists user_action_seq;
 

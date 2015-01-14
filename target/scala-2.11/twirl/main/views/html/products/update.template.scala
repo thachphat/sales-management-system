@@ -34,27 +34,42 @@ Seq[Any](format.raw/*1.57*/("""
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">EAN</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" name="ean" placeholder="""),_display_(/*9.71*/productForm("ean")/*9.89*/.valueOr("Ean")),format.raw/*9.104*/(""" """),format.raw/*9.105*/("""value="""),_display_(/*9.112*/productForm("ean")/*9.130*/.value()),format.raw/*9.138*/(""">
+      <input type="text" class="form-control" readonly="readonly" name="ean" placeholder="""),_display_(/*9.91*/productForm("ean")/*9.109*/.valueOr("Ean")),format.raw/*9.124*/(""" """),format.raw/*9.125*/("""value="""),_display_(/*9.132*/productForm("ean")/*9.150*/.value()),format.raw/*9.158*/(""">
     </div>
   </div>
-  """),_display_(/*12.4*/productForm("ean")/*12.22*/.errors()),format.raw/*12.31*/("""
-  """),format.raw/*13.3*/("""<div class="form-group">
+  
+  <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" name="description" placeholder="""),_display_(/*16.79*/productForm("description")/*16.105*/.valueOr("Description")),format.raw/*16.128*/(""" """),format.raw/*16.129*/("""value="""),_display_(/*16.136*/productForm("description")/*16.162*/.value()),format.raw/*16.170*/(""">
     </div>
   </div>
-  """),_display_(/*19.4*/productForm("description")/*19.30*/.errors()),format.raw/*19.39*/("""
   
-  """),format.raw/*21.3*/("""<div class="form-group">
+  <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="name" placeholder="""),_display_(/*24.72*/productForm("name")/*24.91*/.valueOr("Name")),format.raw/*24.107*/(""" """),format.raw/*24.108*/("""value="""),_display_(/*24.115*/productForm("name")/*24.134*/.value()),format.raw/*24.142*/(""">
+      <input type="text" class="form-control" name="name" placeholder="""),_display_(/*23.72*/productForm("name")/*23.91*/.valueOr("Name")),format.raw/*23.107*/(""" """),format.raw/*23.108*/("""value="""),_display_(/*23.115*/productForm("name")/*23.134*/.value()),format.raw/*23.142*/(""">
     </div>
   </div>
-  """),_display_(/*27.4*/productForm("name")/*27.23*/.errors()),format.raw/*27.32*/("""
-  
-  """),format.raw/*29.3*/("""<div class="form-group">
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Quantity</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="instock" placeholder="""),_display_(/*29.75*/productForm("instock")/*29.97*/.valueOr("2")),format.raw/*29.110*/(""" """),format.raw/*29.111*/("""value="""),_display_(/*29.118*/productForm("instock")/*29.140*/.value()),format.raw/*29.148*/(""">
+    </div>
+  </div>
+  """),_display_(/*32.4*/if(productForm.hasErrors)/*32.29*/ {_display_(Seq[Any](format.raw/*32.31*/("""
+      """),format.raw/*33.7*/("""<div class="alert alert-error">
+          """),_display_(/*34.12*/if(productForm.errors.size() > 0)/*34.45*/ {_display_(Seq[Any](format.raw/*34.47*/("""
+              """),_display_(/*35.16*/for((key, value) <- productForm.errors) yield /*35.55*/ {_display_(Seq[Any](format.raw/*35.57*/("""
+                  """),_display_(/*36.20*/key/*36.23*/.toString()),format.raw/*36.34*/(""" """),format.raw/*36.35*/(""": 
+                      """),_display_(/*37.24*/for(err <- value) yield /*37.41*/ {_display_(Seq[Any](format.raw/*37.43*/("""
+                          """),_display_(/*38.28*/err/*38.31*/.message().toString()),format.raw/*38.52*/("""
+                      """)))}),format.raw/*39.24*/("""
+              """)))}),format.raw/*40.16*/("""
+          """)))}/*41.13*/else/*41.18*/{_display_(Seq[Any](format.raw/*41.19*/("""No error returned.""")))}),format.raw/*41.38*/("""
+      """),format.raw/*42.7*/("""</div>
+  """)))}),format.raw/*43.4*/("""    
+  """),format.raw/*44.3*/("""<div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-default">Save</button>
     </div>
@@ -73,11 +88,11 @@ Seq[Any](format.raw/*1.57*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun Jan 11 22:52:11 ICT 2015
+                  DATE: Wed Jan 14 13:23:38 ICT 2015
                   SOURCE: /Users/mac/Downloads/activator-1.2.12/sales-management-system/app/views/products/update.scala.html
-                  HASH: 0c64d3e17103e2a933bab887b1f4a31d145b2255
-                  MATRIX: 755->1|898->56|926->59|954->79|992->80|1019->81|1122->158|1136->164|1172->180|1397->379|1423->397|1459->412|1488->413|1522->420|1549->438|1578->446|1629->471|1656->489|1686->498|1716->501|1957->715|1993->741|2038->764|2068->765|2103->772|2139->798|2169->806|2220->831|2255->857|2285->866|2318->872|2545->1072|2573->1091|2611->1107|2641->1108|2676->1115|2705->1134|2735->1142|2786->1167|2814->1186|2844->1195|2877->1201
-                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|33->5|33->5|33->5|37->9|37->9|37->9|37->9|37->9|37->9|37->9|40->12|40->12|40->12|41->13|44->16|44->16|44->16|44->16|44->16|44->16|44->16|47->19|47->19|47->19|49->21|52->24|52->24|52->24|52->24|52->24|52->24|52->24|55->27|55->27|55->27|57->29
+                  HASH: abdd4ea499ca0291df68dcb1d64e63f3b0964c43
+                  MATRIX: 755->1|898->56|926->59|954->79|992->80|1019->81|1122->158|1136->164|1172->180|1417->399|1444->417|1480->432|1509->433|1543->440|1570->458|1599->466|1867->707|1903->733|1948->756|1978->757|2013->764|2049->790|2079->798|2333->1025|2361->1044|2399->1060|2429->1061|2464->1068|2493->1087|2523->1095|2781->1326|2812->1348|2847->1361|2877->1362|2912->1369|2944->1391|2974->1399|3025->1424|3059->1449|3099->1451|3133->1458|3203->1501|3245->1534|3285->1536|3328->1552|3383->1591|3423->1593|3470->1613|3482->1616|3514->1627|3543->1628|3596->1654|3629->1671|3669->1673|3724->1701|3736->1704|3778->1725|3833->1749|3880->1765|3911->1778|3924->1783|3963->1784|4013->1803|4047->1810|4087->1820|4121->1827
+                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|33->5|33->5|33->5|37->9|37->9|37->9|37->9|37->9|37->9|37->9|44->16|44->16|44->16|44->16|44->16|44->16|44->16|51->23|51->23|51->23|51->23|51->23|51->23|51->23|57->29|57->29|57->29|57->29|57->29|57->29|57->29|60->32|60->32|60->32|61->33|62->34|62->34|62->34|63->35|63->35|63->35|64->36|64->36|64->36|64->36|65->37|65->37|65->37|66->38|66->38|66->38|67->39|68->40|69->41|69->41|69->41|69->41|70->42|71->43|72->44
                   -- GENERATED --
               */
           

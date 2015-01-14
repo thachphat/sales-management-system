@@ -1,6 +1,6 @@
 // @SOURCE:/Users/mac/Downloads/activator-1.2.12/sales-management-system/conf/routes
-// @HASH:0e40432e89853ae0fe2501fbda3569cfb049b0d5
-// @DATE:Sun Jan 11 22:52:10 ICT 2015
+// @HASH:6d69c74ce2c4bf1738ee180c3aa45e6ed44e8749
+// @DATE:Wed Jan 14 11:13:12 ICT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,10 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:22
 // @LINE:21
@@ -60,15 +63,39 @@ def home(): Call = {
 }
                           
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 class ReverseSupplier_Transactions {
 
 
-// @LINE:28
+// @LINE:29
+def delete(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("DELETE", _prefix + { _defaultPrefix } + "transactions/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:31
 def save(name:String): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "suppliers/" + implicitly[PathBindable[String]].unbind("name", dynamicString(name)) + "/transactions/")
+}
+                        
+
+// @LINE:27
+def details(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "transactions/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
+
+// @LINE:28
+def list(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "transactions/")
 }
                         
 
@@ -185,7 +212,10 @@ def newProduct(): Call = {
                   
 
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:22
 // @LINE:21
@@ -239,17 +269,53 @@ def home : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 class ReverseSupplier_Transactions {
 
 
-// @LINE:28
+// @LINE:29
+def delete : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Supplier_Transactions.delete",
+   """
+      function(id) {
+      return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "transactions/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:31
 def save : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Supplier_Transactions.save",
    """
       function(name) {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "suppliers/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name)) + "/transactions/"})
+      }
+   """
+)
+                        
+
+// @LINE:27
+def details : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Supplier_Transactions.details",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "transactions/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
+
+// @LINE:28
+def list : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Supplier_Transactions.list",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "transactions/"})
       }
    """
 )
@@ -416,7 +482,10 @@ def newProduct : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:22
 // @LINE:21
@@ -460,14 +529,35 @@ def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:31
+// @LINE:29
 // @LINE:28
+// @LINE:27
 // @LINE:26
 class ReverseSupplier_Transactions {
 
 
-// @LINE:28
+// @LINE:29
+def delete(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Supplier_Transactions.delete(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Supplier_Transactions", "delete", Seq(classOf[Long]), "DELETE", """""", _prefix + """transactions/$id<[^/]+>""")
+)
+                      
+
+// @LINE:31
 def save(name:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Supplier_Transactions.save(name), HandlerDef(this.getClass.getClassLoader, "", "controllers.Supplier_Transactions", "save", Seq(classOf[String]), "POST", """""", _prefix + """suppliers/$name<[^/]+>/transactions/""")
+)
+                      
+
+// @LINE:27
+def details(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Supplier_Transactions.details(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Supplier_Transactions", "details", Seq(classOf[Long]), "GET", """""", _prefix + """transactions/$id<[^/]+>""")
+)
+                      
+
+// @LINE:28
+def list(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Supplier_Transactions.list(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Supplier_Transactions", "list", Seq(), "GET", """""", _prefix + """transactions/""")
 )
                       
 
