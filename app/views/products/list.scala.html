@@ -49,7 +49,7 @@ $(document).ready(function() {
 		<td>@product.name</td>
 		<td>@product.description</td>
         <td>@product.instock</td>
-		<td><a href="@routes.Products.details(product.ean)">
+		<td><a href="@routes.Products.update(product.ean)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
 				<a onclick="del('@routes.Products.delete(product.ean)')">
 				<span class="glyphicon glyphicon-remove"></span></a></td

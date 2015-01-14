@@ -9,7 +9,7 @@ import models.Supplier_Transaction;
 
 public class Application extends Controller {
 
-	public static Result home() {
+    public static Result home() {
 		List<User_Action> supplier_transactions=User_Action.find.order("createDate desc").findList();
 		double unpaid = Supplier_Transaction.findUnpaidAmount();
 		double paid = Supplier_Transaction.findPaidAmount();

@@ -1,0 +1,10 @@
+@(transaction: Supplier_Transaction)
+
+@main("Transaction"){
+
+<h1> Transaction ID : @transaction.internalId </h1>
+<p>Supplier: @transaction.supplier.name</p>
+<p>Product: @transaction.product.name</p>
+<p>Quantity: @transaction.quantity</p>
+
+}

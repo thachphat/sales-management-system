@@ -2,14 +2,25 @@
 
 @main("Supplier form"){
 <h1> Supplier form </h1>
-<form class="form-horizontal" method="POST" action="@routes.Suppliers.save()">
+<form class="form-horizontal clearfix error" method="POST" action="@routes.Suppliers.save()">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-9">
       <input type="text" class="form-control" name="name" placeholder=@supplierForm("name").valueOr("Name") value=@supplierForm("name").value()>
     </div>
   </div>
-  @supplierForm("name").errors()
+  @if(supplierForm.hasErrors) {
+      <div class="alert alert-error">
+          @if(supplierForm.errors.size() > 0) {
+              @for((key, value) <- supplierForm.errors) {
+                  @key.toString() : 
+                      @for(err <- value) {
+                          @err.message().toString()
+                      }
+              }
+          } else {No error returned.}
+      </div>
+  }  
 
   
   <div class="form-group">
