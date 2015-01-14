@@ -1,283 +1,2031 @@
-2015-01-11 22:52:01,827 - [INFO] - from play in pool-366-thread-3 
+2015-01-13 10:38:24,956 - [INFO] - from play in pool-4-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-01-11 22:52:40,199 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+2015-01-13 10:38:35,920 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6ko91k80o - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value Customer_Transactions is not a member of object controllers.routes]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:38:35,993 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-01-13 10:42:49,429 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6ko928j1e - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value transactions is not a member of models.Customer]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:44:23,786 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6ko92e2gi - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value map is not a member of models.Customer_Transaction]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:44:27,403 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6ko92e7pl - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value map is not a member of models.Customer_Transaction]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:47:00,226 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6ko92n01g - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value Id is not a member of models.Customer_Transaction]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:47:35,743 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6ko92p0fh - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value product is not a member of models.Customer_Transaction]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:49:29,535 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
 JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
 
-2015-01-11 22:52:40,292 - [INFO] - from play in play-internal-execution-context-1 
+2015-01-13 10:49:29,952 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
 
-2015-01-11 22:52:43,700 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+2015-01-13 10:49:30,476 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
 select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
 
-2015-01-11 22:52:43,702 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+2015-01-13 10:49:30,477 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
 
             select id, hash, apply_script, revert_script from play_evolutions order by id
         
 
-2015-01-11 22:52:44,031 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-01-11 22:52:51,048 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
-
-2015-01-11 22:52:51,064 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval union select supplier_seq.nextval
-
-2015-01-11 22:52:51,087 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-insert into supplier (SUPPLIER_ID, name) values (1,'Apples')
-
-2015-01-11 22:52:51,540 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:52:56,004 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
-
-2015-01-11 22:52:56,040 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
-
-2015-01-11 22:53:02,951 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-6 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
-
-2015-01-11 22:53:05,501 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-6 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:22,807 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:23,041 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
-
-2015-01-11 22:53:23,045 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval union select product_seq.nextval
-
-2015-01-11 22:53:23,051 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-insert into product (id, ean, name, description, instock) values (1,'CA123','Circle Band','Lala Nguyen',0)
-
-2015-01-11 22:53:23,078 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
-
-2015-01-11 22:53:27,740 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:32,091 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:33,783 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
-
-2015-01-11 22:53:33,785 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-7 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
-
-2015-01-11 22:53:42,528 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
-
-2015-01-11 22:53:42,544 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
-
-2015-01-11 22:53:42,551 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-update product set instock=2 where id=1 and ean='CA123' and name='Circle Band' and description='Lala Nguyen' and instock=0
-
-2015-01-11 22:53:42,554 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval union select supplier_transaction_seq.nextval
-
-2015-01-11 22:53:42,560 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-15 
-insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (1,2015-01-11 22:53:42.545,2,false,1,1)
-
-2015-01-11 22:53:42,572 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Apples' 
-
-2015-01-11 22:53:42,574 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-3 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (1) 
-
-2015-01-11 22:53:47,375 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
-
-2015-01-11 22:53:47,377 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
-
-2015-01-11 22:53:47,379 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
-
-2015-01-11 22:53:47,403 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
-
-2015-01-11 22:53:51,698 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:55,512 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:53:57,854 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-16 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
-
-2015-01-11 22:54:00,062 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
-
-2015-01-11 22:54:00,103 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-19 
-select t0.ean c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.ean) in (1) 
-
-2015-01-11 22:54:07,338 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-16 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:54:13,817 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
-
-2015-01-11 22:54:13,849 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-insert into supplier (SUPPLIER_ID, name) values (2,'Dells')
-
-2015-01-11 22:54:13,862 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:54:15,345 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
-
-2015-01-11 22:54:15,347 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (2) 
-
-2015-01-11 22:54:23,001 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CA123' 
-
-2015-01-11 22:54:23,016 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
-
-2015-01-11 22:54:23,018 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-update product set instock=14 where id=1 and ean='CA123' and name='Circle Band' and description='Lala Nguyen' and instock=2
-
-2015-01-11 22:54:23,019 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (2,2015-01-11 22:54:23.017,12,true,2,1)
-
-2015-01-11 22:54:23,055 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Dells' 
-
-2015-01-11 22:54:23,059 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (2) 
-
-2015-01-11 22:54:27,193 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
-
-2015-01-11 22:54:38,099 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-14 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:55:01,410 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:55:01,479 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CL125' 
-
-2015-01-11 22:55:01,482 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-22 
-insert into product (id, ean, name, description, instock) values (2,'CL125','Beautify Band','A circle band with flowers',0)
-
-2015-01-11 22:55:01,523 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
-
-2015-01-11 22:55:07,071 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-26 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:55:14,445 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-24 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
-
-2015-01-11 22:55:14,481 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-24 
-insert into supplier (SUPPLIER_ID, name) values (3,'Fitbits')
-
-2015-01-11 22:55:14,663 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
-
-2015-01-11 22:55:26,633 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
-
-2015-01-11 22:55:26,674 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (3) 
-
-2015-01-11 22:55:42,015 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'CL125' 
-
-2015-01-11 22:55:42,088 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
-
-2015-01-11 22:55:42,090 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-update product set instock=2 where id=2 and ean='CL125' and name='Beautify Band' and description='A circle band with flowers' and instock=0
-
-2015-01-11 22:55:42,095 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-insert into supplier_transaction (internal_id, buy_date, quantity, is_paid, SUPPLIER_ID, ean) values (3,2015-01-11 22:55:42.088,2,true,3,2)
-
-2015-01-11 22:55:42,311 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.name = 'Fitbits' 
-
-2015-01-11 22:55:42,316 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-27 
-select t0.SUPPLIER_ID c0, t0.internal_id c1, t0.buy_date c2, t0.quantity c3, t0.is_paid c4, t0.SUPPLIER_ID c5, t0.ean c6 from supplier_transaction t0 where (t0.SUPPLIER_ID) in (3) 
-
-2015-01-11 22:55:45,321 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
-
-2015-01-11 22:55:45,439 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
-
-2015-01-11 22:55:45,440 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
-
-2015-01-11 22:55:45,444 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
-
-2015-01-11 22:55:45,446 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 2  
-
-2015-01-11 22:55:45,447 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 3  
-
-2015-01-11 22:56:36,755 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+2015-01-13 10:49:30,499 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6ko935e98 - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:510) ~[play-jdbc_2.11-2.3.7.jar:2.3.7]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:531) ~[play-jdbc_2.11-2.3.7.jar:2.3.7]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:485) ~[play-jdbc_2.11-2.3.7.jar:2.3.7]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:483) ~[play-jdbc_2.11-2.3.7.jar:2.3.7]
+	at scala.collection.immutable.List.foreach(List.scala:383) ~[scala-library-2.11.1.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:483) ~[play-jdbc_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:91) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.collection.immutable.List.foreach(List.scala:383) ~[scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:91) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:91) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$.start(Play.scala:90) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:157) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.util.Success.flatMap(Try.scala:230) ~[scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 10:49:34,948 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 10:49:34,949 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 10:49:34,953 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 10:49:34,954 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+update play_evolutions set state = 'applying_down' where id = 1
+
+2015-01-13 10:49:34,963 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+SET REFERENTIAL_INTEGRITY FALSE
+
+2015-01-13 10:49:34,963 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop table if exists product
+
+2015-01-13 10:49:34,966 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop table if exists supplier
+
+2015-01-13 10:49:34,968 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop table if exists supplier_transaction
+
+2015-01-13 10:49:34,969 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+SET REFERENTIAL_INTEGRITY TRUE
+
+2015-01-13 10:49:34,969 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop sequence if exists product_seq
+
+2015-01-13 10:49:34,970 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop sequence if exists supplier_seq
+
+2015-01-13 10:49:34,970 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+drop sequence if exists supplier_transaction_seq
+
+2015-01-13 10:49:34,970 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+delete from play_evolutions where id = 1
+
+2015-01-13 10:49:34,974 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in New I/O worker #5 
+insert into play_evolutions values(1, 'b4ed648ada77c8d2ed0581e942fe60039acc43b4', 2015-01-13, 'create table customer (
+CUSTOMER_ID               bigint not null,
+name                      varchar(255),
+address                   varchar(255),
+phone1                    varchar(255),
+phone2                    varchar(255),
+email1                    varchar(255),
+email2                    varchar(255),
+constraint pk_customer primary key (CUSTOMER_ID))
+;
+
+create table customer_transaction (
+internal_id               bigint not null,
+sell_date                 date,
+price                     integer,
+is_paid                   boolean,
+quantity                  integer,
+customer_CUSTOMER_ID      bigint,
+product_id                bigint,
+constraint pk_customer_transaction primary key (internal_id))
+;
+
+create table product (
+id                        bigint not null,
+ean                       varchar(255) not null,
+name                      varchar(255),
+description               varchar(255),
+instock                   integer not null,
+constraint uq_product_ean unique (ean),
+constraint pk_product primary key (id))
+;
+
+create table supplier (
+SUPPLIER_ID               bigint not null,
+name                      varchar(255) not null,
+constraint uq_supplier_name unique (name),
+constraint pk_supplier primary key (SUPPLIER_ID))
+;
+
+create table supplier_transaction (
+internal_id               bigint not null,
+SUPPLIER_ID               bigint,
+ean                       bigint,
+buy_date                  timestamp,
+quantity                  integer not null,
+is_paid                   boolean not null,
+constraint pk_supplier_transaction primary key (internal_id))
+;
+
+create sequence customer_seq;
+
+create sequence customer_transaction_seq;
+
+create sequence product_seq;
+
+create sequence supplier_seq;
+
+create sequence supplier_transaction_seq;
+
+alter table customer_transaction add constraint fk_customer_transaction_custom_1 foreign key (customer_CUSTOMER_ID) references customer (CUSTOMER_ID) on delete restrict on update restrict;
+create index ix_customer_transaction_custom_1 on customer_transaction (customer_CUSTOMER_ID);
+alter table customer_transaction add constraint fk_customer_transaction_produc_2 foreign key (product_id) references product (id) on delete restrict on update restrict;
+create index ix_customer_transaction_produc_2 on customer_transaction (product_id);
+alter table supplier_transaction add constraint fk_supplier_transaction_suppli_3 foreign key (SUPPLIER_ID) references supplier (SUPPLIER_ID) on delete restrict on update restrict;
+create index ix_supplier_transaction_suppli_3 on supplier_transaction (SUPPLIER_ID);
+alter table supplier_transaction add constraint fk_supplier_transaction_produc_4 foreign key (ean) references product (id) on delete restrict on update restrict;
+create index ix_supplier_transaction_produc_4 on supplier_transaction (ean);', 'SET REFERENTIAL_INTEGRITY FALSE;
+
+drop table if exists customer;
+
+drop table if exists customer_transaction;
+
+drop table if exists product;
+
+drop table if exists supplier;
+
+drop table if exists supplier_transaction;
+
+SET REFERENTIAL_INTEGRITY TRUE;
+
+drop sequence if exists customer_seq;
+
+drop sequence if exists customer_transaction_seq;
+
+drop sequence if exists product_seq;
+
+drop sequence if exists supplier_seq;
+
+drop sequence if exists supplier_transaction_seq;', 'applying_up', '')
+
+2015-01-13 10:49:34,978 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create table customer (
+CUSTOMER_ID               bigint not null,
+name                      varchar(255),
+address                   varchar(255),
+phone1                    varchar(255),
+phone2                    varchar(255),
+email1                    varchar(255),
+email2                    varchar(255),
+constraint pk_customer primary key (CUSTOMER_ID))
+
+2015-01-13 10:49:34,979 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create table customer_transaction (
+internal_id               bigint not null,
+sell_date                 date,
+price                     integer,
+is_paid                   boolean,
+quantity                  integer,
+customer_CUSTOMER_ID      bigint,
+product_id                bigint,
+constraint pk_customer_transaction primary key (internal_id))
+
+2015-01-13 10:49:34,980 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create table product (
+id                        bigint not null,
+ean                       varchar(255) not null,
+name                      varchar(255),
+description               varchar(255),
+instock                   integer not null,
+constraint uq_product_ean unique (ean),
+constraint pk_product primary key (id))
+
+2015-01-13 10:49:34,981 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create table supplier (
+SUPPLIER_ID               bigint not null,
+name                      varchar(255) not null,
+constraint uq_supplier_name unique (name),
+constraint pk_supplier primary key (SUPPLIER_ID))
+
+2015-01-13 10:49:34,982 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create table supplier_transaction (
+internal_id               bigint not null,
+SUPPLIER_ID               bigint,
+ean                       bigint,
+buy_date                  timestamp,
+quantity                  integer not null,
+is_paid                   boolean not null,
+constraint pk_supplier_transaction primary key (internal_id))
+
+2015-01-13 10:49:34,983 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create sequence customer_seq
+
+2015-01-13 10:49:34,983 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create sequence customer_transaction_seq
+
+2015-01-13 10:49:34,984 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create sequence product_seq
+
+2015-01-13 10:49:34,984 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create sequence supplier_seq
+
+2015-01-13 10:49:34,984 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create sequence supplier_transaction_seq
+
+2015-01-13 10:49:34,984 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+alter table customer_transaction add constraint fk_customer_transaction_custom_1 foreign key (customer_CUSTOMER_ID) references customer (CUSTOMER_ID) on delete restrict on update restrict
+
+2015-01-13 10:49:34,990 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create index ix_customer_transaction_custom_1 on customer_transaction (customer_CUSTOMER_ID)
+
+2015-01-13 10:49:34,990 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+alter table customer_transaction add constraint fk_customer_transaction_produc_2 foreign key (product_id) references product (id) on delete restrict on update restrict
+
+2015-01-13 10:49:34,992 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create index ix_customer_transaction_produc_2 on customer_transaction (product_id)
+
+2015-01-13 10:49:34,993 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+alter table supplier_transaction add constraint fk_supplier_transaction_suppli_3 foreign key (SUPPLIER_ID) references supplier (SUPPLIER_ID) on delete restrict on update restrict
+
+2015-01-13 10:49:34,994 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create index ix_supplier_transaction_suppli_3 on supplier_transaction (SUPPLIER_ID)
+
+2015-01-13 10:49:34,994 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+alter table supplier_transaction add constraint fk_supplier_transaction_produc_4 foreign key (ean) references product (id) on delete restrict on update restrict
+
+2015-01-13 10:49:34,996 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+create index ix_supplier_transaction_produc_4 on supplier_transaction (ean)
+
+2015-01-13 10:49:34,996 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+update play_evolutions set state = 'applied' where id = 1
+
+2015-01-13 10:49:34,999 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in New I/O worker #5 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 10:49:35,223 - [WARN] - from play in play-internal-execution-context-1 
+Error stopping plugin
+java.lang.NullPointerException: null
+	at play.libs.ws.ning.NingWSPlugin.onStop(NingWSPlugin.java:31) ~[play-java-ws_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:108) [play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1$$anonfun$apply$mcV$sp$2.apply(Play.scala:107) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.collection.immutable.List.foreach(List.scala:383) [scala-library-2.11.1.jar:na]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply$mcV$sp(Play.scala:107) [play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:107) [play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1$$anonfun$apply$1.apply(Play.scala:107) [play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:106) [play_2.11-2.3.7.jar:2.3.7]
+	at play.api.Play$$anonfun$stop$1.apply(Play.scala:105) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.Play$.stop(Play.scala:105) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:142) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:130) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.util.Success.flatMap(Try.scala:230) [scala-library-2.11.1.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:128) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+
+2015-01-13 10:49:35,223 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
 Shutting down connection pool...
 
-2015-01-11 22:56:36,786 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+2015-01-13 10:49:35,224 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
 Terminating pool watch thread
 
-2015-01-11 22:56:36,792 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+2015-01-13 10:49:35,236 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
 Connection pool has been shutdown.
 
-2015-01-11 22:56:36,792 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+2015-01-13 10:49:35,236 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
 Connection pool has been shut down
 
-2015-01-11 22:56:38,178 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+2015-01-13 10:49:35,299 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
 JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
 
-2015-01-11 22:56:38,187 - [INFO] - from play in play-internal-execution-context-1 
+2015-01-13 10:49:35,426 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
 
-2015-01-11 22:56:40,615 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+2015-01-13 10:49:35,485 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
 select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
 
-2015-01-11 22:56:40,620 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+2015-01-13 10:49:35,486 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
 
             select id, hash, apply_script, revert_script from play_evolutions order by id
         
 
-2015-01-11 22:56:40,726 - [INFO] - from play in play-internal-execution-context-1 
+2015-01-13 10:49:35,600 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-01-11 22:56:40,789 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+2015-01-13 10:49:35,712 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
 select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
 
-2015-01-11 22:56:40,803 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+2015-01-13 10:49:35,720 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
 select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
 
-2015-01-11 22:56:40,806 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
+2015-01-13 10:49:35,721 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-2 
 select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
 
-2015-01-11 22:56:40,818 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.id = 1  
+2015-01-13 10:49:42,856 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
 
-2015-01-11 22:56:40,820 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 1  
+2015-01-13 10:49:42,857 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
 
-2015-01-11 22:56:40,821 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 2  
+2015-01-13 10:49:42,858 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-9 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
 
-2015-01-11 22:56:40,822 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.id = 2  
-
-2015-01-11 22:56:40,823 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-25 
-select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0 where t0.SUPPLIER_ID = 3  
-
-2015-01-11 22:56:50,463 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-33 
+2015-01-13 10:51:33,693 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-12 
 select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-13 10:51:37,603 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-13 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0 where t0.ean = 'buttons.html' 
+
+2015-01-13 10:51:37,604 - [ERROR] - from play in play-akka.actor.default-dispatcher-13 
+Cannot invoke the action, eventually got an error: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+
+2015-01-13 10:51:37,614 - [ERROR] - from application in play-akka.actor.default-dispatcher-13 
+
+
+! @6ko93cka9 - Internal server error, for (GET) [/products/buttons.html] ->
+
+play.api.Application$$anon$1: Execution exception[[IndexOutOfBoundsException: Index: 0, Size: 0]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:635) ~[na:1.7.0_71]
+	at java.util.ArrayList.get(ArrayList.java:411) ~[na:1.7.0_71]
+	at com.avaje.ebean.common.BeanList.get(BeanList.java:251) ~[avaje-ebeanorm-3.3.4.jar:na]
+	at controllers.Products.details(Products.java:26) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:231) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:231) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-13 10:51:49,487 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-14 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-13 10:51:52,659 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-17 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-13 10:51:55,051 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-14 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-13 10:53:55,276 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-13 10:53:55,277 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-13 10:53:55,277 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-20 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-13 11:02:51,531 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:02:51,532 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:02:51,538 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:02:51,538 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:02:52,088 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:02:52,223 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:02:52,281 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:02:52,282 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:02:52,289 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 11:02:52,294 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-13 11:02:52,296 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-13 11:02:52,296 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-13 11:03:11,808 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-13 11:03:11,810 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-13 11:03:11,811 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-13 11:03:13,951 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:03:13,951 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:03:13,956 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:03:13,956 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:03:14,006 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:03:14,136 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:03:14,194 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:03:14,195 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:03:14,202 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 11:03:19,899 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-13 11:03:19,900 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-13 11:03:19,901 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-30 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-13 11:19:47,518 - [ERROR] - from application in New I/O worker #14 
+
+
+! @6ko974o6h - Internal server error, for (GET) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: incompatible types]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 11:20:41,103 - [ERROR] - from application in New I/O worker #15 
+
+
+! @6ko977pdh - Internal server error, for (GET) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: incompatible types]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 11:21:15,533 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:21:15,533 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:21:15,539 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:21:15,539 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:21:16,172 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:21:16,301 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:21:16,350 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:21:16,351 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:21:16,357 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 11:21:16,363 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-40 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-13 11:48:56,813 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:48:56,813 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:48:56,819 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:48:56,819 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:48:57,457 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:48:57,580 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:48:57,628 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:48:57,629 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:48:57,634 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 11:51:10,905 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:51:10,905 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:51:10,908 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:51:10,908 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:51:11,525 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:51:11,657 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:51:11,704 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:51:11,705 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:51:11,711 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 11:51:19,411 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-57 
+select t0.SUPPLIER_ID c0, t0.name c1 from supplier t0
+
+2015-01-13 11:51:23,950 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-54 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-13 11:53:12,581 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 11:53:12,581 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 11:53:12,584 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 11:53:12,584 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 11:53:12,620 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 11:53:12,740 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 11:53:12,787 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 11:53:12,788 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 11:53:12,793 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 19:59:19,760 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6kobnad10 - Internal server error, for (POST) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: incompatible types]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 20:01:26,149 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 20:01:26,149 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 20:01:26,153 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 20:01:26,153 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 20:01:26,755 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 20:01:26,880 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 20:01:26,937 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 20:01:26,937 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 20:01:26,943 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 20:01:27,089 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-63 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'dasd' 
+
+2015-01-13 20:01:27,095 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-63 
+select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval
+
+2015-01-13 20:01:27,103 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-63 
+insert into customer (CUSTOMER_ID, name, address, phone1, phone2, email1, email2) values (1,'dasd','dasd','dads','dasds','dad','dasd')
+
+2015-01-13 20:01:27,436 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-67 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-13 20:01:43,978 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-73 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'dasd' 
+
+2015-01-13 20:01:43,984 - [WARN] - from play in play-akka.actor.default-dispatcher-73 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2015-01-13 20:01:48,935 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-73 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-13 20:01:48,935 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-73 
+insert into customer (CUSTOMER_ID, name, address, phone1, phone2, email1, email2) values (2,'aa','aaa','aaa','aaa','aaa','')
+
+2015-01-13 20:01:48,941 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-71 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-13 20:03:00,037 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 20:03:00,037 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 20:03:00,040 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 20:03:00,040 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 20:03:00,075 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 20:03:00,198 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 20:03:00,243 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 20:03:00,244 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 20:03:00,251 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 20:03:10,987 - [WARN] - from play in play-akka.actor.default-dispatcher-81 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2015-01-13 20:03:16,341 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-68 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'bb' 
+
+2015-01-13 20:03:16,343 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-68 
+select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval union select customer_seq.nextval
+
+2015-01-13 20:03:16,345 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-68 
+insert into customer (CUSTOMER_ID, name, address, phone1, phone2, email1, email2) values (33,'bb','bbb','bbb','','bbb','')
+
+2015-01-13 20:03:16,352 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-82 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-13 20:09:24,347 - [ERROR] - from application in New I/O worker #16 
+
+
+! @6koboinaa - Internal server error, for (GET) [/customers/aa] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: bad operand type Customer for unary operator '!']
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-13 20:09:45,121 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-13 20:09:45,121 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-13 20:09:45,126 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-13 20:09:45,126 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-13 20:09:45,726 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-13 20:09:45,849 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-13 20:09:45,893 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-13 20:09:45,894 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-13 20:09:45,899 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-13 20:09:45,905 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-81 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-13 20:09:50,784 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-81 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-13 20:09:50,834 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-89 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'a' 
+
+2015-01-13 20:09:50,836 - [WARN] - from play in play-akka.actor.default-dispatcher-89 
+You are using status code '404' with flashing, which should only be used with a redirect status!
+
+2015-01-14 08:30:39,471 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:30:39,473 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:30:39,476 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:30:39,476 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:30:39,535 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:30:39,659 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:30:39,741 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:30:39,741 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:30:39,749 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:30:39,769 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-81 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'a' 
+
+2015-01-14 08:30:43,714 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-81 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-14 08:30:54,748 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-93 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-14 08:30:54,754 - [WARN] - from play in play-akka.actor.default-dispatcher-93 
+You are using status code '400' with flashing, which should only be used with a redirect status!
+
+2015-01-14 08:35:24,903 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:35:24,903 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:35:24,905 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:35:24,906 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:35:25,487 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:35:25,615 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:35:25,659 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:35:25,659 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:35:25,664 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:35:25,700 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-94 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-14 08:35:25,703 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-94 
+update customer set name='aa', address='bbb', phone1='aaa', phone2='aaa', email1='aaa', email2='' where CUSTOMER_ID=2
+
+2015-01-14 08:35:26,176 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-94 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:38:29,235 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:38:29,235 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:38:29,238 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:38:29,238 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:38:29,778 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:38:29,908 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:38:29,952 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:38:29,953 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:38:29,958 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:38:29,983 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'aa' 
+
+2015-01-14 08:38:29,987 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+delete from customer where CUSTOMER_ID=2 and name='aa' and address='bbb' and phone1='aaa' and phone2='aaa' and email1='aaa' and email2=''
+
+2015-01-14 08:38:29,996 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:38:30,009 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:38:34,026 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.name = 'dasd' 
+
+2015-01-14 08:38:34,026 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+delete from customer where CUSTOMER_ID=1 and name='dasd' and address='dasd' and phone1='dads' and phone2='dasds' and email1='dad' and email2='dasd'
+
+2015-01-14 08:38:34,030 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:38:34,035 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-111 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:44:07,853 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6kofjl8lh - Internal server error, for (GET) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[type mismatch;
+ found   : String
+ required: Long]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-14 08:44:47,930 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6kofjng33 - Internal server error, for (GET) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: method findByID in class Customer cannot be applied to given types;]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-14 08:45:27,443 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6kofjpmen - Internal server error, for (GET) [/customers/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[type mismatch;
+ found   : String
+ required: Long]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.1.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-01-14 08:45:54,200 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:45:54,200 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:45:54,204 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:45:54,205 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:45:54,815 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:45:54,926 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:45:54,968 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:45:54,969 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:45:54,974 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:45:54,979 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:46:00,471 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-114 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 33 
+
+2015-01-14 08:46:04,663 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-120 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:04,663 - [ERROR] - from play in play-akka.actor.default-dispatcher-120 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:04,665 - [ERROR] - from application in play-akka.actor.default-dispatcher-120 
+
+
+! @6kofk1pgd - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:35,664 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:46:35,665 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:46:35,667 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:46:35,667 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:46:35,708 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:46:35,827 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:46:35,871 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:46:35,872 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:46:35,877 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:46:35,883 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:35,883 - [ERROR] - from play in play-akka.actor.default-dispatcher-121 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:35,885 - [ERROR] - from application in play-akka.actor.default-dispatcher-121 
+
+
+! @6kofk3jl7 - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:39,715 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:39,715 - [ERROR] - from play in play-akka.actor.default-dispatcher-100 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:39,717 - [ERROR] - from application in play-akka.actor.default-dispatcher-100 
+
+
+! @6kofk3pch - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:46,922 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:46,922 - [ERROR] - from play in play-akka.actor.default-dispatcher-100 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:46,924 - [ERROR] - from application in play-akka.actor.default-dispatcher-100 
+
+
+! @6kofk4a3m - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:47,906 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:47,907 - [ERROR] - from play in play-akka.actor.default-dispatcher-121 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:47,908 - [ERROR] - from application in play-akka.actor.default-dispatcher-121 
+
+
+! @6kofk4bfi - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:51,004 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-100 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 32 
+
+2015-01-14 08:46:51,004 - [ERROR] - from play in play-akka.actor.default-dispatcher-100 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:46:51,006 - [ERROR] - from application in play-akka.actor.default-dispatcher-100 
+
+
+! @6kofk4g4m - Internal server error, for (GET) [/customers/32] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:46:53,781 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-14 08:46:53,782 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-14 08:46:53,782 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
+
+2015-01-14 08:46:57,659 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-123 
+select t0.id c0, t0.ean c1, t0.name c2, t0.description c3, t0.instock c4 from product t0
+
+2015-01-14 08:47:02,212 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-122 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:47:03,982 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-126 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 33 
+
+2015-01-14 08:47:07,604 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-125 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 3 
+
+2015-01-14 08:47:07,604 - [ERROR] - from play in play-akka.actor.default-dispatcher-125 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:47:07,606 - [ERROR] - from application in play-akka.actor.default-dispatcher-125 
+
+
+! @6kofk5ej8 - Internal server error, for (GET) [/customers/3] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:47:20,361 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-127 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 3 
+
+2015-01-14 08:47:20,362 - [ERROR] - from play in play-akka.actor.default-dispatcher-127 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-01-14 08:47:20,363 - [ERROR] - from application in play-akka.actor.default-dispatcher-127 
+
+
+! @6kofk67fp - Internal server error, for (GET) [/customers/3] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.7.jar:2.3.7]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.1.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.1.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.1.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Customers.details(Customers.java:27) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$18$$anonfun$apply$18.apply(routes_routing.scala:335) ~[na:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.1.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at scala.Option.map(Option.scala:145) [scala-library-2.11.1.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.1.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.1.jar:na]
+	... 6 common frames omitted
+
+2015-01-14 08:47:35,570 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 08:47:35,571 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 08:47:35,573 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 08:47:35,573 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 08:47:35,605 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 08:47:35,727 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 08:47:35,770 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 08:47:35,770 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 08:47:35,781 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 08:47:35,787 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-115 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 3 
+
+2015-01-14 08:47:40,257 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 33 
+
+2015-01-14 08:47:50,297 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-131 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 33 
+
+2015-01-14 08:47:50,297 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-131 
+update customer set name='bb', address='bbb', phone1='123455', phone2='12345', email1='bbb', email2='' where CUSTOMER_ID=33
+
+2015-01-14 08:47:50,305 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-121 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:48:56,652 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-123 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0 where t0.CUSTOMER_ID = 33 
+
+2015-01-14 08:48:56,652 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-123 
+delete from customer where CUSTOMER_ID=33 and name='bb' and address='bbb' and phone1='123455' and phone2='12345' and email1='bbb' and email2=''
+
+2015-01-14 08:48:56,656 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-123 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 08:48:56,663 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-135 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 09:01:13,299 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Shutting down connection pool...
+
+2015-01-14 09:01:13,299 - [DEBUG] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Terminating pool watch thread
+
+2015-01-14 09:01:13,302 - [INFO] - from com.jolbox.bonecp.BoneCP in play-internal-execution-context-1 
+Connection pool has been shutdown.
+
+2015-01-14 09:01:13,303 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+Connection pool has been shut down
+
+2015-01-14 09:01:13,343 - [DEBUG] - from com.jolbox.bonecp.BoneCPDataSource in play-internal-execution-context-1 
+JDBC URL = jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb, Username = sa, partitions = 1, max (per partition) = 30, min (per partition) = 5, idle max age = 10 min, idle test period = 1 min, strategy = DEFAULT
+
+2015-01-14 09:01:13,465 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:~/Downloads/activator-1.2.12/library/pmdb
+
+2015-01-14 09:01:13,519 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+
+2015-01-14 09:01:13,519 - [DEBUG] - from com.jolbox.bonecp.StatementHandle in play-internal-execution-context-1 
+
+            select id, hash, apply_script, revert_script from play_evolutions order by id
+        
+
+2015-01-14 09:01:13,525 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-01-14 09:01:13,531 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-141 
+select t0.CUSTOMER_ID c0, t0.name c1, t0.address c2, t0.phone1 c3, t0.phone2 c4, t0.email1 c5, t0.email2 c6 from customer t0
+
+2015-01-14 09:01:15,112 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-144 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0
+
+2015-01-14 09:01:15,113 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-144 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'false' 
+
+2015-01-14 09:01:15,113 - [DEBUG] - from com.jolbox.bonecp.PreparedStatementHandle in play-akka.actor.default-dispatcher-144 
+select t0.internal_id c0, t0.buy_date c1, t0.quantity c2, t0.is_paid c3, t0.SUPPLIER_ID c4, t0.ean c5 from supplier_transaction t0 where t0.is_paid = 'true' 
 

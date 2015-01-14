@@ -1,0 +1,21 @@
+@(customerForm:Form[Customer])
+@import helper._
+@import helper.twitterBootstrap._
+
+@main("Customer form"){
+    <h1>Customer form</h1>
+    @helper.form(action=routes.Customers.save(), 'enctype -> "multipart/form-data"){
+        <fieldset>
+            <legend>Customer (@customerForm("name").valueOr("Name"))</legend>
+            <input type="hidden" value="@customerForm("id").valueOr("")" name="id"/>
+            @helper.inputText(customerForm("name"), '_label->"Name")
+            @helper.inputText(customerForm("address"), '_label->"Address")
+            @helper.inputText(customerForm("phone1"), '_label->"Phone")
+            @helper.inputText(customerForm("phone2"), '_label->"Alternative phone")
+            @helper.inputText(customerForm("email1"), '_label->"Email")
+            @helper.inputText(customerForm("email2"), '_label->"Alternative email")
+        </fieldset>
+        <input type="submit" class="btn btn-primary" value="Save">
+        <a class="btn" href="@routes.Customers.list()">Cancel</a>
+    }
+}
