@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.Application.home()
+GET     /login                      controllers.Login.index()
+POST    /login                      controllers.Login.authenticate()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
@@ -35,5 +37,7 @@ POST    /customers/             controllers.Customers.save()
 DELETE  /customers/:id        controllers.Customers.delete(id:Long)
 
 # Customer transaction:
-GET     /customers/:name/transactions/new   controllers.Customer_Transactions.newTransaction(name:String)
-POST    /customers/:name/transactions/      controllers.Customer_Transactions.save(name:String)
+GET     /customers/:id/transactions/      controllers.Customer_Transactions.list(id:Long)
+GET     /customers/:id/transactions/new   controllers.Customer_Transactions.newTransaction(id:Long)
+GET     /customers/:id/transactions/:tid  controllers.Customer_Transactions.details(id:Long,tid:Long)
+POST    /customers/:id/transactions/      controllers.Customer_Transactions.save(id:Long)

@@ -1,0 +1,42 @@
+@(form: Form[Login.LoginModel])
+
+<html>
+<head>
+    <title>Retails Database</title>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+</head>
+<body>
+<header>
+    <a href="@routes.Application.home" id="logo">Retails database</a>
+</header>
+
+@helper.form(routes.Login.authenticate) {
+<h1>Sign in</h1>
+
+@if(form.hasGlobalErrors) {
+<p class="error">
+    @form.globalError.message
+</p>
+}
+
+@if(flash.contains("success")) {
+<p class="success">
+    @flash.get("success")
+</p>
+}
+
+<p>
+    <input type="username" name="username" placeholder="Username" value="@form("username").value">
+</p>
+<p>
+    <input type="password" name="password" placeholder="Password">
+</p>
+<p>
+    <button type="submit">Login</button>
+</p>
+}
+
+</body>
+</html>
+

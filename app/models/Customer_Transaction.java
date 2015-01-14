@@ -1,6 +1,7 @@
 package models;
 
 import java.sql.Date;
+import java.util.List;
 
 import play.data.validation.Constraints;
 
@@ -31,5 +32,9 @@ public class Customer_Transaction extends Model{
 
 	public static Customer_Transaction findByID(Long id){
 		return find.where().eq("id",id).findUnique();
+	}
+
+	public static List<Customer_Transaction> findByCustomer(Long id) {
+		return find.where().eq("customer.id",id).findList();
 	}
 }
