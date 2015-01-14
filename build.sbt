@@ -1,4 +1,4 @@
-name := """library"""
+name := """sales-management-system"""
 
 version := "1.0-SNAPSHOT"
 
