@@ -8,10 +8,6 @@ import play.mvc.Result;
 import play.data.Form;
 import views.html.supplier_transactions.update;
 import views.html.supplier_transactions.list;
-import views.html.supplier_transactions.details;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import models.User_Action;
 
@@ -77,21 +73,35 @@ public class Supplier_Transactions extends Controller {
 		if (transaction.internalId==null) {
 			Supplier supplier = Supplier.findByID(id);
 			transaction.supplier = supplier;
+			product.setInstock(product.instock + transaction.quantity);
+			transaction.product = product;
+			product.update();
 			transaction.save();
 			String str = String.format("Transaction %s : Imported %s to product %s-%s from %s",transaction.internalId,transaction.quantity, product.id, product.name, transaction.supplier.name);
 			action.verb= "Insert";
 			action.description=str;
 			action.save();
-			product.setInstock(product.instock + transaction.quantity);
-			transaction.product = product;
-			product.update();
 		}else{
 			Supplier_Transaction oldTransaction = Supplier_Transaction.find.byId(transaction.internalId);
-			String str = String.format("Transaction %s : Updated import quantity from %s to %s to product %s-%s from %s",transaction.internalId,oldTransaction.quantity,transaction.quantity, product.id, product.name, oldTransaction.supplier.name);
+			Product oldProduct = oldTransaction.product;
+			String str = String.format("Transaction %s : Updated", transaction.internalId);
+			if(product.ean != oldProduct.ean) {
+				str=str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean+",");
+				transaction.product = product;
+			}
+			if(transaction.quantity!=oldTransaction.quantity)
+				str=str.concat(" import quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
+			if(transaction.price!=oldTransaction.price)
+				str=str.concat(" bought price from "+oldTransaction.price+" to "+transaction.price+",");
+			if(transaction.buyDate!=oldTransaction.buyDate)
+				str=str.concat(" bought date from "+oldTransaction.buyDate+" to "+transaction.buyDate);
+			str=str.concat(" to product "+product.id+"-"+product.name+" from "+oldTransaction.supplier.name);
 			action.verb= "Update";
 			action.description=str;
 			action.save();
-			product.setInstock(product.instock + transaction.quantity - oldTransaction.quantity);
+			oldProduct.setInstock(oldProduct.instock - oldTransaction.quantity);
+			if(product.ean != oldProduct.ean) oldProduct.update();
+			product.setInstock(product.instock + transaction.quantity);
 			product.update();
 			transaction.update();
 		}

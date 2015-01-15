@@ -16,12 +16,12 @@ create table customer (
 
 create table customer_transaction (
   internal_id               bigint not null,
-  sell_date                 date,
+  sell_date                 varchar(255),
   price                     integer,
   is_paid                   boolean,
   quantity                  integer,
-  customer_CUSTOMER_ID      bigint,
-  product_id                bigint,
+  CUSTOMER_ID               bigint,
+  ean                       bigint,
   constraint pk_customer_transaction primary key (internal_id))
 ;
 
@@ -69,7 +69,6 @@ create table user_action (
   description               varchar(255) not null,
   verb                      varchar(255) not null,
   create_date               timestamp,
-  constraint uq_user_action_description unique (description),
   constraint pk_user_action primary key (id))
 ;
 
@@ -87,10 +86,10 @@ create sequence user_seq;
 
 create sequence user_action_seq;
 
-alter table customer_transaction add constraint fk_customer_transaction_custom_1 foreign key (customer_CUSTOMER_ID) references customer (CUSTOMER_ID) on delete restrict on update restrict;
-create index ix_customer_transaction_custom_1 on customer_transaction (customer_CUSTOMER_ID);
-alter table customer_transaction add constraint fk_customer_transaction_produc_2 foreign key (product_id) references product (id) on delete restrict on update restrict;
-create index ix_customer_transaction_produc_2 on customer_transaction (product_id);
+alter table customer_transaction add constraint fk_customer_transaction_custom_1 foreign key (CUSTOMER_ID) references customer (CUSTOMER_ID) on delete restrict on update restrict;
+create index ix_customer_transaction_custom_1 on customer_transaction (CUSTOMER_ID);
+alter table customer_transaction add constraint fk_customer_transaction_produc_2 foreign key (ean) references product (id) on delete restrict on update restrict;
+create index ix_customer_transaction_produc_2 on customer_transaction (ean);
 alter table supplier_transaction add constraint fk_supplier_transaction_suppli_3 foreign key (SUPPLIER_ID) references supplier (SUPPLIER_ID) on delete restrict on update restrict;
 create index ix_supplier_transaction_suppli_3 on supplier_transaction (SUPPLIER_ID);
 alter table supplier_transaction add constraint fk_supplier_transaction_produc_4 foreign key (ean) references product (id) on delete restrict on update restrict;

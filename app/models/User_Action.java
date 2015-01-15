@@ -12,7 +12,7 @@ public class User_Action extends Model{
 	public Long id;
 	
 	@Constraints.Required
-	@Basic(optional=false) @Column(unique=true) public String description;	
+	@Basic(optional=false) public String description;
 	
 	@Constraints.Required
 	@Basic(optional=false) public String verb;	

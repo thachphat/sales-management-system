@@ -1,11 +1,10 @@
 package models;
 
-import play.data.format.Formats;
 import play.data.validation.Constraints;
-import java.util.Date;
 import java.util.List;
 
 import play.db.ebean.Model;
+
 import javax.persistence.*;
 
 @Entity

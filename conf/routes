@@ -16,6 +16,7 @@ GET		/products/:ean				controllers.Products.details(ean:String)
 GET		/products/:ean/edit			controllers.Products.update(ean:String)
 POST	/products/					controllers.Products.save()
 DELETE	/products/:ean				controllers.Products.delete(ean:String)
+
 # Supplier routes
 GET		/suppliers/					controllers.Suppliers.list()
 GET		/suppliers/new				controllers.Suppliers.newSupplier()
@@ -27,10 +28,9 @@ DELETE	/suppliers/:id			controllers.Suppliers.delete(id:Long)
 # Supplier transaction:
 
 GET /suppliers/:id/transactions/new controllers.Supplier_Transactions.newTransaction(id:Long)
-GET /transactions/:id controllers.Supplier_Transactions.details(id:Long)
-GET /transactions/ controllers.Supplier_Transactions.list()
-DELETE /transactions/:id controllers.Supplier_Transactions.delete(id:Long)
-
+GET /suppliers/transactions/:id controllers.Supplier_Transactions.details(id:Long)
+GET /suppliers/transactions/ controllers.Supplier_Transactions.list()
+DELETE /suppliers/transactions/:id controllers.Supplier_Transactions.delete(id:Long)
 POST /suppliers/:id/transactions/				controllers.Supplier_Transactions.save(id:Long)
 
 # Customer routes
@@ -42,7 +42,8 @@ POST    /customers/             controllers.Customers.save()
 DELETE  /customers/:id          controllers.Customers.delete(id:Long)
 
 # Customer transaction:
-GET     /customers/:id/transactions/      controllers.Customer_Transactions.list(id:Long)
+GET     /customers/transactions/      controllers.Customer_Transactions.list()
 GET     /customers/:id/transactions/new   controllers.Customer_Transactions.newTransaction(id:Long)
-GET     /customers/:id/transactions/:tid  controllers.Customer_Transactions.details(id:Long,tid:Long)
+GET     /customers/transactions/:id       controllers.Customer_Transactions.details(id:Long)
 POST    /customers/:id/transactions/      controllers.Customer_Transactions.save(id:Long)
+DELETE  /customers/transactions/:id       controllers.Customer_Transactions.delete(id:Long)
