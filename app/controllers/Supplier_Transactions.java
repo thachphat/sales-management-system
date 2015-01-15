@@ -90,7 +90,7 @@ public class Supplier_Transactions extends Controller {
 				transaction.product = product;
 			}
 			if(transaction.quantity!=oldTransaction.quantity)
-				str=str.concat(" import quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
+				str=str.concat(" buying quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
 			if(transaction.price!=oldTransaction.price)
 				str=str.concat(" bought price from "+oldTransaction.price+" to "+transaction.price+",");
 			if(transaction.buyDate!=oldTransaction.buyDate)

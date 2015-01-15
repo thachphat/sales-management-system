@@ -91,18 +91,18 @@ public class Customer_Transactions extends Controller {
                 transaction.product = product;
             }
             if(transaction.quantity!=oldTransaction.quantity)
-                str=str.concat(" import quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
+                str=str.concat(" selling quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
             if(transaction.price!=oldTransaction.price)
-                str=str.concat(" bought price from "+oldTransaction.price+" to "+transaction.price+",");
+                str=str.concat(" sold price from "+oldTransaction.price+" to "+transaction.price+",");
             if(transaction.sellDate!=oldTransaction.sellDate)
-                str=str.concat(" bought date from "+oldTransaction.sellDate+" to "+transaction.sellDate);
+                str=str.concat(" sold date from "+oldTransaction.sellDate+" to "+transaction.sellDate);
             str=str.concat(" to product "+product.id+"-"+product.name+" from "+oldTransaction.customer.name);
             action.verb= "Update";
             action.description=str;
             action.save();
-            oldProduct.setInstock(oldProduct.instock - oldTransaction.quantity);
+            oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
             if(product.ean != oldProduct.ean) oldProduct.update();
-            product.setInstock(product.instock + transaction.quantity);
+            product.setInstock(product.instock - transaction.quantity);
             product.update();
             transaction.update();
         }
