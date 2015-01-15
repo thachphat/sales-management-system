@@ -66,6 +66,9 @@
 	  case "Insert" => {<p class="alert alert-success" role="alert">&bull;
       [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>
 	  </p>}
+	  case "Update" => {<p class="alert alert-success" role="alert">&bull;
+	  [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>
+	  </p>}
   	  case "Delete" => {
 	  <p class="alert alert-danger" role="alert">&bull;
       [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>

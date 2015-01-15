@@ -4,6 +4,7 @@ import models.Customer;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
+import views.html.customers.details;
 import views.html.customers.list;
 import views.html.customers.update;
 
@@ -21,13 +22,18 @@ public class Customers extends Controller {
 		return ok(update.render(customerForm));
 	}
 
-	public static Result details(Long id){
+	public static Result update(Long id){
 		Customer customer = Customer.findByID(id);
 		if(customer==null){
 			return notFound("No customer with name: " + id);
 		}
 		Form<Customer> filledForm = customerForm.fill(customer);
 		return ok(update.render(filledForm));
+	}
+
+	public static Result details(Long id){
+		Customer customer = Customer.findByID(id);
+		return ok(details.render(customer));
 	}
 
 	public static Result save(){
@@ -37,7 +43,7 @@ public class Customers extends Controller {
 			return badRequest(update.render(boundForm));
 		}
 		Customer customer = boundForm.get();
-		if(Customer.findByID(customer.id)!=null){
+		if(customer.id!=null){
 			customer.update();
 			flash("success", "Successfully updated");
 		}

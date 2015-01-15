@@ -8,41 +8,52 @@ $(document).ready(function() {
 } );
 </script>
 <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%"> <thead>
-   <tr>
+<tr>
 	<th>ID</th>
-	<th>Product ID</th>
+	<th>Supplier ID & Name</th>
+	<th>Product</th>
 	<th>Quantity</th>
-	<th>Status</th>
+	<th>Price</th>
 	<th>Date</th>
+	<th>Total</th>
+	<th>Status</th>
 	<th></th>
-	
-  </tr>
+</tr>
 </thead>
-<tfoot>
-            <tr>
-                <th>ID</th>
-				<th>Product ID</th>
-				<th>Quantity</th>
-				<th>Status</th>
-                <th>Date</th>
-				<th></th>
-				
-            </tr>
-        </tfoot>
-<tbody>
+	<tfoot>
+	<tr>
+		<th>ID</th>
+		<th>Supplier ID & Name</th>
+		<th>Product</th>
+		<th>Quantity</th>
+		<th>Price</th>
+		<th>Date</th>
+		<th>Total</th>
+		<th>Status</th>
+		<th></th>
+
+	</tr>
+	</tfoot>
+	<tbody>
 @for(transaction <- supplier.transactions){
-	 <tr>
-	        <td>@transaction.internalId</td>
-			<td>@transaction.product.id</td>
-			<td>@transaction.quantity</td>
-			<td>@transaction.isPaid</td>
-			<td>@transaction.buyDate</td>
-			<td>
-			<a href="@routes.Suppliers.details(supplier.id)"><span class="glyphicon glyphicon-pencil"></span></a>
-			<a onclick="del('@routes.Suppliers.delete(supplier.id)')"><span class="glyphicon glyphicon-remove"></span></a>
-			</td>
-	      </tr>
-	      }
+<tr>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">
+		@transaction.internalId
+	</a></td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.supplier.id - @transaction.supplier.name</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.product.name</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.quantity</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.price</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.buyDate.format("dd-MM-yyyy")</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@(transaction.quantity*transaction.price)</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@if(transaction.isPaid){Paid}else{Unpaid}</td>
+	<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">
+		<span class="glyphicon glyphicon-pencil"></span></a>
+		<a onclick="del('@routes.Supplier_Transactions.delete(transaction.internalId)')">
+			<span class="glyphicon glyphicon-remove"></span></a></td>
+
+</tr>
+}
 		  
 </tbody>
 </table>

@@ -1,34 +1,65 @@
-@(transactionForm: Form[Supplier_Transaction],id: Long)
-
+@(transactionForm: Form[Supplier_Transaction],id:Long)
 @main("transaction form"){
-<h1> transaction form </h1>
+<h1> Supplier's transaction form </h1>
+<script type="text/javascript" src="@routes.Assets.at("datepicker/js/bootstrap-datepicker.js")"></script>
+<script>
+  $(function() {
+    dateFormat: 'dd-mm-yy',
+    $( "#date" ).datepicker('getDate');
+  });
+</script>
 <form class="form-horizontal" method="POST" action="@routes.Supplier_Transactions.save(id)">
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Product</label>
+    <label for="id" class="col-sm-2 control-label">Transaction ID</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" name="product_ean">
+      <input readonly id="id" type="text" class="form-control" name="internalId" placeholder="ID" value=@transactionForm("internalId").value()>
     </div>
   </div>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Supplier</label>
+    <label for="supplier" class="col-sm-2 control-label">Supplier</label>
     <div class="col-sm-9">
-      <input readonly="readonly" type="text" class="form-control" name="supplier_name" placeholder=@id value=@id>
+      <input readonly="readonly" id="supplier" type="text" class="form-control" name="supplier_name" value=@id>
     </div>
   </div>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Quantity</label>
+    <label for="ean" class="col-sm-2 control-label">Product EAN</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" name="quantity" placeholder=@transactionForm("name").valueOr("Name") value=@transactionForm("name").value()>
+      <input id="ean" type="text" class="form-control" name="product_ean" placeholder="EAN" value=@transactionForm("product.ean").value()>
     </div>
   </div>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Status</label>
+    <label for="qty" class="col-sm-2 control-label">Quantity</label>
+    <div class="col-sm-9">
+      <input type="text" id="qty" class="form-control" name="quantity" placeholder=@transactionForm("quantity").valueOr("Quantity") value=@transactionForm("quantity").value()>
+    </div>
+  </div>
+<div class="form-group">
+  <label for="price" class="col-sm-2 control-label">Price/Unit</label>
+  <div class="col-sm-9">
+    <input type="text" id="price" class="form-control" name="price" placeholder=@transactionForm("price").valueOr("Price") value=@transactionForm("price").value()>
+  </div>
+</div>
+<div class="form-group">
+  <label for="date" class="col-sm-2 control-label">Date</label>
+  <div class="col-sm-9">
+    <input type="date" id="date" class="form-control" name="buyDate" placeholder=@transactionForm("buyDate").valueOr("Date") value=@transactionForm("buyDate").value()>
+  </div>
+</div>
+<div class="form-group">
+  <label for="total" class="col-sm-2 control-label">Total</label>
+  <div class="col-sm-9">
+    <input readonly type="text" id="total" class="form-control" name="total" placeholder="Total"
+           value=@if(transactionForm("quantity").value()!=null && transactionForm("price").value()){@(transactionForm("quantity").value().toInt*transactionForm("price").value().toInt)}else{"0"}>
+  </div>
+</div>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Status</label>
     <div class="col-sm-9">
 	<div class="checkbox checkbox-inline">
-	      <label><input type="checkbox" name="status" value="true">Paid</label>
+	      <label><input type="radio" name="status" @if(transactionForm("isPaid").value=="true"){checked}> Paid</label>
 	    </div>
 	    <div class="checkbox checkbox-inline">
-	      <label><input type="checkbox" name="status" value="false">Not Paid</label>
+	      <label><input type="radio" name="status" @if(transactionForm("isPaid").value=="false"){checked}> Unpaid</label>
 	    </div>
 		</div>
   </div>

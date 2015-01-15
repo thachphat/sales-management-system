@@ -49,11 +49,12 @@ create table supplier (
 
 create table supplier_transaction (
   internal_id               bigint not null,
+  buy_date                  varchar(255),
+  quantity                  integer not null,
+  price                     integer not null,
+  is_paid                   boolean not null,
   SUPPLIER_ID               bigint,
   ean                       bigint,
-  buy_date                  timestamp,
-  quantity                  integer not null,
-  is_paid                   boolean not null,
   constraint pk_supplier_transaction primary key (internal_id))
 ;
 

@@ -36,9 +36,10 @@ POST /suppliers/:id/transactions/				controllers.Supplier_Transactions.save(id:L
 # Customer routes
 GET     /customers/             controllers.Customers.list()
 GET     /customers/new          controllers.Customers.newCustomer()
-GET     /customers/:id        controllers.Customers.details(id:Long)
+GET     /customers/:id          controllers.Customers.details(id:Long)
+GET     /customers/:id/edit     controllers.Customers.update(id:Long)
 POST    /customers/             controllers.Customers.save()
-DELETE  /customers/:id        controllers.Customers.delete(id:Long)
+DELETE  /customers/:id          controllers.Customers.delete(id:Long)
 
 # Customer transaction:
 GET     /customers/:id/transactions/      controllers.Customer_Transactions.list(id:Long)

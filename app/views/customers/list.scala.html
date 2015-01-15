@@ -15,6 +15,12 @@
         }
     </script>
 
+    <script>
+        $(document).ready(function(){
+            $('#example').dataTable();
+        });
+    </script>
+
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
@@ -37,7 +43,7 @@
                     <td><a href="@routes.Customers.details(customer.id)">@customer.phone2</a> </td>
                     <td><a href="@routes.Customers.details(customer.id)">@customer.email1</a> </td>
                     <td><a href="@routes.Customers.details(customer.id)">@customer.email2</a> </td>
-                    <td><a href="@routes.Customers.details(customer.id)">
+                    <td><a href="@routes.Customers.update(customer.id)">
                         <span class="glyphicon glyphicon-pencil"></span>
                     </a><a onclick="del('@routes.Customers.delete(customer.id)')">
                         <span class="glyphicon glyphicon-remove"></span>
