@@ -46,9 +46,9 @@ $(document).ready(function() {
 		        <td><a href="@routes.Products.details(product.ean)">
 		          @product.ean
 		        </a></td>
-		<td>@product.name</td>
-		<td>@product.description</td>
-        <td>@product.instock</td>
+		<td><a href="@routes.Products.details(product.ean)">@product.name</td>
+		<td><a href="@routes.Products.details(product.ean)">@product.description</td>
+        <td><a href="@routes.Products.details(product.ean)">@product.instock</td>
 		<td><a href="@routes.Products.update(product.ean)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
 				<a onclick="del('@routes.Products.delete(product.ean)')">

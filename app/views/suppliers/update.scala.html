@@ -2,31 +2,47 @@
 
 @main("Supplier form"){
 <h1> Supplier form </h1>
-<form class="form-horizontal clearfix error" method="POST" action="@routes.Suppliers.save()">
+<form class="form-horizontal error" method="POST" action="@routes.Suppliers.save()">
+    <div class="form-group">
+        <label for="id" class="col-sm-2 control-label">ID</label>
+        <div class="col-sm-9">
+            <input readonly type="number" class="form-control" name="id" id="id" placeholder=@supplierForm("id").valueOr("ID") value=@supplierForm("id").value()>
+        </div>
+    </div>
+    <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="name" id="name" placeholder=@supplierForm("name").valueOr("Name") value=@supplierForm("name").value()>
+    </div>
+  </div>
   <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <label for="address" class="col-sm-2 control-label">Address</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" name="name" placeholder=@supplierForm("name").valueOr("Name") value=@supplierForm("name").value()>
+      <input type="text" class="form-control" name="address" id="address" placeholder=@supplierForm("address").valueOr("Address") value=@supplierForm("address").value()>
     </div>
-    <label for="inputEmail3" class="col-sm-2 control-label">Address</label>
-    <div class="col-sm-9">
-      <input type="text" class="form-control" name="address" placeholder=@supplierForm("address").valueOr("Address") value=@supplierForm("address").value()>
-    </div>
-      <label for="inputEmail3" class="col-sm-2 control-label">Phone 1</label>
+  </div>
+  <div class="form-group">
+      <label for="phone1" class="col-sm-2 control-label">Phone 1</label>
       <div class="col-sm-9">
-          <input type="text" class="form-control" name="phone1" placeholder=@supplierForm("phone1").valueOr("Phone") value=@supplierForm("phone1").value()>
+          <input type="tel" class="form-control" name="phone1" id="phone1" placeholder=@supplierForm("phone1").valueOr("Phone") value=@supplierForm("phone1").value()>
       </div>
-      <label for="inputEmail3" class="col-sm-2 control-label">Phone 2</label>
+  </div>
+  <div class="form-group">
+      <label for="phone2" class="col-sm-2 control-label">Phone 2</label>
       <div class="col-sm-9">
-          <input type="text" class="form-control" name="phone2" placeholder=@supplierForm("phone2").valueOr("Phone") value=@supplierForm("phone2").value()>
+          <input type="tel" class="form-control" name="phone2" id="phone2" placeholder=@supplierForm("phone2").valueOr("Phone") value=@supplierForm("phone2").value()>
       </div>
-      <label for="inputEmail3" class="col-sm-2 control-label">Email 1</label>
+  </div>
+  <div class="form-group">
+      <label for="email1" class="col-sm-2 control-label">Email 1</label>
       <div class="col-sm-9">
-          <input type="text" class="form-control" name="email1" placeholder=@supplierForm("email1").valueOr("Email") value=@supplierForm("email1").value()>
+          <input type="email" class="form-control" name="email1" id="email1" placeholder=@supplierForm("email1").valueOr("Email") value=@supplierForm("email1").value()>
       </div>
-      <label for="inputEmail3" class="col-sm-2 control-label">Email 2</label>
+  </div>
+  <div class="form-group">
+      <label for="email2" class="col-sm-2 control-label">Email 2</label>
       <div class="col-sm-9">
-          <input type="text" class="form-control" name="email2" placeholder=@supplierForm("email2").valueOr("Email") value=@supplierForm("email2").value()>
+          <input type="email" class="form-control" name="email2" id="email2" placeholder=@supplierForm("email2").valueOr("Email") value=@supplierForm("email2").value()>
       </div>
   </div>
   @if(supplierForm.hasErrors) {
@@ -40,7 +56,7 @@
               }
           } else {No error returned.}
       </div>
-  }  
+  }
 
   
   <div class="form-group">

@@ -29,7 +29,7 @@ public class Supplier extends Model{
     public static Finder<Long,Supplier> find = new Finder<Long,Supplier>(
        Long.class, Supplier.class
      ); 
-	public static List<Supplier> findByID(Long id){
-		return find.where().eq("id",id).findList();
+	public static Supplier findByID(Long id){
+		return find.where().eq("id",id).findUnique();
 	}
 }

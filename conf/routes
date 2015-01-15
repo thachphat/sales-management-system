@@ -19,18 +19,19 @@ DELETE	/products/:ean				controllers.Products.delete(ean:String)
 # Supplier routes
 GET		/suppliers/					controllers.Suppliers.list()
 GET		/suppliers/new				controllers.Suppliers.newSupplier()
-GET		/suppliers/:name			controllers.Suppliers.details(name:String)
+GET		/suppliers/:id			controllers.Suppliers.details(id:Long)
+GET		/suppliers/:id/edit			controllers.Suppliers.update(id:Long)
 POST	/suppliers/					controllers.Suppliers.save()
-DELETE	/suppliers/:name			controllers.Suppliers.delete(name:String)
+DELETE	/suppliers/:id			controllers.Suppliers.delete(id:Long)
 
 # Supplier transaction:
 
-GET /suppliers/:name/transactions/new controllers.Supplier_Transactions.newTransaction(name:String)
+GET /suppliers/:id/transactions/new controllers.Supplier_Transactions.newTransaction(id:Long)
 GET /transactions/:id controllers.Supplier_Transactions.details(id:Long)
 GET /transactions/ controllers.Supplier_Transactions.list()
 DELETE /transactions/:id controllers.Supplier_Transactions.delete(id:Long)
 
-POST /suppliers/:name/transactions/				controllers.Supplier_Transactions.save(name:String)
+POST /suppliers/:id/transactions/				controllers.Supplier_Transactions.save(id:Long)
 
 # Customer routes
 GET     /customers/             controllers.Customers.list()

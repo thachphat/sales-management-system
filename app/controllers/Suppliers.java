@@ -20,12 +20,10 @@ public class Suppliers extends Controller{
 		return ok(update.render(supplierForm));
 	}
 	public static Result details(Long id){
-		List<Supplier> suppliers = Supplier.findByID(id);
-		if (suppliers ==null){
+		Supplier supplier = Supplier.findByID(id);
+		if (supplier ==null){
 			return notFound(String.format("Supplier %s does not exist.",id));
 		}
-		System.out.print(suppliers);
-		Supplier supplier=suppliers.get(0);
 		return ok(details.render(supplier));
 	}
 	public static Result save(){
@@ -35,23 +33,32 @@ public class Suppliers extends Controller{
 			return badRequest(update.render(boundForm));
 		}
 		Supplier supplier = boundForm.get();
-		if (!Supplier.findByID(supplier.id).isEmpty()){
-			flash("error","Supplier is already exist");
-			return badRequest(update.render(boundForm));
+		if (supplier.id!=null){
+			supplier.update();
+			flash("success", "Successfully updated");
 		}
 		else{
 			supplier.save();
 			flash("success","Successfully created");
-			return redirect(routes.Suppliers.list());
-		}		
-		
+		}
+		return redirect(routes.Suppliers.list());
 	}
+
+	public static Result update(Long id){
+		Supplier supplier = Supplier.findByID(id);
+		if(supplier==null){
+			return notFound("Supplier " + id + " does not exist.");
+		}
+		Form<Supplier> filledForm = supplierForm.fill(supplier);
+		return ok(update.render(filledForm));
+	}
+
 	public static Result delete(Long id){
-		List<Supplier> suppliers = Supplier.findByID(id);
-		if (Supplier.findByID(suppliers.get(0).id).isEmpty()){
+		Supplier supplier = Supplier.findByID(id);
+		if (supplier==null){
 			return notFound(String.format("Supplier %s does not exist.",id));
 		}
-		suppliers.get(0).delete();
+		supplier.delete();
 		return redirect(routes.Suppliers.list());
 	}
 }

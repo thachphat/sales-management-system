@@ -37,6 +37,11 @@ create table product (
 
 create table supplier (
   SUPPLIER_ID               bigint not null,
+  address                   varchar(255),
+  phone1                    varchar(255),
+  phone2                    varchar(255),
+  email1                    varchar(255),
+  email2                    varchar(255),
   name                      varchar(255) not null,
   constraint uq_supplier_name unique (name),
   constraint pk_supplier primary key (SUPPLIER_ID))

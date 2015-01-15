@@ -1,21 +1,63 @@
-@(customerForm:Form[Customer])
-@import helper._
-@import helper.twitterBootstrap._
+@(customerForm: Form[Customer])
 
 @main("Customer form"){
-    <h1>Customer form</h1>
-    @helper.form(action=routes.Customers.save(), 'enctype -> "multipart/form-data"){
-        <fieldset>
-            <legend>Customer (@customerForm("name").valueOr("Name"))</legend>
-            <input type="hidden" value="@customerForm("id").valueOr("")" name="id"/>
-            @helper.inputText(customerForm("name"), '_label->"Name")
-            @helper.inputText(customerForm("address"), '_label->"Address")
-            @helper.inputText(customerForm("phone1"), '_label->"Phone")
-            @helper.inputText(customerForm("phone2"), '_label->"Alternative phone")
-            @helper.inputText(customerForm("email1"), '_label->"Email")
-            @helper.inputText(customerForm("email2"), '_label->"Alternative email")
-        </fieldset>
-        <input type="submit" class="btn btn-primary" value="Save">
-        <a class="btn" href="@routes.Customers.list()">Cancel</a>
+<h1> Customer form </h1>
+<form class="form-horizontal error" method="POST" action="@routes.Customers.save()">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="name" id="name" placeholder=@customerForm("name").valueOr("Name") value=@customerForm("name").value()>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="address" class="col-sm-2 control-label">Address</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" name="address" id="address" placeholder=@customerForm("address").valueOr("Address") value=@customerForm("address").value()>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="phone1" class="col-sm-2 control-label">Phone 1</label>
+        <div class="col-sm-9">
+            <input type="tel" class="form-control" name="phone1" id="phone1" placeholder=@customerForm("phone1").valueOr("Phone") value=@customerForm("phone1").value()>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="phone2" class="col-sm-2 control-label">Phone 2</label>
+        <div class="col-sm-9">
+            <input type="tel" class="form-control" name="phone2" id="phone2" placeholder=@customerForm("phone2").valueOr("Phone") value=@customerForm("phone2").value()>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email1" class="col-sm-2 control-label">Email 1</label>
+        <div class="col-sm-9">
+            <input type="email" class="form-control" name="email1" id="email1" placeholder=@customerForm("email1").valueOr("Email") value=@customerForm("email1").value()>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email2" class="col-sm-2 control-label">Email 2</label>
+        <div class="col-sm-9">
+            <input type="email" class="form-control" name="email2" id="email2" placeholder=@customerForm("email2").valueOr("Email") value=@customerForm("email2").value()>
+        </div>
+    </div>
+    @if(customerForm.hasErrors) {
+    <div class="alert alert-error">
+        @if(customerForm.errors.size() > 0) {
+        @for((key, value) <- customerForm.errors) {
+        @key.toString() :
+        @for(err <- value) {
+        @err.message().toString()
+        }
+        }
+        } else {No error returned.}
+    </div>
     }
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Save</button>
+        </div>
+    </div>
+</form>
+
 }

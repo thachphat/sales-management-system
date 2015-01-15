@@ -49,8 +49,7 @@ public class Supplier_Transactions extends Controller {
 			flash("error","Please input status.");
 			return badRequest(update.render(transactionForm,id));
 		}
-		List<Supplier> suppliers = Supplier.findByID(id);
-		Supplier supplier=suppliers.get(0);
+		Supplier supplier = Supplier.findByID(id);
 		Product product = products.get(0);
 		Supplier_Transaction transaction = new Supplier_Transaction();
 		transaction.supplier = supplier;

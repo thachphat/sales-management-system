@@ -13,8 +13,8 @@ location.reload();
 }
 });
 }
-</script> 
-   <table class="table table-striped">
+</script>
+   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
     <thead>
       <tr>
 		  <th>ID</th>
@@ -26,6 +26,17 @@ location.reload();
 		  <th>Email 2</th>
 	  </tr>
 	</thead>
+	   <tfoot>
+	   <tr>
+		   <th>ID</th>
+		   <th>Name</th>
+		   <th>Address</th>
+		   <th>Phone 1</th>
+		   <th>Phone 2</th>
+		   <th>Email 1</th>
+		   <th>Email 2</th>
+	   </tr>
+	   </tfoot>
 	<tbody>
 	@for(supplier <- suppliers) {
 		 <tr>
@@ -37,7 +48,7 @@ location.reload();
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email1</a> </td>
 				 <td><a href="@routes.Suppliers.details(supplier.id)">@supplier.email2</a> </td>
 				<td>
-				<a href="@routes.Suppliers.details(supplier.id)">
+				<a href="@routes.Suppliers.update(supplier.id)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
 				<a onclick="del('@routes.Suppliers.delete(supplier.id)')">
 				<span class="glyphicon glyphicon-remove"></span></a>
