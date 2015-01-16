@@ -65,6 +65,10 @@ public class Customer_Transactions extends Controller {
         Product product = products.get(0);
         User_Action action = new User_Action();
         if (transaction.internalId==null) {
+            if(transaction.quantity>product.instock){
+                flash("error",String.format("Please input a quantity at most %s",product.instock));
+                return badRequest(update.render(filledForm,id));
+            }
             transaction.customer = Customer.findByID(id);
             product.setInstock(product.instock - transaction.quantity);
             transaction.product = product;
@@ -73,13 +77,21 @@ public class Customer_Transactions extends Controller {
             String str = String.format("Transaction %s : Selling %s units with %s price/unit on %s to product %s-%s from %s",transaction.internalId,transaction.quantity,transaction.price,transaction.sellDate, product.id, product.name, transaction.customer.name);
             action.verb= "Insert";
             action.description=str;
-            action.update();
+            action.save();
         }else{
             Customer_Transaction oldTransaction = Customer_Transaction.find.byId(transaction.internalId);
             Product oldProduct = oldTransaction.product;
 
             //Checking for change
             if(!product.ean.equals(oldProduct.ean) || transaction.quantity!=oldTransaction.quantity || transaction.price!=oldTransaction.price || !transaction.sellDate.equals(oldTransaction.sellDate) || transaction.isPaid!=oldTransaction.isPaid) {
+                if(product.id!=oldProduct.id && transaction.quantity>product.instock){
+                    flash("error",String.format("Please input a quantity at most %s",product.instock));
+                    return badRequest(update.render(filledForm,id));
+                }
+                else if(product.id==oldProduct.id && transaction.quantity>oldProduct.instock+oldTransaction.quantity){
+                    flash("error",String.format("Please input a quantity at most %s",oldProduct.instock+oldTransaction.quantity));
+                    return badRequest(update.render(filledForm,id));
+                }
                 String str = String.format("Transaction %s : Updated", transaction.internalId);
                 if (!product.ean.equals(oldProduct.ean)) {
                     str = str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean + ",");
@@ -97,8 +109,11 @@ public class Customer_Transactions extends Controller {
                 action.verb = "Update";
                 action.description = str;
                 action.save();
-                oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
-                if (!product.ean.equals(oldProduct.ean)) oldProduct.update();
+                if (!product.ean.equals(oldProduct.ean)){
+                    oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
+                    oldProduct.update();
+                }
+                else product.setInstock(oldProduct.instock+oldTransaction.quantity);
                 product.setInstock(product.instock - transaction.quantity);
                 product.update();
                 transaction.update();

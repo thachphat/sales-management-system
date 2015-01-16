@@ -12,7 +12,7 @@
   <div class="form-group">
     <label for="id" class="col-sm-2 control-label">Transaction ID</label>
     <div class="col-sm-9">
-      <input readonly id="id" type="text" class="form-control" name="internalId" placeholder="ID" value=@transactionForm("internalId").value()>
+      <input readonly id="id" type="text" class="form-control" name="internalId" value=@transactionForm("internalId").value()>
     </div>
   </div>
   <div class="form-group">
@@ -30,13 +30,13 @@
   <div class="form-group">
     <label for="qty" class="col-sm-2 control-label">Quantity</label>
     <div class="col-sm-9">
-      <input type="text" id="qty" class="form-control" name="quantity" placeholder=@transactionForm("quantity").valueOr("Quantity") value=@transactionForm("quantity").value()>
+      <input type="text" id="qty" class="form-control" name="quantity" placeholder=@transactionForm("quantity").valueOr("Quantity") value=@transactionForm("quantity").valueOr("0")>
     </div>
   </div>
 <div class="form-group">
   <label for="price" class="col-sm-2 control-label">Price/Unit</label>
   <div class="col-sm-9">
-    <input type="text" id="price" class="form-control" name="price" placeholder=@transactionForm("price").valueOr("Price") value=@transactionForm("price").value()>
+    <input type="text" id="price" class="form-control" name="price" value=@transactionForm("price").value()>
   </div>
 </div>
 <div class="form-group">

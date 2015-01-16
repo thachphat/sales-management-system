@@ -1,15 +1,15 @@
-@(customer:Customer)
+@(customer: Customer)
 @main("Customer"){
-    <h1>@customer.name</h1>
 
-    <script>
-        $(document).ready(function(){
-            $('#example').dataTable();
-        });
-    </script>
+<h1> @customer.name </h1>
+<script>
+$(document).ready(function() {
+    $('#example').dataTable();
+} );
+</script>
 <script>
 function del(urlToDelete){
-if(confirm("Are you sure you want to delete this CUSTOMER'S TRANSACTION?")){
+if(confirm("Are you sure you want to delete this SUPPLIER'S TRANSACTION?")){
 $.ajax({
 url: urlToDelete,
 type:'DELETE',
@@ -19,33 +19,56 @@ location.reload();
 });}
 }
 </script>
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%"> <thead>
+<tr>
+    <th>ID</th>
+    <th>Customer ID & Name</th>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Date</th>
+    <th>Total</th>
+    <th>Status</th>
+    <th></th>
+</tr>
+</thead>
+    <tfoot>
+    <tr>
+        <th>ID</th>
+        <th>Customer ID & Name</th>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Date</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th></th>
 
-    <table id="example" class="table table-striped table-border">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Product ID</th>
-                <th>Quantity</th>
-                <th>Status</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-        @for(transaction <- customer.transactions){
-            <tr>
-                <td>@transaction.internalId</td>
-                <td>@transaction.product.id</td>
-                <td>@transaction.quantity</td>
-                <td>@transaction.isPaid</td>
-                <td>@transaction.sellDate</td>
-                <td>
-                    <a href="@routes.Customers.details(customer.id)"><span class="glyphicon glyphicon-pencil"></span> </a>
-                    <a onclick="del('@routes.Customers.delete(customer.id)')"><span class="glyphicon glyphicon-remove"></span> </a>
-                </td>
-            </tr>
-        }
-        </tbody>
-    </table>
+    </tr>
+    </tfoot>
+    <tbody>
+    @for(transaction <- customer.transactions){
+    <tr>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">
+            @transaction.internalId
+        </a></td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.customer.id - @transaction.customer.name</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.product.name</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.quantity</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.price</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.sellDate.format("dd-MM-yyyy")</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@(transaction.quantity*transaction.price)</td>
+        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@if(transaction.isPaid){Paid}else{Unpaid}</td>
+        <td><a class="btn" href="@routes.Customer_Transactions.details(transaction.internalId)">
+            <span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn" onclick="del('@routes.Customer_Transactions.delete(transaction.internalId)')">
+                <span class="glyphicon glyphicon-remove"></span></a></td>
 
-    <a href="@routes.Customer_Transactions.newTransaction(customer.id)"><button type="submit" class="btn btn-default">Add Transaction</button> </a>
+    </tr>
+    }
+
+    </tbody>
+</table>
+<a href="@routes.Customer_Transactions.newTransaction(customer.id)"><button type="submit" class="btn btn-default">Add Transaction</button></a>
+
 }
