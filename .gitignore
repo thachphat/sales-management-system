@@ -1,7 +1,7 @@
-/data
-/logs
-/project
-/target
+data
+logs
+project
+target
 tmp
 .history
 dist
