@@ -1,4 +1,4 @@
-@(paid: Double, unpaid: Double, supplier_transactions: List[User_Action])
+@(supplierPaid: Double, supplierUnpaid: Double, customerPaid:Double, customerUnpaid:Double, actions: List[User_Action])
 @main("User Dashboard") {
 <h3>Statistics</h3>
 <hr/>
@@ -12,18 +12,18 @@
 	    			<div class="white-header">
 		  			<h5>SUPPLIER DEBT</h5>
 	    			</div>
-						<p><i class="fa fa-database"></i> @unpaid%</p>
+						<p><i class="fa fa-database"></i> @Math.round(supplierUnpaid/(supplierPaid+supplierUnpaid)*100)% - $@supplierUnpaid</p>
 					</div>
             		</div>
 				<canvas id="serverstatus01" height="120" width="120"></canvas>
 				<script>
 					var doughnutData = [
 							{
-								value: @paid,
+								value: @supplierPaid,
 								color:"#68dff0"
 							},
 							{
-								value : @unpaid,
+								value : @supplierUnpaid,
 								color : "#fdfdfd"
 							}
 						];
@@ -38,18 +38,18 @@
 	    			<div class="white-header">
 		  			<h5>CUSTOMER DEBT</h5>
 	    			</div>
-						<p><i class="fa fa-database"></i> @unpaid%</p>
+						<p><i class="fa fa-database"></i> @Math.round(customerUnpaid/(customerPaid+customerUnpaid)*100)% - $@customerUnpaid</p>
 					</div>
             		</div>
 				<canvas id="serverstatus02" height="120" width="120"></canvas>
 				<script>
 					var doughnutData = [
 							{
-								value: @paid,
+								value: @(customerPaid/(customerPaid+customerUnpaid)),
 								color:"#68dff0"
 							},
 							{
-								value : @unpaid,
+								value : @(customerUnpaid/(customerPaid+customerUnpaid)),
 								color : "#fdfdfd"
 							}
 						];
@@ -59,19 +59,19 @@
         	</div><!-- /col-md-4-->
       </div><!-- /row -->
       
-  	<h3>Transactions</h3>
+  	<h3>Logs</h3>
 	<hr></hr>	
-     @for(transaction<-supplier_transactions){   
-	 @transaction.verb match {              
+     @for(action<-actions){
+	 @action.verb match {              
 	  case "Insert" => {<p class="alert alert-success" role="alert">&bull;
-      [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>
+      [@action.verb] @action.description on <muted>@action.createDate</muted>
 	  </p>}
 	  case "Update" => {<p class="alert alert-success" role="alert">&bull;
-	  [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>
+	  [@action.verb] @action.description on <muted>@action.createDate</muted>
 	  </p>}
   	  case "Delete" => {
 	  <p class="alert alert-danger" role="alert">&bull;
-      [@transaction.verb] @transaction.description on <muted>@transaction.createDate</muted>
+      [@action.verb] @action.description on <muted>@action.createDate</muted>
 	  </p>}
 	  }
 	}

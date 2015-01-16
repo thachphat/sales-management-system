@@ -3,47 +3,48 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.home()
-GET     /login                      controllers.Login.index()
-POST    /login                      controllers.Login.authenticate()
+GET     /                                   controllers.Application.home()
+GET     /login                              controllers.Login.index()
+POST    /login                              controllers.Login.authenticate()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file                       controllers.Assets.at(path="/public", file)
+
 # Product routes
-GET		/products/					controllers.Products.list()
-GET		/products/new				controllers.Products.newProduct()
-GET		/products/:ean				controllers.Products.details(ean:String)
-GET		/products/:ean/edit			controllers.Products.update(ean:String)
-POST	/products/					controllers.Products.save()
-DELETE	/products/:ean				controllers.Products.delete(ean:String)
+GET		/products/					        controllers.Products.list()
+GET		/products/new				        controllers.Products.newProduct()
+GET		/products/:ean				        controllers.Products.details(ean:String)
+GET		/products/:ean/edit			        controllers.Products.update(ean:String)
+POST	/products/					        controllers.Products.save()
+DELETE	/products/:ean				        controllers.Products.delete(ean:String)
 
 # Supplier routes
-GET		/suppliers/					controllers.Suppliers.list()
-GET		/suppliers/new				controllers.Suppliers.newSupplier()
-GET		/suppliers/:id			controllers.Suppliers.details(id:Long)
-GET		/suppliers/:id/edit			controllers.Suppliers.update(id:Long)
-POST	/suppliers/					controllers.Suppliers.save()
-DELETE	/suppliers/:id			controllers.Suppliers.delete(id:Long)
+GET		/suppliers/					        controllers.Suppliers.list()
+GET		/suppliers/new				        controllers.Suppliers.newSupplier()
+GET		/suppliers/:id			            controllers.Suppliers.details(id:Long)
+GET		/suppliers/:id/edit			        controllers.Suppliers.update(id:Long)
+POST	/suppliers/					        controllers.Suppliers.save()
+DELETE	/suppliers/:id			            controllers.Suppliers.delete(id:Long)
 
 # Supplier transaction:
 
-GET /suppliers/:id/transactions/new controllers.Supplier_Transactions.newTransaction(id:Long)
-GET /suppliers/transactions/:id controllers.Supplier_Transactions.details(id:Long)
-GET /suppliers/transactions/ controllers.Supplier_Transactions.list()
-DELETE /suppliers/transactions/:id controllers.Supplier_Transactions.delete(id:Long)
-POST /suppliers/:id/transactions/				controllers.Supplier_Transactions.save(id:Long)
+GET     /suppliers/transactions/            controllers.Supplier_Transactions.list()
+GET     /suppliers/:id/transactions/new     controllers.Supplier_Transactions.newTransaction(id:Long)
+GET     /suppliers/transactions/:id         controllers.Supplier_Transactions.details(id:Long)
+POST    /suppliers/:id/transactions/		controllers.Supplier_Transactions.save(id:Long)
+DELETE  /suppliers/transactions/:id         controllers.Supplier_Transactions.delete(id:Long)
 
 # Customer routes
-GET     /customers/             controllers.Customers.list()
-GET     /customers/new          controllers.Customers.newCustomer()
-GET     /customers/:id          controllers.Customers.details(id:Long)
-GET     /customers/:id/edit     controllers.Customers.update(id:Long)
-POST    /customers/             controllers.Customers.save()
-DELETE  /customers/:id          controllers.Customers.delete(id:Long)
+GET     /customers/                         controllers.Customers.list()
+GET     /customers/new                      controllers.Customers.newCustomer()
+GET     /customers/:id                      controllers.Customers.details(id:Long)
+GET     /customers/:id/edit                 controllers.Customers.update(id:Long)
+POST    /customers/                         controllers.Customers.save()
+DELETE  /customers/:id                      controllers.Customers.delete(id:Long)
 
 # Customer transaction:
-GET     /customers/transactions/      controllers.Customer_Transactions.list()
-GET     /customers/:id/transactions/new   controllers.Customer_Transactions.newTransaction(id:Long)
-GET     /customers/transactions/:id       controllers.Customer_Transactions.details(id:Long)
-POST    /customers/:id/transactions/      controllers.Customer_Transactions.save(id:Long)
-DELETE  /customers/transactions/:id       controllers.Customer_Transactions.delete(id:Long)
+GET     /customers/transactions/            controllers.Customer_Transactions.list()
+GET     /customers/:id/transactions/new     controllers.Customer_Transactions.newTransaction(id:Long)
+GET     /customers/transactions/:id         controllers.Customer_Transactions.details(id:Long)
+POST    /customers/:id/transactions/        controllers.Customer_Transactions.save(id:Long)
+DELETE  /customers/transactions/:id         controllers.Customer_Transactions.delete(id:Long)

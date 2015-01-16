@@ -122,6 +122,7 @@ public class Customer_Transactions extends Controller {
 
         return redirect(routes.Customers.details(id));
     }
+    //delete transaction
     public static Result delete(Long id){
         Customer_Transaction transaction = Customer_Transaction.find.byId(id);
         if (transaction==null){

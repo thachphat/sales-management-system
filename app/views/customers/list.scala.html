@@ -1,7 +1,7 @@
 @(customers: List[Customer])
 
 @main("Customers Catalogue"){
-    <h2>All Customers</h2>
+<h2 xmlns="http://www.w3.org/1999/html">All Customers</h2>
 
     <script>
         function del(urlToDelete){
@@ -22,7 +22,7 @@
         });
     </script>
 
-    <table class="table table-striped table-bordered">
+    <table id="example" class="table table-striped table-bordered">
         <thead>
             <tr>
                 <th>ID</th>
@@ -32,8 +32,21 @@
                 <th>Phone 2</th>
                 <th>Email 1</th>
                 <th>Email 2</th>
+                <th></th>
             </tr>
         </thead>
+        <tfoot>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone 1</th>
+            <th>Phone 2</th>
+            <th>Email 1</th>
+            <th>Email 2</th>
+            <th></th>
+        </tr>
+        </tfoot>
         <tbody>
             @for(customer <- customers){
                 <tr>

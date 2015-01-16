@@ -36,7 +36,7 @@ public class Supplier_Transaction extends Model {
 		List<Supplier_Transaction> transactions = find.where().eq("isPaid","false").findList();
 		double unPaid=0;
 		for(int i=0;i < transactions.size(); i++){
-			unPaid= unPaid + (double)transactions.get(i).quantity;
+			unPaid= unPaid + (double)(transactions.get(i).quantity*transactions.get(i).price);
 		}
 		return unPaid;
 	}
@@ -44,10 +44,9 @@ public class Supplier_Transaction extends Model {
 		List<Supplier_Transaction> transactions = find.where().eq("isPaid","true").findList();
 		double paid =0 ;
 		for(int i=0;i < transactions.size(); i++){
-			paid= paid + (double)transactions.get(i).quantity;
+			paid= paid + (double)(transactions.get(i).quantity*transactions.get(i).price);
 		}
 		return paid;
-		
 	}
 
 	@ManyToOne

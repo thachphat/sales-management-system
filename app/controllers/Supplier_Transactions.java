@@ -106,6 +106,7 @@ public class Supplier_Transactions extends Controller {
 
 		return redirect(routes.Suppliers.details(id));
 	}
+	//delete transaction
 	public static Result delete(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		if (transaction==null){
