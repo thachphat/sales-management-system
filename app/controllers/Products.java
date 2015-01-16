@@ -1,5 +1,6 @@
 package controllers;
 
+import models.User_Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.data.Form;
@@ -45,6 +46,7 @@ public class Products extends Controller{
 		}
 		
 		Product product = boundForm.get();
+		User_Action action = new User_Action();
 		if (!Product.findByEan(product.ean).isEmpty()){
 			List<Product> old_product = Product.findByEan(product.ean);
 			Product old = old_product.get(0);
@@ -52,19 +54,26 @@ public class Products extends Controller{
 			old.setDescription(product.description);
 			old.setInstock(product.instock);
 			old.update();
-			return redirect(routes.Products.list());
+			action.verb = "Update";
+			action.description = String.format("Product: %s-%s",old.ean,old.name);
 		}
 		else{
 			product.save();
 			flash("success","Successfully created");
-			return redirect(routes.Products.list());
+			action.verb = "Insert";
+			action.description = String.format("Product: %s-%s",product.ean,product.name);
 		}
+		action.save();
+		return redirect(routes.Products.list());
 	}
 	public static Result delete(String ean){
 		List<Product> product = Product.findByEan(ean);
 		if (Product.findByEan(product.get(0).ean).isEmpty()){
 			return notFound(String.format("Product %s does not exist.",ean));
 		}
+		User_Action action = new User_Action();
+		action.verb = "Delete";
+		action.description = String.format("Product: %s-%s",product.get(0).ean,product.get(0).name);
 		product.get(0).delete();
 		return redirect(routes.Products.list());
 	}

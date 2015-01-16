@@ -1,6 +1,7 @@
 package controllers;
 
 import models.Customer;
+import models.User_Action;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -32,8 +33,7 @@ public class Customers extends Controller {
 	}
 
 	public static Result details(Long id){
-		Customer customer = Customer.findByID(id);
-		return ok(details.render(customer));
+		return ok(details.render(Customer.findByID(id)));
 	}
 
 	public static Result save(){
@@ -43,14 +43,20 @@ public class Customers extends Controller {
 			return badRequest(update.render(boundForm));
 		}
 		Customer customer = boundForm.get();
+		User_Action action = new User_Action();
 		if(customer.id!=null){
 			customer.update();
 			flash("success", "Successfully updated");
+			action.verb = "Update";
+			action.description = String.format("Customer's info: %s-%s",customer.id,customer.name);
 		}
 		else{
 			customer.save();
 			flash("success","Successfully created");
+			action.verb="Insert";
+			action.description=String.format("Customer: %s-%s",customer.id,customer.name);
 		}
+		action.save();
 		return redirect(routes.Customers.list());
 	}
 
@@ -58,6 +64,10 @@ public class Customers extends Controller {
 		Customer customer = Customer.findByID(id);
 		if(customer==null) return notFound("No customer with id: "+id);
 		customer.delete();
+		User_Action action = new User_Action();
+		action.verb = "Delete";
+		action.description = String.format("Customer: %s-%s.",customer.id,customer.name);
+		action.save();
 		return redirect(routes.Customers.list());
 	}
 }

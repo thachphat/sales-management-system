@@ -1,5 +1,6 @@
 package controllers;
 
+import models.User_Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.data.Form;
@@ -33,14 +34,20 @@ public class Suppliers extends Controller{
 			return badRequest(update.render(boundForm));
 		}
 		Supplier supplier = boundForm.get();
+		User_Action action = new User_Action();
 		if (supplier.id!=null){
 			supplier.update();
 			flash("success", "Successfully updated");
+			action.verb = "Update";
+			action.description = String.format("Supplier: %s-%s",supplier.id,supplier.name);
 		}
 		else{
+			action.verb="Insert";
+			action.description=String.format("Supplier: %s-%s",supplier.id, supplier.name);
 			supplier.save();
 			flash("success","Successfully created");
 		}
+		action.save();
 		return redirect(routes.Suppliers.list());
 	}
 
@@ -58,6 +65,10 @@ public class Suppliers extends Controller{
 		if (supplier==null){
 			return notFound(String.format("Supplier %s does not exist.",id));
 		}
+		User_Action action = new User_Action();
+		action.verb="Delete";
+		action.description=String.format("Supplier: %s-%s",supplier.id,supplier.name);
+		action.save();
 		supplier.delete();
 		return redirect(routes.Suppliers.list());
 	}
