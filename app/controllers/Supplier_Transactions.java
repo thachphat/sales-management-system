@@ -69,7 +69,7 @@ public class Supplier_Transactions extends Controller {
 			transaction.product = product;
 			product.update();
 			transaction.save();
-			String str = String.format("Transaction %s : Imported %s to product %s-%s from %s",transaction.internalId,transaction.quantity, product.id, product.name, transaction.supplier.name);
+			String str = String.format("Transaction %s : Buying %s units with %s price/unit on %s to product %s-%s from %s",transaction.internalId,transaction.quantity,transaction.price,transaction.buyDate, product.id, product.name, transaction.supplier.name);
 			action.verb= "Insert";
 			action.description=str;
 			action.save();
