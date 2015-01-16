@@ -17,19 +17,23 @@ public class Supplier extends Model{
 	public String phone1;
 	public String phone2;
 	@Constraints.Required
+	@Column(unique = true)
 	public String email1;
 	public String email2;
 	
 	@Constraints.Required
-	@Basic(optional=false) @Column(unique=true) public String name;
+	public String name;
 	
 	@OneToMany(mappedBy="supplier",cascade=CascadeType.ALL)
 	public List<Supplier_Transaction> transactions;
 	
-    public static Finder<Long,Supplier> find = new Finder<Long,Supplier>(
+    public static Finder<Long,Supplier> find = new Finder<>(
        Long.class, Supplier.class
      ); 
 	public static Supplier findByID(Long id){
-		return find.where().eq("id",id).findUnique();
+		return find.byId(id);
+	}
+	public static Supplier findByEmail(String email){
+		return find.where().eq("email1",email).findUnique();
 	}
 }

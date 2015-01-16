@@ -44,17 +44,29 @@ public class Customers extends Controller {
 		}
 		Customer customer = boundForm.get();
 		User_Action action = new User_Action();
-		if(customer.id!=null){
-			customer.update();
-			flash("success", "Successfully updated");
+		Customer oldCustomer = Customer.findByEmail(customer.email1);
+		if(customer.id!=null || oldCustomer!=null){
+			if(oldCustomer!=null){
+				oldCustomer.name = customer.name;
+				oldCustomer.address = customer.address;
+				oldCustomer.email2 = customer.email2;
+				oldCustomer.phone1 = customer.phone1;
+				oldCustomer.phone2 = customer.phone2;
+				oldCustomer.update();
+				action.description = String.format("Customer's info: %s-%s-%s",oldCustomer.id,oldCustomer.name,oldCustomer.email1);
+			}
+			else {
+				customer.update();
+				action.description = String.format("Customer's info: %s-%s-%s", customer.id, customer.name,customer.email1);
+			}
 			action.verb = "Update";
-			action.description = String.format("Customer's info: %s-%s",customer.id,customer.name);
+			flash("success", "Successfully updated");
 		}
 		else{
 			customer.save();
-			flash("success","Successfully created");
+			flash("success", "Successfully created");
 			action.verb="Insert";
-			action.description=String.format("Customer: %s-%s",customer.id,customer.name);
+			action.description=String.format("Customer: %s-%s-%s",customer.id,customer.name,customer.email1);
 		}
 		action.save();
 		return redirect(routes.Customers.list());
@@ -63,11 +75,11 @@ public class Customers extends Controller {
 	public static Result delete(Long id){
 		Customer customer = Customer.findByID(id);
 		if(customer==null) return notFound("No customer with id: "+id);
-		customer.delete();
 		User_Action action = new User_Action();
 		action.verb = "Delete";
 		action.description = String.format("Customer: %s-%s.",customer.id,customer.name);
 		action.save();
+		customer.delete();
 		return redirect(routes.Customers.list());
 	}
 }

@@ -25,15 +25,19 @@ public class Customer extends Model{
 	public String phone1;
 	public String phone2;
 	@Constraints.Required
+	@Column(unique = true)
 	public String email1;
 	public String email2;
 	
 	@OneToMany(mappedBy="customer")
 	public List<Customer_Transaction> transactions;
 
-	public static Finder<Long,Customer> find = new Finder<Long, Customer>(Long.class, Customer.class);
+	public static Finder<Long,Customer> find = new Finder<>(Long.class, Customer.class);
 
 	public static Customer findByID(Long id) {
-		return find.where().eq("id",id).findUnique();
+		return find.byId(id);
+	}
+	public static Customer findByEmail(String email){
+		return find.where().eq("email1",email).findUnique();
 	}
 }

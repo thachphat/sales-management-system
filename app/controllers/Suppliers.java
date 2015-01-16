@@ -35,17 +35,29 @@ public class Suppliers extends Controller{
 		}
 		Supplier supplier = boundForm.get();
 		User_Action action = new User_Action();
-		if (supplier.id!=null){
-			supplier.update();
-			flash("success", "Successfully updated");
+		Supplier oldSupplier = Supplier.findByEmail(supplier.email1);
+		if(supplier.id!=null || oldSupplier!=null){
+			if(oldSupplier!=null){
+				oldSupplier.name = supplier.name;
+				oldSupplier.address = supplier.address;
+				oldSupplier.email2 = supplier.email2;
+				oldSupplier.phone1 = supplier.phone1;
+				oldSupplier.phone2 = supplier.phone2;
+				oldSupplier.update();
+				action.description = String.format("Supplier's info: %s-%s-%s",oldSupplier.id,oldSupplier.name,oldSupplier.email1);
+			}
+			else {
+				supplier.update();
+				action.description = String.format("Supplier's info: %s-%s-%s", supplier.id, supplier.name,supplier.email1);
+			}
 			action.verb = "Update";
-			action.description = String.format("Supplier: %s-%s",supplier.id,supplier.name);
+			flash("success", "Successfully updated");
 		}
 		else{
-			action.verb="Insert";
-			action.description=String.format("Supplier: %s-%s",supplier.id, supplier.name);
 			supplier.save();
-			flash("success","Successfully created");
+			flash("success", "Successfully created");
+			action.verb="Insert";
+			action.description=String.format("Supplier: %s-%s-%s",supplier.id,supplier.name,supplier.email1);
 		}
 		action.save();
 		return redirect(routes.Suppliers.list());

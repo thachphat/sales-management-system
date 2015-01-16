@@ -11,6 +11,7 @@ create table customer (
   phone2                    varchar(255),
   email1                    varchar(255),
   email2                    varchar(255),
+  constraint uq_customer_email1 unique (email1),
   constraint pk_customer primary key (CUSTOMER_ID))
 ;
 
@@ -30,7 +31,7 @@ create table product (
   ean                       varchar(255) not null,
   name                      varchar(255),
   description               varchar(255),
-  instock                   integer not null,
+  instock                   integer,
   constraint uq_product_ean unique (ean),
   constraint pk_product primary key (id))
 ;
@@ -42,8 +43,8 @@ create table supplier (
   phone2                    varchar(255),
   email1                    varchar(255),
   email2                    varchar(255),
-  name                      varchar(255) not null,
-  constraint uq_supplier_name unique (name),
+  name                      varchar(255),
+  constraint uq_supplier_email1 unique (email1),
   constraint pk_supplier primary key (SUPPLIER_ID))
 ;
 

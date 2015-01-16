@@ -74,6 +74,7 @@ public class Products extends Controller{
 		User_Action action = new User_Action();
 		action.verb = "Delete";
 		action.description = String.format("Product: %s-%s",product.get(0).ean,product.get(0).name);
+		action.save();
 		product.get(0).delete();
 		return redirect(routes.Products.list());
 	}
