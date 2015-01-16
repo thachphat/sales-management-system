@@ -15,7 +15,12 @@ location.reload();
 });}
 }
 </script>
-   <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+<script>
+$(document).ready(function() {
+    $('#example10').dataTable();
+} );
+</script>
+   <table id="example10" class="table table-striped table-bordered" cellspacing="0" width="100%">
     <thead>
       <tr>
 		  <th>ID</th>
@@ -25,6 +30,7 @@ location.reload();
 		  <th>Phone 2</th>
 		  <th>Email 1</th>
 		  <th>Email 2</th>
+		  <th></th>
 	  </tr>
 	</thead>
 	   <tfoot>
@@ -36,6 +42,7 @@ location.reload();
 		   <th>Phone 2</th>
 		   <th>Email 1</th>
 		   <th>Email 2</th>
+ 		  <th></th>
 	   </tr>
 	   </tfoot>
 	<tbody>
