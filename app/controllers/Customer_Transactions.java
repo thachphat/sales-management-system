@@ -10,6 +10,9 @@ import play.mvc.Result;
 import views.html.customer_transactions.list;
 import views.html.customer_transactions.update;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class Customer_Transactions extends Controller {
@@ -54,26 +57,15 @@ public class Customer_Transactions extends Controller {
             return badRequest(update.render(filledForm,id));
         }
         if (transaction.sellDate==null){
-            flash("error","Please input date.");
-            return badRequest(update.render(filledForm,id));
+            DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+            Date date = new Date();
+            transaction.sellDate = format.format(date);
         }
-		/*if (transaction.isPaid==null){
-			flash("error","Please input status.");
-			return badRequest(update.render(filledForm,id));
-		}*/
-		/*SimpleDateFormat format = new SimpleDateFormat("mm/dd/yy");
-		String dateString = requestData.get("buyDate");
-		try{
-			transaction.buyDate = format.parse(dateString);
-		}
-		catch (java.text.ParseException e){
 
-		}*/
         Product product = products.get(0);
         User_Action action = new User_Action();
         if (transaction.internalId==null) {
-            Customer customer = Customer.findByID(id);
-            transaction.customer = customer;
+            transaction.customer = Customer.findByID(id);
             product.setInstock(product.instock - transaction.quantity);
             transaction.product = product;
             product.save();
@@ -85,26 +77,32 @@ public class Customer_Transactions extends Controller {
         }else{
             Customer_Transaction oldTransaction = Customer_Transaction.find.byId(transaction.internalId);
             Product oldProduct = oldTransaction.product;
-            String str = String.format("Transaction %s : Updated", transaction.internalId);
-            if(product.ean != oldProduct.ean) {
-                str=str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean+",");
-                transaction.product = product;
+
+            //Checking for change
+            if(!product.ean.equals(oldProduct.ean) || transaction.quantity!=oldTransaction.quantity || transaction.price!=oldTransaction.price || !transaction.sellDate.equals(oldTransaction.sellDate) || transaction.isPaid!=oldTransaction.isPaid) {
+                String str = String.format("Transaction %s : Updated", transaction.internalId);
+                if (!product.ean.equals(oldProduct.ean)) {
+                    str = str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean + ",");
+                    transaction.product = product;
+                }
+                if (transaction.quantity != oldTransaction.quantity)
+                    str = str.concat(" selling quantity from " + oldTransaction.quantity + " to " + transaction.quantity + ",");
+                if (transaction.price != oldTransaction.price)
+                    str = str.concat(" sold price from " + oldTransaction.price + " to " + transaction.price + ",");
+                if (!transaction.sellDate.equals(oldTransaction.sellDate))
+                    str = str.concat(" sold date from " + oldTransaction.sellDate + " to " + transaction.sellDate + ",");
+                if (transaction.isPaid != oldTransaction.isPaid)
+                    str = str.concat(" status from " + ((oldTransaction.isPaid) ? "Paid" : "Unpaid") + " to " + ((transaction.isPaid) ? "Paid" : "Unpaid"));
+                str = str.concat(" to product " + product.id + "-" + product.name + " from " + oldTransaction.customer.name);
+                action.verb = "Update";
+                action.description = str;
+                action.save();
+                oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
+                if (!product.ean.equals(oldProduct.ean)) oldProduct.update();
+                product.setInstock(product.instock - transaction.quantity);
+                product.update();
+                transaction.update();
             }
-            if(transaction.quantity!=oldTransaction.quantity)
-                str=str.concat(" selling quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
-            if(transaction.price!=oldTransaction.price)
-                str=str.concat(" sold price from "+oldTransaction.price+" to "+transaction.price+",");
-            if(transaction.sellDate!=oldTransaction.sellDate)
-                str=str.concat(" sold date from "+oldTransaction.sellDate+" to "+transaction.sellDate);
-            str=str.concat(" to product "+product.id+"-"+product.name+" from "+oldTransaction.customer.name);
-            action.verb= "Update";
-            action.description=str;
-            action.save();
-            oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
-            if(product.ean != oldProduct.ean) oldProduct.update();
-            product.setInstock(product.instock - transaction.quantity);
-            product.update();
-            transaction.update();
         }
 
         return redirect(routes.Customers.details(id));

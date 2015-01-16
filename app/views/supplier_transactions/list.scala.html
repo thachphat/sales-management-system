@@ -5,13 +5,14 @@
   <h2>All Supplier's Transactions</h2>
 <script>
 function del(urlToDelete){
+if(confirm("Are you sure you want to delete this SUPPLIER'S TRANSACTION?")){
 $.ajax({
 url: urlToDelete,
 type:'DELETE',
 success: function(results){
 location.reload();
 }
-});
+});}
 }
 </script> 
 <script>
@@ -59,9 +60,9 @@ $(document).ready(function() {
 			 <td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@transaction.buyDate.format("dd-MM-yyyy")</td>
 			 <td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@(transaction.quantity*transaction.price)</td>
         <td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">@if(transaction.isPaid){Paid}else{Unpaid}</td>
-		<td><a href="@routes.Supplier_Transactions.details(transaction.internalId)">
+		<td><a class="btn" href="@routes.Supplier_Transactions.details(transaction.internalId)">
 				<span class="glyphicon glyphicon-pencil"></span></a>
-				<a onclick="del('@routes.Supplier_Transactions.delete(transaction.internalId)')">
+				<a class="btn" onclick="del('@routes.Supplier_Transactions.delete(transaction.internalId)')">
 				<span class="glyphicon glyphicon-remove"></span></a></td>
 
 		      </tr>

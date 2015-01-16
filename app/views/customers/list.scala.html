@@ -5,13 +5,14 @@
 
     <script>
         function del(urlToDelete){
+        if(confirm("Are you sure you want to delete this CUSTOMER?")){
             $.ajax({
                 url: urlToDelete,
                 type: 'DELETE',
                 success: function(results){
                     location.reload();
                 }
-            });
+            });}
         }
     </script>
 
@@ -43,9 +44,9 @@
                     <td><a href="@routes.Customers.details(customer.id)">@customer.phone2</a> </td>
                     <td><a href="@routes.Customers.details(customer.id)">@customer.email1</a> </td>
                     <td><a href="@routes.Customers.details(customer.id)">@customer.email2</a> </td>
-                    <td><a href="@routes.Customers.update(customer.id)">
+                    <td><a class="btn" href="@routes.Customers.update(customer.id)">
                         <span class="glyphicon glyphicon-pencil"></span>
-                    </a><a onclick="del('@routes.Customers.delete(customer.id)')">
+                    </a><a class="btn" onclick="del('@routes.Customers.delete(customer.id)')">
                         <span class="glyphicon glyphicon-remove"></span>
                     </a> </td>
                 </tr>

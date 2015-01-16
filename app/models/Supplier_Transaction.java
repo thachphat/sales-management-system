@@ -14,7 +14,6 @@ public class Supplier_Transaction extends Model {
 	@GeneratedValue
 	public Long internalId;
 
-	@Constraints.Required
 	public String buyDate;
 	
 	@Constraints.Required

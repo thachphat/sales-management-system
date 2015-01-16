@@ -7,6 +7,18 @@
             $('#example').dataTable();
         });
     </script>
+<script>
+function del(urlToDelete){
+if(confirm("Are you sure you want to delete this CUSTOMER'S TRANSACTION?")){
+$.ajax({
+url: urlToDelete,
+type:'DELETE',
+success: function(results){
+location.reload();
+}
+});}
+}
+</script>
 
     <table id="example" class="table table-striped table-border">
         <thead>

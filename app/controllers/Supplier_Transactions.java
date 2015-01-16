@@ -8,6 +8,9 @@ import play.mvc.Result;
 import play.data.Form;
 import views.html.supplier_transactions.update;
 import views.html.supplier_transactions.list;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import models.User_Action;
 
@@ -44,7 +47,7 @@ public class Supplier_Transactions extends Controller {
 			flash("error","Product is not found.");
 			return badRequest(update.render(filledForm,id));
 		}
-		if (transaction.quantity==0){
+		if (transaction.quantity<0){
 			flash("error","Please input quantity.");
 			return badRequest(update.render(filledForm,id));
 		}
@@ -53,26 +56,15 @@ public class Supplier_Transactions extends Controller {
 			return badRequest(update.render(filledForm,id));
 		}
 		if (transaction.buyDate==null){
-			flash("error","Please input date.");
-			return badRequest(update.render(filledForm,id));
+			DateFormat format = new SimpleDateFormat("MM/dd/yyyy");
+			Date date = new Date();
+			transaction.buyDate = format.format(date);
 		}
-		/*if (transaction.isPaid==null){
-			flash("error","Please input status.");
-			return badRequest(update.render(filledForm,id));
-		}*/
-		/*SimpleDateFormat format = new SimpleDateFormat("mm/dd/yy");
-		String dateString = requestData.get("buyDate");
-		try{
-			transaction.buyDate = format.parse(dateString);
-		}
-		catch (java.text.ParseException e){
 
-		}*/
 		Product product = products.get(0);
 		User_Action action = new User_Action();
 		if (transaction.internalId==null) {
-			Supplier supplier = Supplier.findByID(id);
-			transaction.supplier = supplier;
+			transaction.supplier = Supplier.findByID(id);
 			product.setInstock(product.instock + transaction.quantity);
 			transaction.product = product;
 			product.update();
@@ -84,26 +76,32 @@ public class Supplier_Transactions extends Controller {
 		}else{
 			Supplier_Transaction oldTransaction = Supplier_Transaction.find.byId(transaction.internalId);
 			Product oldProduct = oldTransaction.product;
-			String str = String.format("Transaction %s : Updated", transaction.internalId);
-			if(product.ean != oldProduct.ean) {
-				str=str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean+",");
-				transaction.product = product;
+
+			//Checking for change
+			if(!product.ean.equals(oldProduct.ean) || transaction.quantity!=oldTransaction.quantity || transaction.price!=oldTransaction.price || !transaction.buyDate.equals(oldTransaction.buyDate) || transaction.isPaid!=oldTransaction.isPaid) {
+				String str = String.format("Transaction %s : Updated", transaction.internalId);
+				if (!product.ean.equals(oldProduct.ean)) {
+					str = str.concat(" product EAN from " + oldProduct.ean + " to " + product.ean + ",");
+					transaction.product = product;
+				}
+				if (transaction.quantity != oldTransaction.quantity)
+					str = str.concat(" buying quantity from " + oldTransaction.quantity + " to " + transaction.quantity + ",");
+				if (transaction.price != oldTransaction.price)
+					str = str.concat(" bought price from " + oldTransaction.price + " to " + transaction.price + ",");
+				if (!transaction.buyDate.equals(oldTransaction.buyDate))
+					str = str.concat(" bought date from " + oldTransaction.buyDate + " to " + transaction.buyDate + ",");
+				if (transaction.isPaid != oldTransaction.isPaid)
+					str = str.concat(" status from " + ((oldTransaction.isPaid) ? "Paid" : "Unpaid") + " to " + ((transaction.isPaid) ? "Paid" : "Unpaid"));
+				str = str.concat(" to product " + product.id + "-" + product.name + " from " + oldTransaction.supplier.name);
+				action.verb = "Update";
+				action.description = str;
+				action.save();
+				oldProduct.setInstock(oldProduct.instock - oldTransaction.quantity);
+				if (!product.ean.equals(oldProduct.ean)) oldProduct.update();
+				product.setInstock(product.instock + transaction.quantity);
+				product.update();
+				transaction.update();
 			}
-			if(transaction.quantity!=oldTransaction.quantity)
-				str=str.concat(" buying quantity from "+oldTransaction.quantity+" to "+transaction.quantity+",");
-			if(transaction.price!=oldTransaction.price)
-				str=str.concat(" bought price from "+oldTransaction.price+" to "+transaction.price+",");
-			if(transaction.buyDate!=oldTransaction.buyDate)
-				str=str.concat(" bought date from "+oldTransaction.buyDate+" to "+transaction.buyDate);
-			str=str.concat(" to product "+product.id+"-"+product.name+" from "+oldTransaction.supplier.name);
-			action.verb= "Update";
-			action.description=str;
-			action.save();
-			oldProduct.setInstock(oldProduct.instock - oldTransaction.quantity);
-			if(product.ean != oldProduct.ean) oldProduct.update();
-			product.setInstock(product.instock + transaction.quantity);
-			product.update();
-			transaction.update();
 		}
 
 		return redirect(routes.Suppliers.details(id));

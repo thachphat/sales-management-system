@@ -16,7 +16,6 @@ public class Customer_Transaction extends Model{
 	@Id
 	public Long internalId;
 	
-	@Constraints.Required
 	public String sellDate;
 	@Constraints.Required
 	public int price;
