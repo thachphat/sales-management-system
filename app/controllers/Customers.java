@@ -5,6 +5,7 @@ import models.User_Action;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Security;
 import views.html.customers.details;
 import views.html.customers.list;
 import views.html.customers.update;
@@ -14,15 +15,18 @@ import java.util.List;
 public class Customers extends Controller {
 	private static final Form<Customer> customerForm = Form.form(Customer.class);
 
+	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Customer> customers = Customer.find.all();
 		return ok(list.render(customers));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result newCustomer(){
 		return ok(update.render(customerForm));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result update(Long id){
 		Customer customer = Customer.findByID(id);
 		if(customer==null){
@@ -32,10 +36,12 @@ public class Customers extends Controller {
 		return ok(update.render(filledForm));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		return ok(details.render(Customer.findByID(id)));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Customer> boundForm = customerForm.bindFromRequest();
 		if(boundForm.hasErrors()){
@@ -72,6 +78,7 @@ public class Customers extends Controller {
 		return redirect(routes.Customers.list());
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Customer customer = Customer.findByID(id);
 		if(customer==null) return notFound("No customer with id: "+id);

@@ -7,6 +7,7 @@ import models.User_Action;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.mvc.Security;
 import views.html.customer_transactions.list;
 import views.html.customer_transactions.update;
 
@@ -18,15 +19,18 @@ import java.util.List;
 public class Customer_Transactions extends Controller {
     private static final Form<Customer_Transaction> transactionForm = Form.form(Customer_Transaction.class);
 
+    @Security.Authenticated(Secured.class)
     public static Result newTransaction(Long id){
         return ok(update.render(transactionForm, id));
     }
     //List all transactions
+    @Security.Authenticated(Secured.class)
     public static Result list(){
         List<Customer_Transaction> transactions = Customer_Transaction.find.all();
         return ok(list.render(transactions));
     }
     //Update transaction with transactionID
+    @Security.Authenticated(Secured.class)
     public static Result details(Long id){
         Customer_Transaction transaction = Customer_Transaction.find.byId(id);
         if(transaction==null){
@@ -36,6 +40,7 @@ public class Customer_Transactions extends Controller {
         return ok(update.render(filledForm,transaction.customer.id));
     }
     //Save to customerID
+    @Security.Authenticated(Secured.class)
     public static Result save(Long id){
         Form<Customer_Transaction> filledForm = transactionForm.bindFromRequest();
         if(filledForm.hasErrors()){
@@ -83,11 +88,11 @@ public class Customer_Transactions extends Controller {
 
             //Checking for change
             if(!product.ean.equals(oldProduct.ean) || transaction.quantity!=oldTransaction.quantity || transaction.price!=oldTransaction.price || !transaction.sellDate.equals(oldTransaction.sellDate) || transaction.isPaid!=oldTransaction.isPaid) {
-                if(product.id!=oldProduct.id && transaction.quantity>product.instock){
+                if(!product.id.equals(oldProduct.id) && transaction.quantity>product.instock){
                     flash("error",String.format("Please input a quantity at most %s",product.instock));
                     return badRequest(update.render(filledForm,id));
                 }
-                else if(product.id==oldProduct.id && transaction.quantity>oldProduct.instock+oldTransaction.quantity){
+                else if(product.id.equals(oldProduct.id) && transaction.quantity>oldProduct.instock+oldTransaction.quantity){
                     flash("error",String.format("Please input a quantity at most %s",oldProduct.instock+oldTransaction.quantity));
                     return badRequest(update.render(filledForm,id));
                 }
@@ -122,6 +127,7 @@ public class Customer_Transactions extends Controller {
         return redirect(routes.Customers.details(id));
     }
     //delete transaction
+    @Security.Authenticated(Secured.class)
     public static Result delete(Long id){
         Customer_Transaction transaction = Customer_Transaction.find.byId(id);
         if (transaction==null){

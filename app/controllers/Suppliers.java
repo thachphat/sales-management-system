@@ -4,6 +4,7 @@ import models.User_Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.data.Form;
+import play.mvc.Security;
 import views.html.suppliers.list;
 import views.html.suppliers.details;
 import views.html.suppliers.update;
@@ -13,13 +14,16 @@ import java.util.*;
 public class Suppliers extends Controller{
 	private static final Form<Supplier> supplierForm = Form.form(Supplier.class);
 
+	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Supplier> suppliers = Supplier.find.all();
 		return ok(list.render(suppliers));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result newSupplier(){
 		return ok(update.render(supplierForm));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		Supplier supplier = Supplier.findByID(id);
 		if (supplier ==null){
@@ -27,6 +31,7 @@ public class Suppliers extends Controller{
 		}
 		return ok(details.render(supplier));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Supplier> boundForm = supplierForm.bindFromRequest();
 		if(boundForm.hasErrors()){
@@ -63,6 +68,7 @@ public class Suppliers extends Controller{
 		return redirect(routes.Suppliers.list());
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result update(Long id){
 		Supplier supplier = Supplier.findByID(id);
 		if(supplier==null){
@@ -72,6 +78,7 @@ public class Suppliers extends Controller{
 		return ok(update.render(filledForm));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Supplier supplier = Supplier.findByID(id);
 		if (supplier==null){

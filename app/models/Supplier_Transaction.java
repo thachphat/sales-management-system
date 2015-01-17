@@ -28,23 +28,23 @@ public class Supplier_Transaction extends Model {
 	@Basic(optional=false)
 	public boolean isPaid;
 	
-    public static Finder<Long,Supplier_Transaction> find = new Finder<Long,Supplier_Transaction>(
+    public static Finder<Long,Supplier_Transaction> find = new Finder<>(
        Long.class, Supplier_Transaction.class
      ); 
 	
 	public static double findUnpaidAmount(){
 		List<Supplier_Transaction> transactions = find.where().eq("isPaid","false").findList();
 		double unPaid=0;
-		for(int i=0;i < transactions.size(); i++){
-			unPaid= unPaid + (double)(transactions.get(i).quantity*transactions.get(i).price);
+		for(Supplier_Transaction transaction:transactions){
+			unPaid= unPaid + (double)(transaction.quantity*transaction.price);
 		}
 		return unPaid;
 	}
 	public static double findPaidAmount(){
 		List<Supplier_Transaction> transactions = find.where().eq("isPaid","true").findList();
 		double paid =0 ;
-		for(int i=0;i < transactions.size(); i++){
-			paid= paid + (double)(transactions.get(i).quantity*transactions.get(i).price);
+		for(Supplier_Transaction transaction:transactions){
+			paid= paid + (double)(transaction.quantity*transaction.price);
 		}
 		return paid;
 	}

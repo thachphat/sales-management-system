@@ -1,0 +1,15 @@
+@(loginForm: Form[User])
+
+@main("Login") {
+<form class="form-inline" method="POST" action="@routes.Users.authenticate()">
+    <h1>Sign in</h1>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Username/Email" value="@loginForm("email").value">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+    <button class="btn btn-default"><a href="@routes.Users.register()">Register</a> </button>
+</form>
+}

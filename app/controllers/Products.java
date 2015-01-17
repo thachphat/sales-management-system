@@ -4,6 +4,7 @@ import models.User_Action;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.data.Form;
+import play.mvc.Security;
 import views.html.products.list;
 import views.html.products.update;
 
@@ -12,16 +13,20 @@ import java.util.*;
 public class Products extends Controller{
 	private static final Form<Product> productForm = Form.form(Product.class);
 
+	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Product> products = Product.find.all();
 		return ok(list.render(products));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result newProduct(){
 		return ok(update.render(productForm));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result details(String ean){
 		return ok(update.render(productForm));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result update(String ean){
 		Product product = Product.findByEan(ean);
 		if (product ==null){
@@ -31,6 +36,7 @@ public class Products extends Controller{
 		// Also return list of companies
 		return ok(update.render(filledForm));
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Product> boundForm = productForm.bindFromRequest();
 		if(boundForm.hasErrors()){
@@ -41,8 +47,7 @@ public class Products extends Controller{
 		Product product = boundForm.get();
 		User_Action action = new User_Action();
 		if (Product.findByEan(product.ean)!=null){
-			Product old_product = Product.findByEan(product.ean);
-			Product old = old_product;
+			Product old = Product.findByEan(product.ean);
 			old.setName(product.name);
 			old.setDescription(product.description);
 			old.setInstock(product.instock);
@@ -59,6 +64,7 @@ public class Products extends Controller{
 		action.save();
 		return redirect(routes.Products.list());
 	}
+	@Security.Authenticated(Secured.class)
 	public static Result delete(String ean){
 		Product product = Product.findByEan(ean);
 		if (product==null){

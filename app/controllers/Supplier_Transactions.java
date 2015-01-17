@@ -6,6 +6,7 @@ import models.Supplier_Transaction;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.data.Form;
+import play.mvc.Security;
 import views.html.supplier_transactions.update;
 import views.html.supplier_transactions.list;
 
@@ -17,15 +18,19 @@ import models.User_Action;
 public class Supplier_Transactions extends Controller {
 	private static final Form<Supplier_Transaction> transactionForm = Form.form(Supplier_Transaction.class);
 
+	@Security.Authenticated(Secured.class)
 	public static Result newTransaction(Long id){
 		return ok(update.render(transactionForm,id));
 	}
 	//List all transactions
+	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Supplier_Transaction> transactions = Supplier_Transaction.find.all();
 		return ok(list.render(transactions));
 	}
+
 	//Update transaction with transactionID
+	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		if(transaction==null){
@@ -34,7 +39,9 @@ public class Supplier_Transactions extends Controller {
 		Form<Supplier_Transaction> filledForm = transactionForm.fill(transaction);
 		return ok(update.render(filledForm,transaction.supplier.id));
 	}
+
 	//Save to supplierID
+	@Security.Authenticated(Secured.class)
 	public static Result save(Long id){
 		Form<Supplier_Transaction> filledForm = transactionForm.bindFromRequest();
 		if(filledForm.hasErrors()){
@@ -105,7 +112,9 @@ public class Supplier_Transactions extends Controller {
 
 		return redirect(routes.Suppliers.details(id));
 	}
+
 	//delete transaction
+	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
 		if (transaction==null){

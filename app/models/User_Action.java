@@ -24,7 +24,7 @@ public class User_Action extends Model{
 		return String.format("%s",description);
 	}
 	
-    public static Finder<Long,User_Action> find = new Finder<Long,User_Action>(
+    public static Finder<Long,User_Action> find = new Finder<>(
        Long.class, User_Action.class
      );
 }

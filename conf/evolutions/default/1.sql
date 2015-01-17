@@ -60,9 +60,10 @@ create table supplier_transaction (
 ;
 
 create table user (
-  username                  varchar(255) not null,
+  id                        bigint not null,
+  email                     varchar(255),
   password                  varchar(255),
-  constraint pk_user primary key (username))
+  constraint pk_user primary key (id))
 ;
 
 create table user_action (

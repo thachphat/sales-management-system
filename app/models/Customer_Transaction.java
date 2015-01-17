@@ -32,17 +32,13 @@ public class Customer_Transaction extends Model{
 	@JoinColumn(name="ean")
 	public Product product;
 
-	public static Finder<Long,Customer_Transaction> find = new Finder<Long, Customer_Transaction>(Long.class, Customer_Transaction.class);
-
-	public static List<Customer_Transaction> findByCustomer(Long id) {
-		return find.where().eq("customer.id",id).findList();
-	}
+	public static Finder<Long,Customer_Transaction> find = new Finder<>(Long.class, Customer_Transaction.class);
 
 	public static double findUnpaidAmount(){
 		List<Customer_Transaction> transactions = find.where().eq("isPaid","false").findList();
 		double unPaid=0;
-		for(int i=0;i < transactions.size(); i++){
-			unPaid= unPaid + (double)(transactions.get(i).quantity*transactions.get(i).price);
+		for(Customer_Transaction transaction:transactions){
+			unPaid= unPaid + (double)(transaction.quantity*transaction.price);
 		}
 		return unPaid;
 	}
@@ -50,8 +46,8 @@ public class Customer_Transaction extends Model{
 	public static double findPaidAmount(){
 		List<Customer_Transaction> transactions = find.where().eq("isPaid","true").findList();
 		double paid =0 ;
-		for(int i=0;i < transactions.size(); i++){
-			paid= paid + (double)(transactions.get(i).quantity*transactions.get(i).price);
+		for(Customer_Transaction transaction:transactions){
+			paid= paid + (double)(transaction.quantity*transaction.price);
 		}
 		return paid;
 	}
