@@ -43,8 +43,8 @@ public class Customer_Transactions extends Controller {
             return badRequest(update.render(transactionForm, id));
         }
         Customer_Transaction transaction = filledForm.get();
-        List<Product> products = Product.findByEan(filledForm.apply("product_ean").value());
-        if (products.isEmpty()){
+        Product product = Product.findByEan(filledForm.apply("product_ean").value());
+        if (product==null){
             flash("error","Product is not found.");
             return badRequest(update.render(filledForm,id));
         }
@@ -62,7 +62,6 @@ public class Customer_Transactions extends Controller {
             transaction.sellDate = format.format(date);
         }
 
-        Product product = products.get(0);
         User_Action action = new User_Action();
         if (transaction.internalId==null) {
             if(transaction.quantity>product.instock){

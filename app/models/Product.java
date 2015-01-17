@@ -40,7 +40,7 @@ public class Product extends Model{
        Long.class, Product.class
      ); 
 	
-	public static List<Product> findByEan(String ean){
-		return find.where().eq("ean",ean).findList();
+	public static Product findByEan(String ean){
+		return find.where().eq("ean",ean).findUnique();
 	}
 }

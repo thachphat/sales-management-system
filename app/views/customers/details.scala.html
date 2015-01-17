@@ -52,8 +52,8 @@ location.reload();
         <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">
             @transaction.internalId
         </a></td>
-        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.customer.id - @transaction.customer.name</td>
-        <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.product.name</td>
+        <td><a href="@routes.Customers.update(transaction.customer.id)">@transaction.customer.id - @transaction.customer.name</td>
+        <td><a href="@routes.Products.update(transaction.product.ean)">@transaction.product.ean - @transaction.product.name</td>
         <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.quantity</td>
         <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.price</td>
         <td><a href="@routes.Customer_Transactions.details(transaction.internalId)">@transaction.sellDate.format("dd-MM-yyyy")</td>
