@@ -62,7 +62,7 @@ public class Users extends Controller{
         }
         flash("success", "Successful registered.");
         user.save();
-        return redirect(routes.Application.home());
+        return redirect(routes.Users.login());
     }
 
     public static Result logout(){
