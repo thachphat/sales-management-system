@@ -1,6 +1,7 @@
 data
 logs
-project
+project/project
+project/target
 target
 tmp
 .history
