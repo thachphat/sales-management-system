@@ -16,39 +16,53 @@ public class Users extends Controller{
 
     public static Result authenticate() {
         Form<User> boundForm = loginForm.bindFromRequest();
-        if (boundForm.hasErrors()) {
-            Application.flash("error", "Please correct the form below.");
-            return Application.badRequest(register.render(boundForm));
+
+        if(boundForm.apply("email").value().equals("")){
+            flash("error","Please enter username/email.");
+            return badRequest(login.render(loginForm));
+        }
+        if(boundForm.apply("password").value().equals("")){
+            flash("error","Please enter password.");
+            return badRequest(login.render(boundForm));
         }
         String email = boundForm.get().email;
         String password = boundForm.get().password;
-        if (User.authenticate(email, password) == null) {
-            Application.flash("error", "Invalid password");
-            return Application.badRequest(login.render(loginForm));
+        if (User.findByEmail(email) == null) {
+            flash("error", "Invalid username/email.");
+            return badRequest(login.render(loginForm));
         }
-        Application.session().clear();
-        Application.session("email", email);
-        return Application.redirect(routes.Application.home());
+        if (User.authenticate(email, password) == null) {
+            flash("error", "Invalid password.");
+            return badRequest(login.render(boundForm));
+        }
+        session().clear();
+        session("email", email);
+        flash("success","Log in successfully.");
+        return redirect(routes.Application.home());
     }
 
     public static Result register() {
-        return Application.ok(register.render(loginForm));
+        return ok(register.render(loginForm));
     }
 
     public static Result save() {
         Form<User> boundForm = loginForm.bindFromRequest();
-        if (boundForm.hasErrors()) {
-            Application.flash("error", "Please correct the form below.");
-            return Application.badRequest(register.render(boundForm));
+        if(boundForm.apply("email").value().equals("")){
+            flash("error","Please enter username/email.");
+            return badRequest(register.render(loginForm));
+        }
+        if(boundForm.apply("password").value().equals("")){
+            flash("error","Please enter password.");
+            return badRequest(register.render(boundForm));
         }
         User user = boundForm.get();
         if (User.findByEmail(user.email) != null) {
-            Application.flash("error", "Username already taken.");
-            return Application.badRequest(register.render(boundForm));
+            flash("error", "Username already taken.");
+            return badRequest(register.render(loginForm));
         }
-        Application.flash("success", "Successful registered.");
+        flash("success", "Successful registered.");
         user.save();
-        return Application.redirect(routes.Application.home());
+        return redirect(routes.Application.home());
     }
 
     public static Result logout(){

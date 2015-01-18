@@ -1,14 +1,54 @@
 @(loginForm: Form[User])
 
-@main("Register") {
-<form class="form-inline" method="POST" action="@routes.Users.save()">
-    <h1>Register Account</h1>
-    <div class="form-group">
-        <input type="email" class="form-control" name="email" placeholder="Username/Email" value="@loginForm("email").value">
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link href="@routes.Assets.at("stylesheets/bootstrap.min.css")" rel="stylesheet" media="screen">
+
+    <!--external css-->
+    <link href="@routes.Assets.at("font-awesome/css/font-awesome.css")" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.at("javascripts/gritter/css/jquery.gritter.css")" />
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.at("lineicons/style.css")"/>
+
+    <!-- Custom styles for this template -->
+    <link href="@routes.Assets.at("stylesheets/style.css")" rel="stylesheet">
+    <link href="@routes.Assets.at("stylesheets/style-responsive.css")" rel="stylesheet">
+</head>
+<body>
+<section id="main-content">
+    <section class="wrapper">
+        <div class="container-fluid">
+            @if(flash.containsKey("success")){
+            <div class="alert alert-success" role="alert">
+                @flash.get("success")
+            </div>
+            }
+
+            @if(flash.containsKey("error")){
+            <div class="alert alert-danger" role="alert">
+                @flash.get("error")
+            </div>
+            }
+        </div>
+    </section>
+</section>
+<div id="login-page">
+    <div class="container">
+        <form class="form-login" method="POST" action="@routes.Users.save()">
+            <h2 class="form-login-heading">register</h2>
+            <div class="login-wrap">
+                <input name="email" type="email" class="form-control" placeholder="Email/Username" autofocus>
+                <br>
+                <input name="password" type="password" class="form-control" placeholder="Password">
+                <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i>REGISTER</button>
+                <hr>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <input type="password" class="form-control" name="password" placeholder="Password">
-    </div>
-    <button type="submit" class="btn btn-default">Register</button>
-</form>
-}
+</div>
+</body>
+</html>
+
