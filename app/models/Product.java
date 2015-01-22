@@ -21,21 +21,7 @@ public class Product extends Model{
 	
 	@OneToMany(mappedBy="product",cascade=CascadeType.ALL)
 	public List<Supplier_Transaction> transactions;
-			
-	public String toString(){
-		return String.format("%s - %s",ean,name);
-	}
-	public void setInstock(int quantity) {
-	        this.instock = quantity;
-	    }
-	
-	public void setName(String name) {
-		        this.name = name;
-		    }
-	
-	public void setDescription(String description) {
-			   this.description = description;
-	}
+
     public static Finder<Long,Product> find = new Finder<>(
        Long.class, Product.class
      ); 

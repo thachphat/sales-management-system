@@ -74,7 +74,7 @@ public class Customer_Transactions extends Controller {
                 return badRequest(update.render(filledForm,id));
             }
             transaction.customer = Customer.findByID(id);
-            product.setInstock(product.instock - transaction.quantity);
+            product.instock = product.instock - transaction.quantity;
             transaction.product = product;
             product.save();
             transaction.save();
@@ -114,11 +114,11 @@ public class Customer_Transactions extends Controller {
                 action.description = str;
                 action.save();
                 if (!product.ean.equals(oldProduct.ean)){
-                    oldProduct.setInstock(oldProduct.instock + oldTransaction.quantity);
+                    oldProduct.instock=oldProduct.instock + oldTransaction.quantity;
                     oldProduct.update();
                 }
-                else product.setInstock(oldProduct.instock+oldTransaction.quantity);
-                product.setInstock(product.instock - transaction.quantity);
+                else product.instock=oldProduct.instock+oldTransaction.quantity;
+                product.instock=product.instock - transaction.quantity;
                 product.update();
                 transaction.update();
             }
@@ -135,7 +135,7 @@ public class Customer_Transactions extends Controller {
         }
 
         Product product = transaction.product;
-        product.setInstock(product.instock + transaction.quantity);
+        product.instock=product.instock + transaction.quantity;
         product.update();
 
         transaction.delete();

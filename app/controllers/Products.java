@@ -48,9 +48,9 @@ public class Products extends Controller{
 		User_Action action = new User_Action();
 		if (Product.findByEan(product.ean)!=null){
 			Product old = Product.findByEan(product.ean);
-			old.setName(product.name);
-			old.setDescription(product.description);
-			old.setInstock(product.instock);
+			old.name=product.name;
+			old.description=product.description;
+			old.instock=product.instock;
 			old.update();
 			action.verb = "Update";
 			action.description = String.format("Product: %s-%s",old.ean,old.name);

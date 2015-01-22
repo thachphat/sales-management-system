@@ -71,7 +71,7 @@ public class Supplier_Transactions extends Controller {
 		User_Action action = new User_Action();
 		if (transaction.internalId==null) {
 			transaction.supplier = Supplier.findByID(id);
-			product.setInstock(product.instock + transaction.quantity);
+			product.instock=product.instock + transaction.quantity;
 			transaction.product = product;
 			product.update();
 			transaction.save();
@@ -102,9 +102,9 @@ public class Supplier_Transactions extends Controller {
 				action.verb = "Update";
 				action.description = str;
 				action.save();
-				oldProduct.setInstock(oldProduct.instock - oldTransaction.quantity);
+				oldProduct.instock=oldProduct.instock - oldTransaction.quantity;
 				if (!product.ean.equals(oldProduct.ean)) oldProduct.update();
-				product.setInstock(product.instock + transaction.quantity);
+				product.instock=product.instock + transaction.quantity;
 				product.update();
 				transaction.update();
 			}
@@ -122,7 +122,7 @@ public class Supplier_Transactions extends Controller {
 		}
 
 		Product product = transaction.product;
-		product.setInstock(product.instock - transaction.quantity);
+		product.instock=product.instock - transaction.quantity;
 		product.update();
 
 		transaction.delete();
