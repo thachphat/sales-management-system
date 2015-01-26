@@ -1,9 +1,6 @@
 package models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import play.data.validation.Constraints;
 import play.db.ebean.Model;
 import java.util.List;
@@ -28,7 +25,7 @@ public class Customer extends Model{
 	public String email2;
 
 	//Create one to many relationship with Customer_Transaction
-	@OneToMany(mappedBy="customer")
+	@OneToMany(mappedBy="customer", cascade=CascadeType.ALL)
 	public List<Customer_Transaction> transactions;
 
 	public static Finder<Long,Customer> find = new Finder<>(Long.class, Customer.class);
