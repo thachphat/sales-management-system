@@ -16,20 +16,50 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+//This class provides respond function for web interaction with Customer_Transaction relation in the database
 public class Customer_Transactions extends Controller {
     private static final Form<Customer_Transaction> transactionForm = Form.form(Customer_Transaction.class);
 
+    /*
+	Function name: newTransaction(Long id)
+	Input:
+	    - id: customer's id
+	Output:
+	    - return transaction form page
+	Description:
+		- direct new transaction of a customer with customer's id request to transaction form page
+	 */
     @Security.Authenticated(Secured.class)
     public static Result newTransaction(Long id){
         return ok(update.render(transactionForm, id));
     }
-    //List all transactions
+
+    /*
+	Function name: list()
+	Input: None
+	Output:
+	    - return transaction list page
+	Description:
+		- find all transactions performed by all customers
+		- return transactions page with transactions list
+	 */
     @Security.Authenticated(Secured.class)
     public static Result list(){
         List<Customer_Transaction> transactions = Customer_Transaction.find.all();
         return ok(list.render(transactions));
     }
-    //Update transaction with transactionID
+
+    /*
+	Function name: details(Long id)
+	Input:
+	    - id: transaction's id
+	Output:
+	    - return not found page or transaction form page
+	Description:
+        - find a transaction with id
+        - if not exist, return not found page
+        - else return transaction form page with filled data from found transaction
+	 */
     @Security.Authenticated(Secured.class)
     public static Result details(Long id){
         Customer_Transaction transaction = Customer_Transaction.find.byId(id);
@@ -39,7 +69,19 @@ public class Customer_Transactions extends Controller {
         Form<Customer_Transaction> filledForm = transactionForm.fill(transaction);
         return ok(update.render(filledForm,transaction.customer.id));
     }
-    //Save to customerID
+
+    /*
+	Function name: save(Long id)
+	Input:
+	    - id: customer's id
+	Output:
+	    - return customer's transactions page
+	Description:
+        - gather information from transaction form page
+        - save or update the transaction to database
+        - update product's in stock
+        - return customer's transactions page
+	 */
     @Security.Authenticated(Secured.class)
     public static Result save(Long id){
         Form<Customer_Transaction> filledForm = transactionForm.bindFromRequest();
@@ -126,7 +168,20 @@ public class Customer_Transactions extends Controller {
 
         return redirect(routes.Customers.details(id));
     }
-    //delete transaction
+
+    /*
+	Function name: delete(Long id)
+	Input:
+	    - id: transaction's id
+	Output:
+	    - return not found page or transactions page
+	Description:
+        - find a transaction with id
+        - if not exist, return not found page
+        - else
+            - update product in stock
+            - delete transaction from database
+	 */
     @Security.Authenticated(Secured.class)
     public static Result delete(Long id){
         Customer_Transaction transaction = Customer_Transaction.find.byId(id);
@@ -138,12 +193,12 @@ public class Customer_Transactions extends Controller {
         product.instock=product.instock + transaction.quantity;
         product.update();
 
-        transaction.delete();
         User_Action action = new User_Action();
         String str = String.format("Transaction %s : Remove %s of product %s-%s from %s",transaction.internalId,transaction.quantity, product.id, product.name, transaction.customer.name);
         action.verb= "Delete";
         action.description=str;
         action.save();
+        transaction.delete();
         return redirect(routes.Customer_Transactions.list());
     }
 }

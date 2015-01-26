@@ -15,21 +15,50 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import models.User_Action;
 
+//This class provides respond function for web interaction with Supplier_Transaction relation in the database
 public class Supplier_Transactions extends Controller {
 	private static final Form<Supplier_Transaction> transactionForm = Form.form(Supplier_Transaction.class);
 
+	/*
+	Function name: newTransaction(Long id)
+	Input:
+	    - id: supplier's id
+	Output:
+	    - return transaction form page
+	Description:
+		- direct new transaction of a supplier with supplier's id request to transaction form page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result newTransaction(Long id){
 		return ok(update.render(transactionForm,id));
 	}
-	//List all transactions
+
+	/*
+        Function name: list()
+        Input: None
+        Output:
+            - return transaction list page
+        Description:
+            - find all transactions performed by all suppliers
+            - return transactions page with transactions list
+    */
 	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Supplier_Transaction> transactions = Supplier_Transaction.find.all();
 		return ok(list.render(transactions));
 	}
 
-	//Update transaction with transactionID
+	/*
+    Function name: details(Long id)
+    Input:
+        - id: transaction's id
+    Output:
+        - return not found page or transaction form page
+    Description:
+        - find a transaction with id
+        - if not exist, return not found page
+        - else return transaction form page with filled data from found transaction
+    */
 	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);
@@ -40,7 +69,18 @@ public class Supplier_Transactions extends Controller {
 		return ok(update.render(filledForm,transaction.supplier.id));
 	}
 
-	//Save to supplierID
+	/*
+	Function name: save(Long id)
+	Input:
+	    - id: supplier's id
+	Output:
+	    - return supplier's transactions page
+	Description:
+        - gather information from transaction form page
+        - save or update the transaction to database
+        - update product's in stock
+        - return supplier's transactions page
+	*/
 	@Security.Authenticated(Secured.class)
 	public static Result save(Long id){
 		Form<Supplier_Transaction> filledForm = transactionForm.bindFromRequest();
@@ -113,7 +153,19 @@ public class Supplier_Transactions extends Controller {
 		return redirect(routes.Suppliers.details(id));
 	}
 
-	//delete transaction
+	/*
+	Function name: delete(Long id)
+	Input:
+	    - id: transaction's id
+	Output:
+	    - return not found page or transactions page
+	Description:
+        - find a transaction with id
+        - if not exist, return not found page
+        - else
+            - update product in stock
+            - delete transaction from database
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Supplier_Transaction transaction = Supplier_Transaction.find.byId(id);

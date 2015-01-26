@@ -10,22 +10,50 @@ import views.html.products.update;
 
 import models.Product;
 import java.util.*;
+
+//This class provides respond function for web interaction with Product relation in the database
 public class Products extends Controller{
 	private static final Form<Product> productForm = Form.form(Product.class);
 
+	/*
+	Function name: list()
+	Input: None
+	Output:
+	    - return products list page
+	Description:
+		- find all products
+		- return products page with product list
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Product> products = Product.find.all();
 		return ok(list.render(products));
 	}
+
+	/*
+	Function name: newProduct()
+	Input: None
+	Output:
+	    - return product form page
+	Description:
+		- return product form page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result newProduct(){
 		return ok(update.render(productForm));
 	}
-	@Security.Authenticated(Secured.class)
-	public static Result details(String ean){
-		return ok(update.render(productForm));
-	}
+
+	/*
+	Function name: update(String ean)
+	Input:
+		- product's ean
+	Output:
+	    - return not found page or product form page
+	Description:
+		- find product with ean
+		- if not exist, return not found page
+		- else return product form page with filled data from exist product
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result update(String ean){
 		Product product = Product.findByEan(ean);
@@ -36,6 +64,17 @@ public class Products extends Controller{
 		// Also return list of companies
 		return ok(update.render(filledForm));
 	}
+
+	/*
+	Function name: save()
+	Input: None
+	Output:
+	    - return products page
+	Description:
+		- gather data from product form
+		- save or update the product to database
+		- return products page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Product> boundForm = productForm.bindFromRequest();
@@ -64,6 +103,18 @@ public class Products extends Controller{
 		action.save();
 		return redirect(routes.Products.list());
 	}
+
+	/*
+	Function name: delete(String ean)
+	Input:
+		- product's ean
+	Output:
+	    - return not found page products page
+	Description:
+		- find product with ean
+		- if not exist, return not found page
+		- else delete exist product
+	*/
 	@Security.Authenticated(Secured.class)
 	public static Result delete(String ean){
 		Product product = Product.findByEan(ean);

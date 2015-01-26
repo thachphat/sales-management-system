@@ -18,14 +18,24 @@ public class Product extends Model{
 	public String description;
 	
 	public int instock;
-	
+
+	//Create one to many relationship with Supplier_Transaction
 	@OneToMany(mappedBy="product",cascade=CascadeType.ALL)
 	public List<Supplier_Transaction> transactions;
 
     public static Finder<Long,Product> find = new Finder<>(
        Long.class, Product.class
-     ); 
-	
+     );
+
+	/*
+	Function name: findByEan(String ean)
+	Input:
+		- String ean
+	Output:
+	    - return Product instance
+	Description:
+	    - find Product instance in database by ean and return it
+	 */
 	public static Product findByEan(String ean){
 		return find.where().eq("ean",ean).findUnique();
 	}

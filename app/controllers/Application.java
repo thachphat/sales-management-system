@@ -10,8 +10,18 @@ import views.html.home;
 
 import java.util.List;
 
+//This class provides homepage functions
 public class Application extends Controller {
 
+	/*
+	Function name: home()
+	Input: None
+	Output:
+		- return to home page
+	Description:
+		- calculate supplier's and customer's paid and unpaid amount
+		- render homepage dashboard
+	 */
 	@Security.Authenticated(Secured.class)
     public static Result home() {
 		List<User_Action> actions=User_Action.find.order("createDate desc").findList();

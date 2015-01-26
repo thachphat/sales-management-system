@@ -11,18 +11,47 @@ import views.html.suppliers.update;
 import models.Supplier;
 import java.util.*;
 
+//This class provides respond function for web interaction with Supplier relation in the database
 public class Suppliers extends Controller{
 	private static final Form<Supplier> supplierForm = Form.form(Supplier.class);
 
+	/*
+	Function name: list()
+	Input: None
+	Output:
+	    - return suppliers list page
+	Description:
+		- find all suppliers
+		- return suppliers page with supplier list
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Supplier> suppliers = Supplier.find.all();
 		return ok(list.render(suppliers));
 	}
+
+	/*
+	Function name: newSupplier()
+	Input: None
+	Output:
+	    - return supplier form page
+	Description:
+		- return supplier form page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result newSupplier(){
 		return ok(update.render(supplierForm));
 	}
+
+	/*
+	Function name: details(Long id)
+	Input:
+		- supplier's id
+	Output:
+	    - return supplier's transactions page
+	Description:
+		- return supplier's transaction page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		Supplier supplier = Supplier.findByID(id);
@@ -31,6 +60,17 @@ public class Suppliers extends Controller{
 		}
 		return ok(details.render(supplier));
 	}
+
+	/*
+	Function name: save()
+	Input: None
+	Output:
+	    - return suppliers page
+	Description:
+		- gather data from supplier form
+		- save or update the supplier to database
+		- return suppliers page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Supplier> boundForm = supplierForm.bindFromRequest();
@@ -68,6 +108,17 @@ public class Suppliers extends Controller{
 		return redirect(routes.Suppliers.list());
 	}
 
+	/*
+	Function name: update(Long id)
+	Input:
+		- supplier's id
+	Output:
+	    - return not found page or supplier form page
+	Description:
+		- find supplier with id
+		- if not exist, return not found page
+		- else return supplier form page with filled data from exist supplier
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result update(Long id){
 		Supplier supplier = Supplier.findByID(id);
@@ -78,6 +129,17 @@ public class Suppliers extends Controller{
 		return ok(update.render(filledForm));
 	}
 
+	/*
+	Function name: delete(Long id)
+	Input:
+		- supplier's id
+	Output:
+	    - return not found page suppliers page
+	Description:
+		- find supplier with id
+		- if not exist, return not found page
+		- else delete exist supplier
+	*/
 	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Supplier supplier = Supplier.findByID(id);

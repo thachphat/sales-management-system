@@ -12,20 +12,49 @@ import views.html.customers.update;
 
 import java.util.List;
 
+//This class provides respond function for web interaction with Customer relation in the database
 public class Customers extends Controller {
 	private static final Form<Customer> customerForm = Form.form(Customer.class);
 
+	/*
+	Function name: list()
+	Input: None
+	Output:
+	    - return customers list page
+	Description:
+		- find all customers
+		- return customers page with customer list
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result list(){
 		List<Customer> customers = Customer.find.all();
 		return ok(list.render(customers));
 	}
 
+	/*
+	Function name: newCustomer()
+	Input: None
+	Output:
+	    - return customer form page
+	Description:
+		- return customer form page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result newCustomer(){
 		return ok(update.render(customerForm));
 	}
 
+	/*
+	Function name: update(Long id)
+	Input:
+		- customer's id
+	Output:
+	    - return not found page or customer form page
+	Description:
+		- find customer with id
+		- if not exist, return not found page
+		- else return customer form page with filled data from exist customer
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result update(Long id){
 		Customer customer = Customer.findByID(id);
@@ -36,11 +65,30 @@ public class Customers extends Controller {
 		return ok(update.render(filledForm));
 	}
 
+	/*
+	Function name: details(Long id)
+	Input:
+		- customer's id
+	Output:
+	    - return customer's transactions page
+	Description:
+		- return customer's transaction page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result details(Long id){
 		return ok(details.render(Customer.findByID(id)));
 	}
 
+	/*
+	Function name: save()
+	Input: None
+	Output:
+	    - return customers page
+	Description:
+		- gather data from customer form
+		- save or update the customer to database
+		- return customers page
+	 */
 	@Security.Authenticated(Secured.class)
 	public static Result save(){
 		Form<Customer> boundForm = customerForm.bindFromRequest();
@@ -78,6 +126,17 @@ public class Customers extends Controller {
 		return redirect(routes.Customers.list());
 	}
 
+	/*
+	Function name: delete(Long id)
+	Input:
+		- customer's id
+	Output:
+	    - return not found page customers page
+	Description:
+		- find customer with id
+		- if not exist, return not found page
+		- else delete exist customer
+	*/
 	@Security.Authenticated(Secured.class)
 	public static Result delete(Long id){
 		Customer customer = Customer.findByID(id);
