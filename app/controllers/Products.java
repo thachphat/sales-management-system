@@ -44,6 +44,27 @@ public class Products extends Controller{
 	}
 
 	/*
+	Function name: details(String ean)
+	Input:
+		- product's ean
+	Output:
+	    - return not found page or product form page
+	Description:
+		- find product with ean
+		- if not exist, return not found page
+		- else return product form page with filled data from exist product
+	 */
+	@Security.Authenticated(Secured.class)
+	public static Result details(String ean){
+		Product product = Product.findByEan(ean);
+		if (product ==null){
+			return notFound(String.format("Product %s does not exist.",ean));
+		}
+		Form<Product> filledForm = productForm.fill(product);
+		return ok(update.render(filledForm));
+	}
+
+	/*
 	Function name: update(String ean)
 	Input:
 		- product's ean
@@ -61,7 +82,6 @@ public class Products extends Controller{
 			return notFound(String.format("Product %s does not exist.",ean));
 		}
 		Form<Product> filledForm = productForm.fill(product);
-		// Also return list of companies
 		return ok(update.render(filledForm));
 	}
 
